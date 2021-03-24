@@ -1,4 +1,4 @@
 # Where is Fluffymon? (project)
 
-Mebri: Olariu Alexandra, Tara Radu, Nassar Mahmoud, Criniceanu Ctlin, Radeanu Dragos
+Membri: Olariu Alexandra, Tarsa Radu, Nassar Mahmoud, Crainiceanu Catalin, Radeanu Dragos
 
