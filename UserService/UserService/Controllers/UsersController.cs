@@ -123,7 +123,7 @@ namespace UserService.Controllers
             {
                 // update user 
                 _userService.Update(user, model.Password);
-                return NoContent();
+                return Ok("update successfully");
             }
             catch (UserException ex)
             {
