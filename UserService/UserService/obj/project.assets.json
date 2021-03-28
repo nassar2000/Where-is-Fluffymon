@@ -1721,11 +1721,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "D:\\pravda-master\\UserService\\UserService\\UserService.csproj",
+      "projectUniqueName": "D:\\tspproject\\Where-is-Fluffymon\\UserService\\UserService\\UserService.csproj",
       "projectName": "UserService",
-      "projectPath": "D:\\pravda-master\\UserService\\UserService\\UserService.csproj",
+      "projectPath": "D:\\tspproject\\Where-is-Fluffymon\\UserService\\UserService\\UserService.csproj",
       "packagesPath": "C:\\Users\\nassa\\.nuget\\packages\\",
-      "outputPath": "D:\\pravda-master\\UserService\\UserService\\obj\\",
+      "outputPath": "D:\\tspproject\\Where-is-Fluffymon\\UserService\\UserService\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\nassa\\AppData\\Roaming\\NuGet\\NuGet.Config",
