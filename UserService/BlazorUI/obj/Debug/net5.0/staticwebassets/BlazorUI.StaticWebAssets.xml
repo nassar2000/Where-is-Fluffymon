@@ -1,0 +1,4 @@
+﻿<StaticWebAssets Version="1.0">
+  <ContentRoot BasePath="/" Path="D:\GitHubRepos\Where-is-Fluffymon\UserService\BlazorUI\bin\Debug\net5.0\wwwroot\" />
+  <ContentRoot BasePath="/" Path="D:\GitHubRepos\Where-is-Fluffymon\UserService\BlazorUI\obj\Debug\net5.0\scopedcss\bundle\" />
+</StaticWebAssets>

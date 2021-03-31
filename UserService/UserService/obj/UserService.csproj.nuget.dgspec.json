@@ -1,20 +1,20 @@
 {
   "format": 1,
   "restore": {
-    "D:\\tspproject\\Where-is-Fluffymon\\UserService\\UserService\\UserService.csproj": {}
+    "D:\\GitHubRepos\\Where-is-Fluffymon\\UserService\\UserService\\UserService.csproj": {}
   },
   "projects": {
-    "D:\\tspproject\\Where-is-Fluffymon\\UserService\\UserService\\UserService.csproj": {
+    "D:\\GitHubRepos\\Where-is-Fluffymon\\UserService\\UserService\\UserService.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\tspproject\\Where-is-Fluffymon\\UserService\\UserService\\UserService.csproj",
+        "projectUniqueName": "D:\\GitHubRepos\\Where-is-Fluffymon\\UserService\\UserService\\UserService.csproj",
         "projectName": "UserService",
-        "projectPath": "D:\\tspproject\\Where-is-Fluffymon\\UserService\\UserService\\UserService.csproj",
-        "packagesPath": "C:\\Users\\nassa\\.nuget\\packages\\",
-        "outputPath": "D:\\tspproject\\Where-is-Fluffymon\\UserService\\UserService\\obj\\",
+        "projectPath": "D:\\GitHubRepos\\Where-is-Fluffymon\\UserService\\UserService\\UserService.csproj",
+        "packagesPath": "C:\\Users\\Subaru\\.nuget\\packages\\",
+        "outputPath": "D:\\GitHubRepos\\Where-is-Fluffymon\\UserService\\UserService\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "C:\\Users\\nassa\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\Subaru\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [

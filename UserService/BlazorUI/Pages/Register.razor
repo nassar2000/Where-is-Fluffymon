@@ -1,0 +1,68 @@
+﻿@page "/register"
+
+<title>Register</title>
+
+<link rel="stylesheet" href="css/login-register.css">
+<BodyStyle/>
+
+<div class="signup-form">
+    <form action="some_action" method="post">
+        <h2>Register</h2>
+        <div class="form-group">
+            <div class="input-group">
+                <div class="input-group-prepend">
+                    <span class="input-group-text">
+                        <span class="fa fa-user-circle"></span>
+                    </span>
+                </div>
+                <input type="text" class="form-control" name="first_name" placeholder="First Name" required="required">
+            </div>
+        </div>
+        <div class="form-group">
+            <div class="input-group">
+                <div class="input-group-prepend">
+                    <span class="input-group-text">
+                        <span class="fa fa-user-circle-o"></span>
+                    </span>
+                </div>
+                <input type="text" class="form-control" name="last_name" placeholder="Last Name" required="required">
+            </div>
+        </div>
+        <div class="form-group">
+            <div class="input-group">
+                <div class="input-group-prepend">
+                    <span class="input-group-text">
+                        <i class="fa fa-paper-plane"></i>
+                    </span>
+                </div>
+                <input type="email" class="form-control" name="email" placeholder="Email Address" required="required">
+            </div>
+        </div>
+        <div class="form-group">
+            <div class="input-group">
+                <div class="input-group-prepend">
+                    <span class="input-group-text">
+                        <i class="fa fa-unlock"></i>
+                    </span>
+                </div>
+                <input type="text" class="form-control" name="password" placeholder="Password" required="required">
+            </div>
+        </div>
+        <div class="form-group">
+            <div class="input-group">
+                <div class="input-group-prepend">
+                    <span class="input-group-text">
+                        <i class="fa fa-unlock"></i>
+                    </span>
+                </div>
+                <input type="text" class="form-control" name="confirm_password" placeholder="Confirm Password" required="required">
+            </div>
+        </div>
+        <div class="form-group">
+            <button type="submit" class="btn btn-success btn-lg btn-block">Register</button>
+        </div>
+    </form>
+    <div class="text-center">
+        Already have an account? <a href="login">Sign in</a>
+    </div>
+</div>
