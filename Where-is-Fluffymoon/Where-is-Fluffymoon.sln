@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.31025.194
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Where-is-Fluffymoon", "Where-is-Fluffymoon\Where-is-Fluffymoon.csproj", "{D65B5929-2DD6-46FF-9185-EE418EADD2FB}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{D65B5929-2DD6-46FF-9185-EE418EADD2FB}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D65B5929-2DD6-46FF-9185-EE418EADD2FB}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D65B5929-2DD6-46FF-9185-EE418EADD2FB}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D65B5929-2DD6-46FF-9185-EE418EADD2FB}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {6004585E-6D7E-4963-88FA-6ED960320A02}
+	EndGlobalSection
+EndGlobal
