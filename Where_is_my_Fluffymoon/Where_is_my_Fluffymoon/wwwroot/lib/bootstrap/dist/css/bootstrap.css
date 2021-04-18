@@ -87,7 +87,7 @@ abbr[title],
 abbr[data-original-title] {
   text-decoration: underline;
   -webkit-text-decoration: underline dotted;
-  text-decoration: underline dotted;
+  -text-decoration: underline dotted;
   cursor: help;
   border-bottom: 0;
   -webkit-text-decoration-skip-ink: none;
@@ -419,7 +419,7 @@ h6, .h6 {
   line-height: 1.2;
 }
 
-hr {
+.hr {
   margin-top: 1rem;
   margin-bottom: 1rem;
   border: 0;
@@ -528,7 +528,7 @@ kbd kbd {
   font-weight: 700;
 }
 
-pre {
+.pre {
   display: block;
   font-size: 87.5%;
   color: #212529;
@@ -3173,9 +3173,6 @@ input[type="button"].btn-block {
   margin-left: 0;
 }
 
-.dropright .dropdown-toggle::after {
-  vertical-align: 0;
-}
 
 .dropleft .dropdown-menu {
   top: 0;
@@ -3192,9 +3189,6 @@ input[type="button"].btn-block {
   content: "";
 }
 
-.dropleft .dropdown-toggle::after {
-  display: none;
-}
 
 .dropleft .dropdown-toggle::before {
   display: inline-block;

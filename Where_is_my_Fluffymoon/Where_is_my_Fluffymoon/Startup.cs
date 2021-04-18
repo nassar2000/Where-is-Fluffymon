@@ -1,13 +1,8 @@
 using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Hosting;
-using Microsoft.AspNetCore.HttpsPolicy;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Threading.Tasks;
 using Microsoft.EntityFrameworkCore;
 using Where_is_my_Fluffymoon.Data;
 
@@ -28,7 +23,7 @@ namespace Where_is_my_Fluffymoon
             services.AddControllersWithViews();
             services.AddRazorPages();
 
-            services.AddDbContext<Where_is_my_FluffymoonContext>(options =>
+            services.AddDbContext<AppDbContext>(options =>
                     options.UseSqlServer(Configuration.GetConnectionString("AppDbContextConnection")));
         }
 
