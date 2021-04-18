@@ -117,54 +117,6 @@
           "locations": [
             {
               "resultFile": {
-                "uri": "file:///D:/tspproject/Mvc/Where_is_my_Fluffymoon/Where_is_my_Fluffymoon/obj/Debug/net5.0/Razor/Views/Shared/_LoginPartial.cshtml.g.cs",
-                "region": {
-                  "startLine": 92,
-                  "startColumn": 207,
-                  "endLine": 92,
-                  "endColumn": 209
-                }
-              }
-            }
-          ],
-          "properties": {
-            "warningLevel": 1
-          }
-        },
-        {
-          "ruleId": "CS1998",
-          "level": "warning",
-          "message": "This async method lacks 'await' operators and will run synchronously. Consider using the 'await' operator to await non-blocking API calls, or 'await Task.Run(...)' to do CPU-bound work on a background thread.",
-          "suppressionStates": [
-            "suppressedInSource"
-          ],
-          "locations": [
-            {
-              "resultFile": {
-                "uri": "file:///D:/tspproject/Mvc/Where_is_my_Fluffymoon/Where_is_my_Fluffymoon/obj/Debug/net5.0/Razor/Views/Shared/_LoginPartial.cshtml.g.cs",
-                "region": {
-                  "startLine": 121,
-                  "startColumn": 210,
-                  "endLine": 121,
-                  "endColumn": 212
-                }
-              }
-            }
-          ],
-          "properties": {
-            "warningLevel": 1
-          }
-        },
-        {
-          "ruleId": "CS1998",
-          "level": "warning",
-          "message": "This async method lacks 'await' operators and will run synchronously. Consider using the 'await' operator to await non-blocking API calls, or 'await Task.Run(...)' to do CPU-bound work on a background thread.",
-          "suppressionStates": [
-            "suppressedInSource"
-          ],
-          "locations": [
-            {
-              "resultFile": {
                 "uri": "file:///D:/tspproject/Mvc/Where_is_my_Fluffymoon/Where_is_my_Fluffymoon/obj/Debug/net5.0/Razor/Areas/Identity/Pages/Account/Login.cshtml.g.cs",
                 "region": {
                   "startLine": 111,
@@ -741,6 +693,78 @@
           "locations": [
             {
               "resultFile": {
+                "uri": "file:///D:/tspproject/Mvc/Where_is_my_Fluffymoon/Where_is_my_Fluffymoon/obj/Debug/net5.0/Razor/Views/Shared/_LoginPartial.cshtml.g.cs",
+                "region": {
+                  "startLine": 92,
+                  "startColumn": 207,
+                  "endLine": 92,
+                  "endColumn": 209
+                }
+              }
+            }
+          ],
+          "properties": {
+            "warningLevel": 1
+          }
+        },
+        {
+          "ruleId": "CS1998",
+          "level": "warning",
+          "message": "This async method lacks 'await' operators and will run synchronously. Consider using the 'await' operator to await non-blocking API calls, or 'await Task.Run(...)' to do CPU-bound work on a background thread.",
+          "suppressionStates": [
+            "suppressedInSource"
+          ],
+          "locations": [
+            {
+              "resultFile": {
+                "uri": "file:///D:/tspproject/Mvc/Where_is_my_Fluffymoon/Where_is_my_Fluffymoon/obj/Debug/net5.0/Razor/Views/Shared/_LoginPartial.cshtml.g.cs",
+                "region": {
+                  "startLine": 121,
+                  "startColumn": 210,
+                  "endLine": 121,
+                  "endColumn": 212
+                }
+              }
+            }
+          ],
+          "properties": {
+            "warningLevel": 1
+          }
+        },
+        {
+          "ruleId": "CS1998",
+          "level": "warning",
+          "message": "This async method lacks 'await' operators and will run synchronously. Consider using the 'await' operator to await non-blocking API calls, or 'await Task.Run(...)' to do CPU-bound work on a background thread.",
+          "suppressionStates": [
+            "suppressedInSource"
+          ],
+          "locations": [
+            {
+              "resultFile": {
+                "uri": "file:///D:/tspproject/Mvc/Where_is_my_Fluffymoon/Where_is_my_Fluffymoon/obj/Debug/net5.0/Razor/Areas/Identity/Pages/Account/_ViewImports.cshtml.g.cs",
+                "region": {
+                  "startLine": 55,
+                  "startColumn": 67,
+                  "endLine": 55,
+                  "endColumn": 79
+                }
+              }
+            }
+          ],
+          "properties": {
+            "warningLevel": 1
+          }
+        },
+        {
+          "ruleId": "CS1998",
+          "level": "warning",
+          "message": "This async method lacks 'await' operators and will run synchronously. Consider using the 'await' operator to await non-blocking API calls, or 'await Task.Run(...)' to do CPU-bound work on a background thread.",
+          "suppressionStates": [
+            "suppressedInSource"
+          ],
+          "locations": [
+            {
+              "resultFile": {
                 "uri": "file:///D:/tspproject/Mvc/Where_is_my_Fluffymoon/Where_is_my_Fluffymoon/obj/Debug/net5.0/Razor/Views/Shared/_Layout.cshtml.g.cs",
                 "region": {
                   "startLine": 87,
@@ -981,102 +1005,6 @@
           "locations": [
             {
               "resultFile": {
-                "uri": "file:///D:/tspproject/Mvc/Where_is_my_Fluffymoon/Where_is_my_Fluffymoon/obj/Debug/net5.0/Razor/Areas/Identity/Pages/Account/_ViewImports.cshtml.g.cs",
-                "region": {
-                  "startLine": 55,
-                  "startColumn": 67,
-                  "endLine": 55,
-                  "endColumn": 79
-                }
-              }
-            }
-          ],
-          "properties": {
-            "warningLevel": 1
-          }
-        },
-        {
-          "ruleId": "CS1998",
-          "level": "warning",
-          "message": "This async method lacks 'await' operators and will run synchronously. Consider using the 'await' operator to await non-blocking API calls, or 'await Task.Run(...)' to do CPU-bound work on a background thread.",
-          "suppressionStates": [
-            "suppressedInSource"
-          ],
-          "locations": [
-            {
-              "resultFile": {
-                "uri": "file:///D:/tspproject/Mvc/Where_is_my_Fluffymoon/Where_is_my_Fluffymoon/obj/Debug/net5.0/Razor/Areas/Identity/Pages/_ViewImports.cshtml.g.cs",
-                "region": {
-                  "startLine": 47,
-                  "startColumn": 67,
-                  "endLine": 47,
-                  "endColumn": 79
-                }
-              }
-            }
-          ],
-          "properties": {
-            "warningLevel": 1
-          }
-        },
-        {
-          "ruleId": "CS1998",
-          "level": "warning",
-          "message": "This async method lacks 'await' operators and will run synchronously. Consider using the 'await' operator to await non-blocking API calls, or 'await Task.Run(...)' to do CPU-bound work on a background thread.",
-          "suppressionStates": [
-            "suppressedInSource"
-          ],
-          "locations": [
-            {
-              "resultFile": {
-                "uri": "file:///D:/tspproject/Mvc/Where_is_my_Fluffymoon/Where_is_my_Fluffymoon/obj/Debug/net5.0/Razor/Areas/Identity/Pages/_ViewStart.cshtml.g.cs",
-                "region": {
-                  "startLine": 48,
-                  "startColumn": 67,
-                  "endLine": 48,
-                  "endColumn": 79
-                }
-              }
-            }
-          ],
-          "properties": {
-            "warningLevel": 1
-          }
-        },
-        {
-          "ruleId": "CS1998",
-          "level": "warning",
-          "message": "This async method lacks 'await' operators and will run synchronously. Consider using the 'await' operator to await non-blocking API calls, or 'await Task.Run(...)' to do CPU-bound work on a background thread.",
-          "suppressionStates": [
-            "suppressedInSource"
-          ],
-          "locations": [
-            {
-              "resultFile": {
-                "uri": "file:///D:/tspproject/Mvc/Where_is_my_Fluffymoon/Where_is_my_Fluffymoon/obj/Debug/net5.0/Razor/Views/Shared/Error.cshtml.g.cs",
-                "region": {
-                  "startLine": 34,
-                  "startColumn": 67,
-                  "endLine": 34,
-                  "endColumn": 79
-                }
-              }
-            }
-          ],
-          "properties": {
-            "warningLevel": 1
-          }
-        },
-        {
-          "ruleId": "CS1998",
-          "level": "warning",
-          "message": "This async method lacks 'await' operators and will run synchronously. Consider using the 'await' operator to await non-blocking API calls, or 'await Task.Run(...)' to do CPU-bound work on a background thread.",
-          "suppressionStates": [
-            "suppressedInSource"
-          ],
-          "locations": [
-            {
-              "resultFile": {
                 "uri": "file:///D:/tspproject/Mvc/Where_is_my_Fluffymoon/Where_is_my_Fluffymoon/obj/Debug/net5.0/Razor/Areas/Identity/Pages/_ValidationScriptsPartial.cshtml.g.cs",
                 "region": {
                   "startLine": 88,
@@ -1173,12 +1101,12 @@
           "locations": [
             {
               "resultFile": {
-                "uri": "file:///D:/tspproject/Mvc/Where_is_my_Fluffymoon/Where_is_my_Fluffymoon/obj/Debug/net5.0/Razor/Views/Comments/Delete.cshtml.g.cs",
+                "uri": "file:///D:/tspproject/Mvc/Where_is_my_Fluffymoon/Where_is_my_Fluffymoon/obj/Debug/net5.0/Razor/Areas/Identity/Pages/_ViewImports.cshtml.g.cs",
                 "region": {
-                  "startLine": 204,
-                  "startColumn": 210,
-                  "endLine": 204,
-                  "endColumn": 212
+                  "startLine": 47,
+                  "startColumn": 67,
+                  "endLine": 47,
+                  "endColumn": 79
                 }
               }
             }
@@ -1197,12 +1125,36 @@
           "locations": [
             {
               "resultFile": {
-                "uri": "file:///D:/tspproject/Mvc/Where_is_my_Fluffymoon/Where_is_my_Fluffymoon/obj/Debug/net5.0/Razor/Views/Comments/Delete.cshtml.g.cs",
+                "uri": "file:///D:/tspproject/Mvc/Where_is_my_Fluffymoon/Where_is_my_Fluffymoon/obj/Debug/net5.0/Razor/Areas/Identity/Pages/_ViewStart.cshtml.g.cs",
                 "region": {
-                  "startLine": 227,
-                  "startColumn": 212,
-                  "endLine": 227,
-                  "endColumn": 214
+                  "startLine": 48,
+                  "startColumn": 67,
+                  "endLine": 48,
+                  "endColumn": 79
+                }
+              }
+            }
+          ],
+          "properties": {
+            "warningLevel": 1
+          }
+        },
+        {
+          "ruleId": "CS1998",
+          "level": "warning",
+          "message": "This async method lacks 'await' operators and will run synchronously. Consider using the 'await' operator to await non-blocking API calls, or 'await Task.Run(...)' to do CPU-bound work on a background thread.",
+          "suppressionStates": [
+            "suppressedInSource"
+          ],
+          "locations": [
+            {
+              "resultFile": {
+                "uri": "file:///D:/tspproject/Mvc/Where_is_my_Fluffymoon/Where_is_my_Fluffymoon/obj/Debug/net5.0/Razor/Views/Shared/Error.cshtml.g.cs",
+                "region": {
+                  "startLine": 34,
+                  "startColumn": 67,
+                  "endLine": 34,
+                  "endColumn": 79
                 }
               }
             }
@@ -1299,6 +1251,54 @@
                   "startColumn": 208,
                   "endLine": 286,
                   "endColumn": 210
+                }
+              }
+            }
+          ],
+          "properties": {
+            "warningLevel": 1
+          }
+        },
+        {
+          "ruleId": "CS1998",
+          "level": "warning",
+          "message": "This async method lacks 'await' operators and will run synchronously. Consider using the 'await' operator to await non-blocking API calls, or 'await Task.Run(...)' to do CPU-bound work on a background thread.",
+          "suppressionStates": [
+            "suppressedInSource"
+          ],
+          "locations": [
+            {
+              "resultFile": {
+                "uri": "file:///D:/tspproject/Mvc/Where_is_my_Fluffymoon/Where_is_my_Fluffymoon/obj/Debug/net5.0/Razor/Views/Comments/Delete.cshtml.g.cs",
+                "region": {
+                  "startLine": 204,
+                  "startColumn": 210,
+                  "endLine": 204,
+                  "endColumn": 212
+                }
+              }
+            }
+          ],
+          "properties": {
+            "warningLevel": 1
+          }
+        },
+        {
+          "ruleId": "CS1998",
+          "level": "warning",
+          "message": "This async method lacks 'await' operators and will run synchronously. Consider using the 'await' operator to await non-blocking API calls, or 'await Task.Run(...)' to do CPU-bound work on a background thread.",
+          "suppressionStates": [
+            "suppressedInSource"
+          ],
+          "locations": [
+            {
+              "resultFile": {
+                "uri": "file:///D:/tspproject/Mvc/Where_is_my_Fluffymoon/Where_is_my_Fluffymoon/obj/Debug/net5.0/Razor/Views/Comments/Delete.cshtml.g.cs",
+                "region": {
+                  "startLine": 227,
+                  "startColumn": 212,
+                  "endLine": 227,
+                  "endColumn": 214
                 }
               }
             }
@@ -2589,6 +2589,750 @@
           "locations": [
             {
               "resultFile": {
+                "uri": "file:///D:/tspproject/Mvc/Where_is_my_Fluffymoon/Where_is_my_Fluffymoon/obj/Debug/net5.0/Razor/Views/Comments/Edit.cshtml.g.cs",
+                "region": {
+                  "startLine": 83,
+                  "startColumn": 213,
+                  "endLine": 83,
+                  "endColumn": 215
+                }
+              }
+            }
+          ],
+          "properties": {
+            "warningLevel": 1
+          }
+        },
+        {
+          "ruleId": "CS1998",
+          "level": "warning",
+          "message": "This async method lacks 'await' operators and will run synchronously. Consider using the 'await' operator to await non-blocking API calls, or 'await Task.Run(...)' to do CPU-bound work on a background thread.",
+          "suppressionStates": [
+            "suppressedInSource"
+          ],
+          "locations": [
+            {
+              "resultFile": {
+                "uri": "file:///D:/tspproject/Mvc/Where_is_my_Fluffymoon/Where_is_my_Fluffymoon/obj/Debug/net5.0/Razor/Views/Comments/Edit.cshtml.g.cs",
+                "region": {
+                  "startLine": 105,
+                  "startColumn": 209,
+                  "endLine": 105,
+                  "endColumn": 211
+                }
+              }
+            }
+          ],
+          "properties": {
+            "warningLevel": 1
+          }
+        },
+        {
+          "ruleId": "CS1998",
+          "level": "warning",
+          "message": "This async method lacks 'await' operators and will run synchronously. Consider using the 'await' operator to await non-blocking API calls, or 'await Task.Run(...)' to do CPU-bound work on a background thread.",
+          "suppressionStates": [
+            "suppressedInSource"
+          ],
+          "locations": [
+            {
+              "resultFile": {
+                "uri": "file:///D:/tspproject/Mvc/Where_is_my_Fluffymoon/Where_is_my_Fluffymoon/obj/Debug/net5.0/Razor/Views/Comments/Edit.cshtml.g.cs",
+                "region": {
+                  "startLine": 128,
+                  "startColumn": 216,
+                  "endLine": 128,
+                  "endColumn": 218
+                }
+              }
+            }
+          ],
+          "properties": {
+            "warningLevel": 1
+          }
+        },
+        {
+          "ruleId": "CS1998",
+          "level": "warning",
+          "message": "This async method lacks 'await' operators and will run synchronously. Consider using the 'await' operator to await non-blocking API calls, or 'await Task.Run(...)' to do CPU-bound work on a background thread.",
+          "suppressionStates": [
+            "suppressedInSource"
+          ],
+          "locations": [
+            {
+              "resultFile": {
+                "uri": "file:///D:/tspproject/Mvc/Where_is_my_Fluffymoon/Where_is_my_Fluffymoon/obj/Debug/net5.0/Razor/Views/Comments/Edit.cshtml.g.cs",
+                "region": {
+                  "startLine": 150,
+                  "startColumn": 210,
+                  "endLine": 150,
+                  "endColumn": 212
+                }
+              }
+            }
+          ],
+          "properties": {
+            "warningLevel": 1
+          }
+        },
+        {
+          "ruleId": "CS1998",
+          "level": "warning",
+          "message": "This async method lacks 'await' operators and will run synchronously. Consider using the 'await' operator to await non-blocking API calls, or 'await Task.Run(...)' to do CPU-bound work on a background thread.",
+          "suppressionStates": [
+            "suppressedInSource"
+          ],
+          "locations": [
+            {
+              "resultFile": {
+                "uri": "file:///D:/tspproject/Mvc/Where_is_my_Fluffymoon/Where_is_my_Fluffymoon/obj/Debug/net5.0/Razor/Views/Comments/Edit.cshtml.g.cs",
+                "region": {
+                  "startLine": 172,
+                  "startColumn": 215,
+                  "endLine": 172,
+                  "endColumn": 217
+                }
+              }
+            }
+          ],
+          "properties": {
+            "warningLevel": 1
+          }
+        },
+        {
+          "ruleId": "CS1998",
+          "level": "warning",
+          "message": "This async method lacks 'await' operators and will run synchronously. Consider using the 'await' operator to await non-blocking API calls, or 'await Task.Run(...)' to do CPU-bound work on a background thread.",
+          "suppressionStates": [
+            "suppressedInSource"
+          ],
+          "locations": [
+            {
+              "resultFile": {
+                "uri": "file:///D:/tspproject/Mvc/Where_is_my_Fluffymoon/Where_is_my_Fluffymoon/obj/Debug/net5.0/Razor/Views/Comments/Edit.cshtml.g.cs",
+                "region": {
+                  "startLine": 194,
+                  "startColumn": 216,
+                  "endLine": 194,
+                  "endColumn": 218
+                }
+              }
+            }
+          ],
+          "properties": {
+            "warningLevel": 1
+          }
+        },
+        {
+          "ruleId": "CS1998",
+          "level": "warning",
+          "message": "This async method lacks 'await' operators and will run synchronously. Consider using the 'await' operator to await non-blocking API calls, or 'await Task.Run(...)' to do CPU-bound work on a background thread.",
+          "suppressionStates": [
+            "suppressedInSource"
+          ],
+          "locations": [
+            {
+              "resultFile": {
+                "uri": "file:///D:/tspproject/Mvc/Where_is_my_Fluffymoon/Where_is_my_Fluffymoon/obj/Debug/net5.0/Razor/Views/Comments/Edit.cshtml.g.cs",
+                "region": {
+                  "startLine": 216,
+                  "startColumn": 210,
+                  "endLine": 216,
+                  "endColumn": 212
+                }
+              }
+            }
+          ],
+          "properties": {
+            "warningLevel": 1
+          }
+        },
+        {
+          "ruleId": "CS1998",
+          "level": "warning",
+          "message": "This async method lacks 'await' operators and will run synchronously. Consider using the 'await' operator to await non-blocking API calls, or 'await Task.Run(...)' to do CPU-bound work on a background thread.",
+          "suppressionStates": [
+            "suppressedInSource"
+          ],
+          "locations": [
+            {
+              "resultFile": {
+                "uri": "file:///D:/tspproject/Mvc/Where_is_my_Fluffymoon/Where_is_my_Fluffymoon/obj/Debug/net5.0/Razor/Views/Comments/Edit.cshtml.g.cs",
+                "region": {
+                  "startLine": 238,
+                  "startColumn": 215,
+                  "endLine": 238,
+                  "endColumn": 217
+                }
+              }
+            }
+          ],
+          "properties": {
+            "warningLevel": 1
+          }
+        },
+        {
+          "ruleId": "CS1998",
+          "level": "warning",
+          "message": "This async method lacks 'await' operators and will run synchronously. Consider using the 'await' operator to await non-blocking API calls, or 'await Task.Run(...)' to do CPU-bound work on a background thread.",
+          "suppressionStates": [
+            "suppressedInSource"
+          ],
+          "locations": [
+            {
+              "resultFile": {
+                "uri": "file:///D:/tspproject/Mvc/Where_is_my_Fluffymoon/Where_is_my_Fluffymoon/obj/Debug/net5.0/Razor/Views/Comments/Edit.cshtml.g.cs",
+                "region": {
+                  "startLine": 260,
+                  "startColumn": 216,
+                  "endLine": 260,
+                  "endColumn": 218
+                }
+              }
+            }
+          ],
+          "properties": {
+            "warningLevel": 1
+          }
+        },
+        {
+          "ruleId": "CS1998",
+          "level": "warning",
+          "message": "This async method lacks 'await' operators and will run synchronously. Consider using the 'await' operator to await non-blocking API calls, or 'await Task.Run(...)' to do CPU-bound work on a background thread.",
+          "suppressionStates": [
+            "suppressedInSource"
+          ],
+          "locations": [
+            {
+              "resultFile": {
+                "uri": "file:///D:/tspproject/Mvc/Where_is_my_Fluffymoon/Where_is_my_Fluffymoon/obj/Debug/net5.0/Razor/Views/Comments/Edit.cshtml.g.cs",
+                "region": {
+                  "startLine": 282,
+                  "startColumn": 210,
+                  "endLine": 282,
+                  "endColumn": 212
+                }
+              }
+            }
+          ],
+          "properties": {
+            "warningLevel": 1
+          }
+        },
+        {
+          "ruleId": "CS1998",
+          "level": "warning",
+          "message": "This async method lacks 'await' operators and will run synchronously. Consider using the 'await' operator to await non-blocking API calls, or 'await Task.Run(...)' to do CPU-bound work on a background thread.",
+          "suppressionStates": [
+            "suppressedInSource"
+          ],
+          "locations": [
+            {
+              "resultFile": {
+                "uri": "file:///D:/tspproject/Mvc/Where_is_my_Fluffymoon/Where_is_my_Fluffymoon/obj/Debug/net5.0/Razor/Views/Comments/Edit.cshtml.g.cs",
+                "region": {
+                  "startLine": 304,
+                  "startColumn": 215,
+                  "endLine": 304,
+                  "endColumn": 217
+                }
+              }
+            }
+          ],
+          "properties": {
+            "warningLevel": 1
+          }
+        },
+        {
+          "ruleId": "CS1998",
+          "level": "warning",
+          "message": "This async method lacks 'await' operators and will run synchronously. Consider using the 'await' operator to await non-blocking API calls, or 'await Task.Run(...)' to do CPU-bound work on a background thread.",
+          "suppressionStates": [
+            "suppressedInSource"
+          ],
+          "locations": [
+            {
+              "resultFile": {
+                "uri": "file:///D:/tspproject/Mvc/Where_is_my_Fluffymoon/Where_is_my_Fluffymoon/obj/Debug/net5.0/Razor/Views/Comments/Edit.cshtml.g.cs",
+                "region": {
+                  "startLine": 326,
+                  "startColumn": 216,
+                  "endLine": 326,
+                  "endColumn": 218
+                }
+              }
+            }
+          ],
+          "properties": {
+            "warningLevel": 1
+          }
+        },
+        {
+          "ruleId": "CS1998",
+          "level": "warning",
+          "message": "This async method lacks 'await' operators and will run synchronously. Consider using the 'await' operator to await non-blocking API calls, or 'await Task.Run(...)' to do CPU-bound work on a background thread.",
+          "suppressionStates": [
+            "suppressedInSource"
+          ],
+          "locations": [
+            {
+              "resultFile": {
+                "uri": "file:///D:/tspproject/Mvc/Where_is_my_Fluffymoon/Where_is_my_Fluffymoon/obj/Debug/net5.0/Razor/Views/Comments/Edit.cshtml.g.cs",
+                "region": {
+                  "startLine": 348,
+                  "startColumn": 210,
+                  "endLine": 348,
+                  "endColumn": 212
+                }
+              }
+            }
+          ],
+          "properties": {
+            "warningLevel": 1
+          }
+        },
+        {
+          "ruleId": "CS1998",
+          "level": "warning",
+          "message": "This async method lacks 'await' operators and will run synchronously. Consider using the 'await' operator to await non-blocking API calls, or 'await Task.Run(...)' to do CPU-bound work on a background thread.",
+          "suppressionStates": [
+            "suppressedInSource"
+          ],
+          "locations": [
+            {
+              "resultFile": {
+                "uri": "file:///D:/tspproject/Mvc/Where_is_my_Fluffymoon/Where_is_my_Fluffymoon/obj/Debug/net5.0/Razor/Views/Comments/Edit.cshtml.g.cs",
+                "region": {
+                  "startLine": 370,
+                  "startColumn": 215,
+                  "endLine": 370,
+                  "endColumn": 217
+                }
+              }
+            }
+          ],
+          "properties": {
+            "warningLevel": 1
+          }
+        },
+        {
+          "ruleId": "CS1998",
+          "level": "warning",
+          "message": "This async method lacks 'await' operators and will run synchronously. Consider using the 'await' operator to await non-blocking API calls, or 'await Task.Run(...)' to do CPU-bound work on a background thread.",
+          "suppressionStates": [
+            "suppressedInSource"
+          ],
+          "locations": [
+            {
+              "resultFile": {
+                "uri": "file:///D:/tspproject/Mvc/Where_is_my_Fluffymoon/Where_is_my_Fluffymoon/obj/Debug/net5.0/Razor/Views/Comments/Edit.cshtml.g.cs",
+                "region": {
+                  "startLine": 392,
+                  "startColumn": 216,
+                  "endLine": 392,
+                  "endColumn": 218
+                }
+              }
+            }
+          ],
+          "properties": {
+            "warningLevel": 1
+          }
+        },
+        {
+          "ruleId": "CS1998",
+          "level": "warning",
+          "message": "This async method lacks 'await' operators and will run synchronously. Consider using the 'await' operator to await non-blocking API calls, or 'await Task.Run(...)' to do CPU-bound work on a background thread.",
+          "suppressionStates": [
+            "suppressedInSource"
+          ],
+          "locations": [
+            {
+              "resultFile": {
+                "uri": "file:///D:/tspproject/Mvc/Where_is_my_Fluffymoon/Where_is_my_Fluffymoon/obj/Debug/net5.0/Razor/Views/Comments/Edit.cshtml.g.cs",
+                "region": {
+                  "startLine": 414,
+                  "startColumn": 210,
+                  "endLine": 414,
+                  "endColumn": 212
+                }
+              }
+            }
+          ],
+          "properties": {
+            "warningLevel": 1
+          }
+        },
+        {
+          "ruleId": "CS1998",
+          "level": "warning",
+          "message": "This async method lacks 'await' operators and will run synchronously. Consider using the 'await' operator to await non-blocking API calls, or 'await Task.Run(...)' to do CPU-bound work on a background thread.",
+          "suppressionStates": [
+            "suppressedInSource"
+          ],
+          "locations": [
+            {
+              "resultFile": {
+                "uri": "file:///D:/tspproject/Mvc/Where_is_my_Fluffymoon/Where_is_my_Fluffymoon/obj/Debug/net5.0/Razor/Views/Comments/Edit.cshtml.g.cs",
+                "region": {
+                  "startLine": 436,
+                  "startColumn": 215,
+                  "endLine": 436,
+                  "endColumn": 217
+                }
+              }
+            }
+          ],
+          "properties": {
+            "warningLevel": 1
+          }
+        },
+        {
+          "ruleId": "CS1998",
+          "level": "warning",
+          "message": "This async method lacks 'await' operators and will run synchronously. Consider using the 'await' operator to await non-blocking API calls, or 'await Task.Run(...)' to do CPU-bound work on a background thread.",
+          "suppressionStates": [
+            "suppressedInSource"
+          ],
+          "locations": [
+            {
+              "resultFile": {
+                "uri": "file:///D:/tspproject/Mvc/Where_is_my_Fluffymoon/Where_is_my_Fluffymoon/obj/Debug/net5.0/Razor/Views/Comments/Edit.cshtml.g.cs",
+                "region": {
+                  "startLine": 458,
+                  "startColumn": 216,
+                  "endLine": 458,
+                  "endColumn": 218
+                }
+              }
+            }
+          ],
+          "properties": {
+            "warningLevel": 1
+          }
+        },
+        {
+          "ruleId": "CS1998",
+          "level": "warning",
+          "message": "This async method lacks 'await' operators and will run synchronously. Consider using the 'await' operator to await non-blocking API calls, or 'await Task.Run(...)' to do CPU-bound work on a background thread.",
+          "suppressionStates": [
+            "suppressedInSource"
+          ],
+          "locations": [
+            {
+              "resultFile": {
+                "uri": "file:///D:/tspproject/Mvc/Where_is_my_Fluffymoon/Where_is_my_Fluffymoon/obj/Debug/net5.0/Razor/Views/Comments/Edit.cshtml.g.cs",
+                "region": {
+                  "startLine": 480,
+                  "startColumn": 210,
+                  "endLine": 480,
+                  "endColumn": 212
+                }
+              }
+            }
+          ],
+          "properties": {
+            "warningLevel": 1
+          }
+        },
+        {
+          "ruleId": "CS1998",
+          "level": "warning",
+          "message": "This async method lacks 'await' operators and will run synchronously. Consider using the 'await' operator to await non-blocking API calls, or 'await Task.Run(...)' to do CPU-bound work on a background thread.",
+          "suppressionStates": [
+            "suppressedInSource"
+          ],
+          "locations": [
+            {
+              "resultFile": {
+                "uri": "file:///D:/tspproject/Mvc/Where_is_my_Fluffymoon/Where_is_my_Fluffymoon/obj/Debug/net5.0/Razor/Views/Comments/Edit.cshtml.g.cs",
+                "region": {
+                  "startLine": 502,
+                  "startColumn": 215,
+                  "endLine": 502,
+                  "endColumn": 217
+                }
+              }
+            }
+          ],
+          "properties": {
+            "warningLevel": 1
+          }
+        },
+        {
+          "ruleId": "CS1998",
+          "level": "warning",
+          "message": "This async method lacks 'await' operators and will run synchronously. Consider using the 'await' operator to await non-blocking API calls, or 'await Task.Run(...)' to do CPU-bound work on a background thread.",
+          "suppressionStates": [
+            "suppressedInSource"
+          ],
+          "locations": [
+            {
+              "resultFile": {
+                "uri": "file:///D:/tspproject/Mvc/Where_is_my_Fluffymoon/Where_is_my_Fluffymoon/obj/Debug/net5.0/Razor/Views/Comments/Edit.cshtml.g.cs",
+                "region": {
+                  "startLine": 524,
+                  "startColumn": 216,
+                  "endLine": 524,
+                  "endColumn": 218
+                }
+              }
+            }
+          ],
+          "properties": {
+            "warningLevel": 1
+          }
+        },
+        {
+          "ruleId": "CS1998",
+          "level": "warning",
+          "message": "This async method lacks 'await' operators and will run synchronously. Consider using the 'await' operator to await non-blocking API calls, or 'await Task.Run(...)' to do CPU-bound work on a background thread.",
+          "suppressionStates": [
+            "suppressedInSource"
+          ],
+          "locations": [
+            {
+              "resultFile": {
+                "uri": "file:///D:/tspproject/Mvc/Where_is_my_Fluffymoon/Where_is_my_Fluffymoon/obj/Debug/net5.0/Razor/Views/Comments/Edit.cshtml.g.cs",
+                "region": {
+                  "startLine": 546,
+                  "startColumn": 217,
+                  "endLine": 546,
+                  "endColumn": 219
+                }
+              }
+            }
+          ],
+          "properties": {
+            "warningLevel": 1
+          }
+        },
+        {
+          "ruleId": "CS1998",
+          "level": "warning",
+          "message": "This async method lacks 'await' operators and will run synchronously. Consider using the 'await' operator to await non-blocking API calls, or 'await Task.Run(...)' to do CPU-bound work on a background thread.",
+          "suppressionStates": [
+            "suppressedInSource"
+          ],
+          "locations": [
+            {
+              "resultFile": {
+                "uri": "file:///D:/tspproject/Mvc/Where_is_my_Fluffymoon/Where_is_my_Fluffymoon/obj/Debug/net5.0/Razor/Views/Comments/Edit.cshtml.g.cs",
+                "region": {
+                  "startLine": 576,
+                  "startColumn": 215,
+                  "endLine": 576,
+                  "endColumn": 217
+                }
+              }
+            }
+          ],
+          "properties": {
+            "warningLevel": 1
+          }
+        },
+        {
+          "ruleId": "CS1998",
+          "level": "warning",
+          "message": "This async method lacks 'await' operators and will run synchronously. Consider using the 'await' operator to await non-blocking API calls, or 'await Task.Run(...)' to do CPU-bound work on a background thread.",
+          "suppressionStates": [
+            "suppressedInSource"
+          ],
+          "locations": [
+            {
+              "resultFile": {
+                "uri": "file:///D:/tspproject/Mvc/Where_is_my_Fluffymoon/Where_is_my_Fluffymoon/obj/Debug/net5.0/Razor/Views/Comments/Edit.cshtml.g.cs",
+                "region": {
+                  "startLine": 598,
+                  "startColumn": 216,
+                  "endLine": 598,
+                  "endColumn": 218
+                }
+              }
+            }
+          ],
+          "properties": {
+            "warningLevel": 1
+          }
+        },
+        {
+          "ruleId": "CS1998",
+          "level": "warning",
+          "message": "This async method lacks 'await' operators and will run synchronously. Consider using the 'await' operator to await non-blocking API calls, or 'await Task.Run(...)' to do CPU-bound work on a background thread.",
+          "suppressionStates": [
+            "suppressedInSource"
+          ],
+          "locations": [
+            {
+              "resultFile": {
+                "uri": "file:///D:/tspproject/Mvc/Where_is_my_Fluffymoon/Where_is_my_Fluffymoon/obj/Debug/net5.0/Razor/Views/Comments/Edit.cshtml.g.cs",
+                "region": {
+                  "startLine": 620,
+                  "startColumn": 217,
+                  "endLine": 620,
+                  "endColumn": 219
+                }
+              }
+            }
+          ],
+          "properties": {
+            "warningLevel": 1
+          }
+        },
+        {
+          "ruleId": "CS1998",
+          "level": "warning",
+          "message": "This async method lacks 'await' operators and will run synchronously. Consider using the 'await' operator to await non-blocking API calls, or 'await Task.Run(...)' to do CPU-bound work on a background thread.",
+          "suppressionStates": [
+            "suppressedInSource"
+          ],
+          "locations": [
+            {
+              "resultFile": {
+                "uri": "file:///D:/tspproject/Mvc/Where_is_my_Fluffymoon/Where_is_my_Fluffymoon/obj/Debug/net5.0/Razor/Views/Comments/Edit.cshtml.g.cs",
+                "region": {
+                  "startLine": 650,
+                  "startColumn": 215,
+                  "endLine": 650,
+                  "endColumn": 217
+                }
+              }
+            }
+          ],
+          "properties": {
+            "warningLevel": 1
+          }
+        },
+        {
+          "ruleId": "CS1998",
+          "level": "warning",
+          "message": "This async method lacks 'await' operators and will run synchronously. Consider using the 'await' operator to await non-blocking API calls, or 'await Task.Run(...)' to do CPU-bound work on a background thread.",
+          "suppressionStates": [
+            "suppressedInSource"
+          ],
+          "locations": [
+            {
+              "resultFile": {
+                "uri": "file:///D:/tspproject/Mvc/Where_is_my_Fluffymoon/Where_is_my_Fluffymoon/obj/Debug/net5.0/Razor/Views/Comments/Edit.cshtml.g.cs",
+                "region": {
+                  "startLine": 688,
+                  "startColumn": 208,
+                  "endLine": 688,
+                  "endColumn": 210
+                }
+              }
+            }
+          ],
+          "properties": {
+            "warningLevel": 1
+          }
+        },
+        {
+          "ruleId": "CS1998",
+          "level": "warning",
+          "message": "This async method lacks 'await' operators and will run synchronously. Consider using the 'await' operator to await non-blocking API calls, or 'await Task.Run(...)' to do CPU-bound work on a background thread.",
+          "suppressionStates": [
+            "suppressedInSource"
+          ],
+          "locations": [
+            {
+              "resultFile": {
+                "uri": "file:///D:/tspproject/Mvc/Where_is_my_Fluffymoon/Where_is_my_Fluffymoon/obj/Debug/net5.0/Razor/Views/Comments/Index.cshtml.g.cs",
+                "region": {
+                  "startLine": 72,
+                  "startColumn": 207,
+                  "endLine": 72,
+                  "endColumn": 209
+                }
+              }
+            }
+          ],
+          "properties": {
+            "warningLevel": 1
+          }
+        },
+        {
+          "ruleId": "CS1998",
+          "level": "warning",
+          "message": "This async method lacks 'await' operators and will run synchronously. Consider using the 'await' operator to await non-blocking API calls, or 'await Task.Run(...)' to do CPU-bound work on a background thread.",
+          "suppressionStates": [
+            "suppressedInSource"
+          ],
+          "locations": [
+            {
+              "resultFile": {
+                "uri": "file:///D:/tspproject/Mvc/Where_is_my_Fluffymoon/Where_is_my_Fluffymoon/obj/Debug/net5.0/Razor/Views/Comments/Index.cshtml.g.cs",
+                "region": {
+                  "startLine": 224,
+                  "startColumn": 208,
+                  "endLine": 224,
+                  "endColumn": 210
+                }
+              }
+            }
+          ],
+          "properties": {
+            "warningLevel": 1
+          }
+        },
+        {
+          "ruleId": "CS1998",
+          "level": "warning",
+          "message": "This async method lacks 'await' operators and will run synchronously. Consider using the 'await' operator to await non-blocking API calls, or 'await Task.Run(...)' to do CPU-bound work on a background thread.",
+          "suppressionStates": [
+            "suppressedInSource"
+          ],
+          "locations": [
+            {
+              "resultFile": {
+                "uri": "file:///D:/tspproject/Mvc/Where_is_my_Fluffymoon/Where_is_my_Fluffymoon/obj/Debug/net5.0/Razor/Views/Comments/Index.cshtml.g.cs",
+                "region": {
+                  "startLine": 255,
+                  "startColumn": 208,
+                  "endLine": 255,
+                  "endColumn": 210
+                }
+              }
+            }
+          ],
+          "properties": {
+            "warningLevel": 1
+          }
+        },
+        {
+          "ruleId": "CS1998",
+          "level": "warning",
+          "message": "This async method lacks 'await' operators and will run synchronously. Consider using the 'await' operator to await non-blocking API calls, or 'await Task.Run(...)' to do CPU-bound work on a background thread.",
+          "suppressionStates": [
+            "suppressedInSource"
+          ],
+          "locations": [
+            {
+              "resultFile": {
+                "uri": "file:///D:/tspproject/Mvc/Where_is_my_Fluffymoon/Where_is_my_Fluffymoon/obj/Debug/net5.0/Razor/Views/Comments/Index.cshtml.g.cs",
+                "region": {
+                  "startLine": 286,
+                  "startColumn": 208,
+                  "endLine": 286,
+                  "endColumn": 210
+                }
+              }
+            }
+          ],
+          "properties": {
+            "warningLevel": 1
+          }
+        },
+        {
+          "ruleId": "CS1998",
+          "level": "warning",
+          "message": "This async method lacks 'await' operators and will run synchronously. Consider using the 'await' operator to await non-blocking API calls, or 'await Task.Run(...)' to do CPU-bound work on a background thread.",
+          "suppressionStates": [
+            "suppressedInSource"
+          ],
+          "locations": [
+            {
+              "resultFile": {
                 "uri": "file:///D:/tspproject/Mvc/Where_is_my_Fluffymoon/Where_is_my_Fluffymoon/obj/Debug/net5.0/Razor/Views/Pets/Details.cshtml.g.cs",
                 "region": {
                   "startLine": 198,
@@ -2619,6 +3363,54 @@
                   "startColumn": 208,
                   "endLine": 229,
                   "endColumn": 210
+                }
+              }
+            }
+          ],
+          "properties": {
+            "warningLevel": 1
+          }
+        },
+        {
+          "ruleId": "CS1998",
+          "level": "warning",
+          "message": "This async method lacks 'await' operators and will run synchronously. Consider using the 'await' operator to await non-blocking API calls, or 'await Task.Run(...)' to do CPU-bound work on a background thread.",
+          "suppressionStates": [
+            "suppressedInSource"
+          ],
+          "locations": [
+            {
+              "resultFile": {
+                "uri": "file:///D:/tspproject/Mvc/Where_is_my_Fluffymoon/Where_is_my_Fluffymoon/obj/Debug/net5.0/Razor/Views/Home/Index.cshtml.g.cs",
+                "region": {
+                  "startLine": 34,
+                  "startColumn": 67,
+                  "endLine": 34,
+                  "endColumn": 79
+                }
+              }
+            }
+          ],
+          "properties": {
+            "warningLevel": 1
+          }
+        },
+        {
+          "ruleId": "CS1998",
+          "level": "warning",
+          "message": "This async method lacks 'await' operators and will run synchronously. Consider using the 'await' operator to await non-blocking API calls, or 'await Task.Run(...)' to do CPU-bound work on a background thread.",
+          "suppressionStates": [
+            "suppressedInSource"
+          ],
+          "locations": [
+            {
+              "resultFile": {
+                "uri": "file:///D:/tspproject/Mvc/Where_is_my_Fluffymoon/Where_is_my_Fluffymoon/obj/Debug/net5.0/Razor/Views/Home/Privacy.cshtml.g.cs",
+                "region": {
+                  "startLine": 34,
+                  "startColumn": 67,
+                  "endLine": 34,
+                  "endColumn": 79
                 }
               }
             }
@@ -3276,836 +4068,20 @@
           }
         },
         {
-          "ruleId": "CS1998",
-          "level": "warning",
-          "message": "This async method lacks 'await' operators and will run synchronously. Consider using the 'await' operator to await non-blocking API calls, or 'await Task.Run(...)' to do CPU-bound work on a background thread.",
-          "suppressionStates": [
-            "suppressedInSource"
-          ],
-          "locations": [
-            {
-              "resultFile": {
-                "uri": "file:///D:/tspproject/Mvc/Where_is_my_Fluffymoon/Where_is_my_Fluffymoon/obj/Debug/net5.0/Razor/Views/Home/Privacy.cshtml.g.cs",
-                "region": {
-                  "startLine": 34,
-                  "startColumn": 67,
-                  "endLine": 34,
-                  "endColumn": 79
-                }
-              }
-            }
-          ],
-          "properties": {
-            "warningLevel": 1
-          }
-        },
-        {
-          "ruleId": "CS1998",
-          "level": "warning",
-          "message": "This async method lacks 'await' operators and will run synchronously. Consider using the 'await' operator to await non-blocking API calls, or 'await Task.Run(...)' to do CPU-bound work on a background thread.",
-          "suppressionStates": [
-            "suppressedInSource"
-          ],
-          "locations": [
-            {
-              "resultFile": {
-                "uri": "file:///D:/tspproject/Mvc/Where_is_my_Fluffymoon/Where_is_my_Fluffymoon/obj/Debug/net5.0/Razor/Views/Home/Index.cshtml.g.cs",
-                "region": {
-                  "startLine": 34,
-                  "startColumn": 67,
-                  "endLine": 34,
-                  "endColumn": 79
-                }
-              }
-            }
-          ],
-          "properties": {
-            "warningLevel": 1
-          }
-        },
-        {
-          "ruleId": "CS1998",
-          "level": "warning",
-          "message": "This async method lacks 'await' operators and will run synchronously. Consider using the 'await' operator to await non-blocking API calls, or 'await Task.Run(...)' to do CPU-bound work on a background thread.",
-          "suppressionStates": [
-            "suppressedInSource"
-          ],
-          "locations": [
-            {
-              "resultFile": {
-                "uri": "file:///D:/tspproject/Mvc/Where_is_my_Fluffymoon/Where_is_my_Fluffymoon/obj/Debug/net5.0/Razor/Views/Comments/Index.cshtml.g.cs",
-                "region": {
-                  "startLine": 72,
-                  "startColumn": 207,
-                  "endLine": 72,
-                  "endColumn": 209
-                }
-              }
-            }
-          ],
-          "properties": {
-            "warningLevel": 1
-          }
-        },
-        {
-          "ruleId": "CS1998",
-          "level": "warning",
-          "message": "This async method lacks 'await' operators and will run synchronously. Consider using the 'await' operator to await non-blocking API calls, or 'await Task.Run(...)' to do CPU-bound work on a background thread.",
-          "suppressionStates": [
-            "suppressedInSource"
-          ],
-          "locations": [
-            {
-              "resultFile": {
-                "uri": "file:///D:/tspproject/Mvc/Where_is_my_Fluffymoon/Where_is_my_Fluffymoon/obj/Debug/net5.0/Razor/Views/Comments/Index.cshtml.g.cs",
-                "region": {
-                  "startLine": 224,
-                  "startColumn": 208,
-                  "endLine": 224,
-                  "endColumn": 210
-                }
-              }
-            }
-          ],
-          "properties": {
-            "warningLevel": 1
-          }
-        },
-        {
-          "ruleId": "CS1998",
-          "level": "warning",
-          "message": "This async method lacks 'await' operators and will run synchronously. Consider using the 'await' operator to await non-blocking API calls, or 'await Task.Run(...)' to do CPU-bound work on a background thread.",
-          "suppressionStates": [
-            "suppressedInSource"
-          ],
-          "locations": [
-            {
-              "resultFile": {
-                "uri": "file:///D:/tspproject/Mvc/Where_is_my_Fluffymoon/Where_is_my_Fluffymoon/obj/Debug/net5.0/Razor/Views/Comments/Index.cshtml.g.cs",
-                "region": {
-                  "startLine": 255,
-                  "startColumn": 208,
-                  "endLine": 255,
-                  "endColumn": 210
-                }
-              }
-            }
-          ],
-          "properties": {
-            "warningLevel": 1
-          }
-        },
-        {
-          "ruleId": "CS1998",
-          "level": "warning",
-          "message": "This async method lacks 'await' operators and will run synchronously. Consider using the 'await' operator to await non-blocking API calls, or 'await Task.Run(...)' to do CPU-bound work on a background thread.",
-          "suppressionStates": [
-            "suppressedInSource"
-          ],
-          "locations": [
-            {
-              "resultFile": {
-                "uri": "file:///D:/tspproject/Mvc/Where_is_my_Fluffymoon/Where_is_my_Fluffymoon/obj/Debug/net5.0/Razor/Views/Comments/Index.cshtml.g.cs",
-                "region": {
-                  "startLine": 286,
-                  "startColumn": 208,
-                  "endLine": 286,
-                  "endColumn": 210
-                }
-              }
-            }
-          ],
-          "properties": {
-            "warningLevel": 1
-          }
-        },
-        {
-          "ruleId": "CS1998",
-          "level": "warning",
-          "message": "This async method lacks 'await' operators and will run synchronously. Consider using the 'await' operator to await non-blocking API calls, or 'await Task.Run(...)' to do CPU-bound work on a background thread.",
-          "suppressionStates": [
-            "suppressedInSource"
-          ],
-          "locations": [
-            {
-              "resultFile": {
-                "uri": "file:///D:/tspproject/Mvc/Where_is_my_Fluffymoon/Where_is_my_Fluffymoon/obj/Debug/net5.0/Razor/Views/Comments/Edit.cshtml.g.cs",
-                "region": {
-                  "startLine": 83,
-                  "startColumn": 213,
-                  "endLine": 83,
-                  "endColumn": 215
-                }
-              }
-            }
-          ],
-          "properties": {
-            "warningLevel": 1
-          }
-        },
-        {
-          "ruleId": "CS1998",
-          "level": "warning",
-          "message": "This async method lacks 'await' operators and will run synchronously. Consider using the 'await' operator to await non-blocking API calls, or 'await Task.Run(...)' to do CPU-bound work on a background thread.",
-          "suppressionStates": [
-            "suppressedInSource"
-          ],
-          "locations": [
-            {
-              "resultFile": {
-                "uri": "file:///D:/tspproject/Mvc/Where_is_my_Fluffymoon/Where_is_my_Fluffymoon/obj/Debug/net5.0/Razor/Views/Comments/Edit.cshtml.g.cs",
-                "region": {
-                  "startLine": 105,
-                  "startColumn": 209,
-                  "endLine": 105,
-                  "endColumn": 211
-                }
-              }
-            }
-          ],
-          "properties": {
-            "warningLevel": 1
-          }
-        },
-        {
-          "ruleId": "CS1998",
-          "level": "warning",
-          "message": "This async method lacks 'await' operators and will run synchronously. Consider using the 'await' operator to await non-blocking API calls, or 'await Task.Run(...)' to do CPU-bound work on a background thread.",
-          "suppressionStates": [
-            "suppressedInSource"
-          ],
-          "locations": [
-            {
-              "resultFile": {
-                "uri": "file:///D:/tspproject/Mvc/Where_is_my_Fluffymoon/Where_is_my_Fluffymoon/obj/Debug/net5.0/Razor/Views/Comments/Edit.cshtml.g.cs",
-                "region": {
-                  "startLine": 128,
-                  "startColumn": 216,
-                  "endLine": 128,
-                  "endColumn": 218
-                }
-              }
-            }
-          ],
-          "properties": {
-            "warningLevel": 1
-          }
-        },
-        {
-          "ruleId": "CS1998",
-          "level": "warning",
-          "message": "This async method lacks 'await' operators and will run synchronously. Consider using the 'await' operator to await non-blocking API calls, or 'await Task.Run(...)' to do CPU-bound work on a background thread.",
-          "suppressionStates": [
-            "suppressedInSource"
-          ],
-          "locations": [
-            {
-              "resultFile": {
-                "uri": "file:///D:/tspproject/Mvc/Where_is_my_Fluffymoon/Where_is_my_Fluffymoon/obj/Debug/net5.0/Razor/Views/Comments/Edit.cshtml.g.cs",
-                "region": {
-                  "startLine": 150,
-                  "startColumn": 210,
-                  "endLine": 150,
-                  "endColumn": 212
-                }
-              }
-            }
-          ],
-          "properties": {
-            "warningLevel": 1
-          }
-        },
-        {
-          "ruleId": "CS1998",
-          "level": "warning",
-          "message": "This async method lacks 'await' operators and will run synchronously. Consider using the 'await' operator to await non-blocking API calls, or 'await Task.Run(...)' to do CPU-bound work on a background thread.",
-          "suppressionStates": [
-            "suppressedInSource"
-          ],
-          "locations": [
-            {
-              "resultFile": {
-                "uri": "file:///D:/tspproject/Mvc/Where_is_my_Fluffymoon/Where_is_my_Fluffymoon/obj/Debug/net5.0/Razor/Views/Comments/Edit.cshtml.g.cs",
-                "region": {
-                  "startLine": 172,
-                  "startColumn": 215,
-                  "endLine": 172,
-                  "endColumn": 217
-                }
-              }
-            }
-          ],
-          "properties": {
-            "warningLevel": 1
-          }
-        },
-        {
-          "ruleId": "CS1998",
-          "level": "warning",
-          "message": "This async method lacks 'await' operators and will run synchronously. Consider using the 'await' operator to await non-blocking API calls, or 'await Task.Run(...)' to do CPU-bound work on a background thread.",
-          "suppressionStates": [
-            "suppressedInSource"
-          ],
-          "locations": [
-            {
-              "resultFile": {
-                "uri": "file:///D:/tspproject/Mvc/Where_is_my_Fluffymoon/Where_is_my_Fluffymoon/obj/Debug/net5.0/Razor/Views/Comments/Edit.cshtml.g.cs",
-                "region": {
-                  "startLine": 194,
-                  "startColumn": 216,
-                  "endLine": 194,
-                  "endColumn": 218
-                }
-              }
-            }
-          ],
-          "properties": {
-            "warningLevel": 1
-          }
-        },
-        {
-          "ruleId": "CS1998",
-          "level": "warning",
-          "message": "This async method lacks 'await' operators and will run synchronously. Consider using the 'await' operator to await non-blocking API calls, or 'await Task.Run(...)' to do CPU-bound work on a background thread.",
-          "suppressionStates": [
-            "suppressedInSource"
-          ],
-          "locations": [
-            {
-              "resultFile": {
-                "uri": "file:///D:/tspproject/Mvc/Where_is_my_Fluffymoon/Where_is_my_Fluffymoon/obj/Debug/net5.0/Razor/Views/Comments/Edit.cshtml.g.cs",
-                "region": {
-                  "startLine": 216,
-                  "startColumn": 210,
-                  "endLine": 216,
-                  "endColumn": 212
-                }
-              }
-            }
-          ],
-          "properties": {
-            "warningLevel": 1
-          }
-        },
-        {
-          "ruleId": "CS1998",
-          "level": "warning",
-          "message": "This async method lacks 'await' operators and will run synchronously. Consider using the 'await' operator to await non-blocking API calls, or 'await Task.Run(...)' to do CPU-bound work on a background thread.",
-          "suppressionStates": [
-            "suppressedInSource"
-          ],
-          "locations": [
-            {
-              "resultFile": {
-                "uri": "file:///D:/tspproject/Mvc/Where_is_my_Fluffymoon/Where_is_my_Fluffymoon/obj/Debug/net5.0/Razor/Views/Comments/Edit.cshtml.g.cs",
-                "region": {
-                  "startLine": 238,
-                  "startColumn": 215,
-                  "endLine": 238,
-                  "endColumn": 217
-                }
-              }
-            }
-          ],
-          "properties": {
-            "warningLevel": 1
-          }
-        },
-        {
-          "ruleId": "CS1998",
-          "level": "warning",
-          "message": "This async method lacks 'await' operators and will run synchronously. Consider using the 'await' operator to await non-blocking API calls, or 'await Task.Run(...)' to do CPU-bound work on a background thread.",
-          "suppressionStates": [
-            "suppressedInSource"
-          ],
-          "locations": [
-            {
-              "resultFile": {
-                "uri": "file:///D:/tspproject/Mvc/Where_is_my_Fluffymoon/Where_is_my_Fluffymoon/obj/Debug/net5.0/Razor/Views/Comments/Edit.cshtml.g.cs",
-                "region": {
-                  "startLine": 260,
-                  "startColumn": 216,
-                  "endLine": 260,
-                  "endColumn": 218
-                }
-              }
-            }
-          ],
-          "properties": {
-            "warningLevel": 1
-          }
-        },
-        {
-          "ruleId": "CS1998",
-          "level": "warning",
-          "message": "This async method lacks 'await' operators and will run synchronously. Consider using the 'await' operator to await non-blocking API calls, or 'await Task.Run(...)' to do CPU-bound work on a background thread.",
-          "suppressionStates": [
-            "suppressedInSource"
-          ],
-          "locations": [
-            {
-              "resultFile": {
-                "uri": "file:///D:/tspproject/Mvc/Where_is_my_Fluffymoon/Where_is_my_Fluffymoon/obj/Debug/net5.0/Razor/Views/Comments/Edit.cshtml.g.cs",
-                "region": {
-                  "startLine": 282,
-                  "startColumn": 210,
-                  "endLine": 282,
-                  "endColumn": 212
-                }
-              }
-            }
-          ],
-          "properties": {
-            "warningLevel": 1
-          }
-        },
-        {
-          "ruleId": "CS1998",
-          "level": "warning",
-          "message": "This async method lacks 'await' operators and will run synchronously. Consider using the 'await' operator to await non-blocking API calls, or 'await Task.Run(...)' to do CPU-bound work on a background thread.",
-          "suppressionStates": [
-            "suppressedInSource"
-          ],
-          "locations": [
-            {
-              "resultFile": {
-                "uri": "file:///D:/tspproject/Mvc/Where_is_my_Fluffymoon/Where_is_my_Fluffymoon/obj/Debug/net5.0/Razor/Views/Comments/Edit.cshtml.g.cs",
-                "region": {
-                  "startLine": 304,
-                  "startColumn": 215,
-                  "endLine": 304,
-                  "endColumn": 217
-                }
-              }
-            }
-          ],
-          "properties": {
-            "warningLevel": 1
-          }
-        },
-        {
-          "ruleId": "CS1998",
-          "level": "warning",
-          "message": "This async method lacks 'await' operators and will run synchronously. Consider using the 'await' operator to await non-blocking API calls, or 'await Task.Run(...)' to do CPU-bound work on a background thread.",
-          "suppressionStates": [
-            "suppressedInSource"
-          ],
-          "locations": [
-            {
-              "resultFile": {
-                "uri": "file:///D:/tspproject/Mvc/Where_is_my_Fluffymoon/Where_is_my_Fluffymoon/obj/Debug/net5.0/Razor/Views/Comments/Edit.cshtml.g.cs",
-                "region": {
-                  "startLine": 326,
-                  "startColumn": 216,
-                  "endLine": 326,
-                  "endColumn": 218
-                }
-              }
-            }
-          ],
-          "properties": {
-            "warningLevel": 1
-          }
-        },
-        {
-          "ruleId": "CS1998",
-          "level": "warning",
-          "message": "This async method lacks 'await' operators and will run synchronously. Consider using the 'await' operator to await non-blocking API calls, or 'await Task.Run(...)' to do CPU-bound work on a background thread.",
-          "suppressionStates": [
-            "suppressedInSource"
-          ],
-          "locations": [
-            {
-              "resultFile": {
-                "uri": "file:///D:/tspproject/Mvc/Where_is_my_Fluffymoon/Where_is_my_Fluffymoon/obj/Debug/net5.0/Razor/Views/Comments/Edit.cshtml.g.cs",
-                "region": {
-                  "startLine": 348,
-                  "startColumn": 210,
-                  "endLine": 348,
-                  "endColumn": 212
-                }
-              }
-            }
-          ],
-          "properties": {
-            "warningLevel": 1
-          }
-        },
-        {
-          "ruleId": "CS1998",
-          "level": "warning",
-          "message": "This async method lacks 'await' operators and will run synchronously. Consider using the 'await' operator to await non-blocking API calls, or 'await Task.Run(...)' to do CPU-bound work on a background thread.",
-          "suppressionStates": [
-            "suppressedInSource"
-          ],
-          "locations": [
-            {
-              "resultFile": {
-                "uri": "file:///D:/tspproject/Mvc/Where_is_my_Fluffymoon/Where_is_my_Fluffymoon/obj/Debug/net5.0/Razor/Views/Comments/Edit.cshtml.g.cs",
-                "region": {
-                  "startLine": 370,
-                  "startColumn": 215,
-                  "endLine": 370,
-                  "endColumn": 217
-                }
-              }
-            }
-          ],
-          "properties": {
-            "warningLevel": 1
-          }
-        },
-        {
-          "ruleId": "CS1998",
-          "level": "warning",
-          "message": "This async method lacks 'await' operators and will run synchronously. Consider using the 'await' operator to await non-blocking API calls, or 'await Task.Run(...)' to do CPU-bound work on a background thread.",
-          "suppressionStates": [
-            "suppressedInSource"
-          ],
-          "locations": [
-            {
-              "resultFile": {
-                "uri": "file:///D:/tspproject/Mvc/Where_is_my_Fluffymoon/Where_is_my_Fluffymoon/obj/Debug/net5.0/Razor/Views/Comments/Edit.cshtml.g.cs",
-                "region": {
-                  "startLine": 392,
-                  "startColumn": 216,
-                  "endLine": 392,
-                  "endColumn": 218
-                }
-              }
-            }
-          ],
-          "properties": {
-            "warningLevel": 1
-          }
-        },
-        {
-          "ruleId": "CS1998",
-          "level": "warning",
-          "message": "This async method lacks 'await' operators and will run synchronously. Consider using the 'await' operator to await non-blocking API calls, or 'await Task.Run(...)' to do CPU-bound work on a background thread.",
-          "suppressionStates": [
-            "suppressedInSource"
-          ],
-          "locations": [
-            {
-              "resultFile": {
-                "uri": "file:///D:/tspproject/Mvc/Where_is_my_Fluffymoon/Where_is_my_Fluffymoon/obj/Debug/net5.0/Razor/Views/Comments/Edit.cshtml.g.cs",
-                "region": {
-                  "startLine": 414,
-                  "startColumn": 210,
-                  "endLine": 414,
-                  "endColumn": 212
-                }
-              }
-            }
-          ],
-          "properties": {
-            "warningLevel": 1
-          }
-        },
-        {
-          "ruleId": "CS1998",
-          "level": "warning",
-          "message": "This async method lacks 'await' operators and will run synchronously. Consider using the 'await' operator to await non-blocking API calls, or 'await Task.Run(...)' to do CPU-bound work on a background thread.",
-          "suppressionStates": [
-            "suppressedInSource"
-          ],
-          "locations": [
-            {
-              "resultFile": {
-                "uri": "file:///D:/tspproject/Mvc/Where_is_my_Fluffymoon/Where_is_my_Fluffymoon/obj/Debug/net5.0/Razor/Views/Comments/Edit.cshtml.g.cs",
-                "region": {
-                  "startLine": 436,
-                  "startColumn": 215,
-                  "endLine": 436,
-                  "endColumn": 217
-                }
-              }
-            }
-          ],
-          "properties": {
-            "warningLevel": 1
-          }
-        },
-        {
-          "ruleId": "CS1998",
-          "level": "warning",
-          "message": "This async method lacks 'await' operators and will run synchronously. Consider using the 'await' operator to await non-blocking API calls, or 'await Task.Run(...)' to do CPU-bound work on a background thread.",
-          "suppressionStates": [
-            "suppressedInSource"
-          ],
-          "locations": [
-            {
-              "resultFile": {
-                "uri": "file:///D:/tspproject/Mvc/Where_is_my_Fluffymoon/Where_is_my_Fluffymoon/obj/Debug/net5.0/Razor/Views/Comments/Edit.cshtml.g.cs",
-                "region": {
-                  "startLine": 458,
-                  "startColumn": 216,
-                  "endLine": 458,
-                  "endColumn": 218
-                }
-              }
-            }
-          ],
-          "properties": {
-            "warningLevel": 1
-          }
-        },
-        {
-          "ruleId": "CS1998",
-          "level": "warning",
-          "message": "This async method lacks 'await' operators and will run synchronously. Consider using the 'await' operator to await non-blocking API calls, or 'await Task.Run(...)' to do CPU-bound work on a background thread.",
-          "suppressionStates": [
-            "suppressedInSource"
-          ],
-          "locations": [
-            {
-              "resultFile": {
-                "uri": "file:///D:/tspproject/Mvc/Where_is_my_Fluffymoon/Where_is_my_Fluffymoon/obj/Debug/net5.0/Razor/Views/Comments/Edit.cshtml.g.cs",
-                "region": {
-                  "startLine": 480,
-                  "startColumn": 210,
-                  "endLine": 480,
-                  "endColumn": 212
-                }
-              }
-            }
-          ],
-          "properties": {
-            "warningLevel": 1
-          }
-        },
-        {
-          "ruleId": "CS1998",
-          "level": "warning",
-          "message": "This async method lacks 'await' operators and will run synchronously. Consider using the 'await' operator to await non-blocking API calls, or 'await Task.Run(...)' to do CPU-bound work on a background thread.",
-          "suppressionStates": [
-            "suppressedInSource"
-          ],
-          "locations": [
-            {
-              "resultFile": {
-                "uri": "file:///D:/tspproject/Mvc/Where_is_my_Fluffymoon/Where_is_my_Fluffymoon/obj/Debug/net5.0/Razor/Views/Comments/Edit.cshtml.g.cs",
-                "region": {
-                  "startLine": 502,
-                  "startColumn": 215,
-                  "endLine": 502,
-                  "endColumn": 217
-                }
-              }
-            }
-          ],
-          "properties": {
-            "warningLevel": 1
-          }
-        },
-        {
-          "ruleId": "CS1998",
-          "level": "warning",
-          "message": "This async method lacks 'await' operators and will run synchronously. Consider using the 'await' operator to await non-blocking API calls, or 'await Task.Run(...)' to do CPU-bound work on a background thread.",
-          "suppressionStates": [
-            "suppressedInSource"
-          ],
-          "locations": [
-            {
-              "resultFile": {
-                "uri": "file:///D:/tspproject/Mvc/Where_is_my_Fluffymoon/Where_is_my_Fluffymoon/obj/Debug/net5.0/Razor/Views/Comments/Edit.cshtml.g.cs",
-                "region": {
-                  "startLine": 524,
-                  "startColumn": 216,
-                  "endLine": 524,
-                  "endColumn": 218
-                }
-              }
-            }
-          ],
-          "properties": {
-            "warningLevel": 1
-          }
-        },
-        {
-          "ruleId": "CS1998",
-          "level": "warning",
-          "message": "This async method lacks 'await' operators and will run synchronously. Consider using the 'await' operator to await non-blocking API calls, or 'await Task.Run(...)' to do CPU-bound work on a background thread.",
-          "suppressionStates": [
-            "suppressedInSource"
-          ],
-          "locations": [
-            {
-              "resultFile": {
-                "uri": "file:///D:/tspproject/Mvc/Where_is_my_Fluffymoon/Where_is_my_Fluffymoon/obj/Debug/net5.0/Razor/Views/Comments/Edit.cshtml.g.cs",
-                "region": {
-                  "startLine": 546,
-                  "startColumn": 217,
-                  "endLine": 546,
-                  "endColumn": 219
-                }
-              }
-            }
-          ],
-          "properties": {
-            "warningLevel": 1
-          }
-        },
-        {
-          "ruleId": "CS1998",
-          "level": "warning",
-          "message": "This async method lacks 'await' operators and will run synchronously. Consider using the 'await' operator to await non-blocking API calls, or 'await Task.Run(...)' to do CPU-bound work on a background thread.",
-          "suppressionStates": [
-            "suppressedInSource"
-          ],
-          "locations": [
-            {
-              "resultFile": {
-                "uri": "file:///D:/tspproject/Mvc/Where_is_my_Fluffymoon/Where_is_my_Fluffymoon/obj/Debug/net5.0/Razor/Views/Comments/Edit.cshtml.g.cs",
-                "region": {
-                  "startLine": 576,
-                  "startColumn": 215,
-                  "endLine": 576,
-                  "endColumn": 217
-                }
-              }
-            }
-          ],
-          "properties": {
-            "warningLevel": 1
-          }
-        },
-        {
-          "ruleId": "CS1998",
-          "level": "warning",
-          "message": "This async method lacks 'await' operators and will run synchronously. Consider using the 'await' operator to await non-blocking API calls, or 'await Task.Run(...)' to do CPU-bound work on a background thread.",
-          "suppressionStates": [
-            "suppressedInSource"
-          ],
-          "locations": [
-            {
-              "resultFile": {
-                "uri": "file:///D:/tspproject/Mvc/Where_is_my_Fluffymoon/Where_is_my_Fluffymoon/obj/Debug/net5.0/Razor/Views/Comments/Edit.cshtml.g.cs",
-                "region": {
-                  "startLine": 598,
-                  "startColumn": 216,
-                  "endLine": 598,
-                  "endColumn": 218
-                }
-              }
-            }
-          ],
-          "properties": {
-            "warningLevel": 1
-          }
-        },
-        {
-          "ruleId": "CS1998",
-          "level": "warning",
-          "message": "This async method lacks 'await' operators and will run synchronously. Consider using the 'await' operator to await non-blocking API calls, or 'await Task.Run(...)' to do CPU-bound work on a background thread.",
-          "suppressionStates": [
-            "suppressedInSource"
-          ],
-          "locations": [
-            {
-              "resultFile": {
-                "uri": "file:///D:/tspproject/Mvc/Where_is_my_Fluffymoon/Where_is_my_Fluffymoon/obj/Debug/net5.0/Razor/Views/Comments/Edit.cshtml.g.cs",
-                "region": {
-                  "startLine": 620,
-                  "startColumn": 217,
-                  "endLine": 620,
-                  "endColumn": 219
-                }
-              }
-            }
-          ],
-          "properties": {
-            "warningLevel": 1
-          }
-        },
-        {
-          "ruleId": "CS1998",
-          "level": "warning",
-          "message": "This async method lacks 'await' operators and will run synchronously. Consider using the 'await' operator to await non-blocking API calls, or 'await Task.Run(...)' to do CPU-bound work on a background thread.",
-          "suppressionStates": [
-            "suppressedInSource"
-          ],
-          "locations": [
-            {
-              "resultFile": {
-                "uri": "file:///D:/tspproject/Mvc/Where_is_my_Fluffymoon/Where_is_my_Fluffymoon/obj/Debug/net5.0/Razor/Views/Comments/Edit.cshtml.g.cs",
-                "region": {
-                  "startLine": 650,
-                  "startColumn": 215,
-                  "endLine": 650,
-                  "endColumn": 217
-                }
-              }
-            }
-          ],
-          "properties": {
-            "warningLevel": 1
-          }
-        },
-        {
-          "ruleId": "CS1998",
-          "level": "warning",
-          "message": "This async method lacks 'await' operators and will run synchronously. Consider using the 'await' operator to await non-blocking API calls, or 'await Task.Run(...)' to do CPU-bound work on a background thread.",
-          "suppressionStates": [
-            "suppressedInSource"
-          ],
-          "locations": [
-            {
-              "resultFile": {
-                "uri": "file:///D:/tspproject/Mvc/Where_is_my_Fluffymoon/Where_is_my_Fluffymoon/obj/Debug/net5.0/Razor/Views/Comments/Edit.cshtml.g.cs",
-                "region": {
-                  "startLine": 688,
-                  "startColumn": 208,
-                  "endLine": 688,
-                  "endColumn": 210
-                }
-              }
-            }
-          ],
-          "properties": {
-            "warningLevel": 1
-          }
-        },
-        {
           "ruleId": "CS0169",
           "level": "warning",
-          "message": "The field 'Views_Pets_Edit.__tagHelperStringValueBuffer' is never used",
+          "message": "The field 'Views_Comments_Edit.__tagHelperStringValueBuffer' is never used",
           "suppressionStates": [
             "suppressedInSource"
           ],
           "locations": [
             {
               "resultFile": {
-                "uri": "file:///D:/tspproject/Mvc/Where_is_my_Fluffymoon/Where_is_my_Fluffymoon/obj/Debug/net5.0/Razor/Views/Pets/Edit.cshtml.g.cs",
+                "uri": "file:///D:/tspproject/Mvc/Where_is_my_Fluffymoon/Where_is_my_Fluffymoon/obj/Debug/net5.0/Razor/Views/Comments/Edit.cshtml.g.cs",
                 "region": {
                   "startLine": 45,
                   "startColumn": 24,
                   "endLine": 45,
-                  "endColumn": 52
-                }
-              }
-            }
-          ],
-          "properties": {
-            "warningLevel": 3
-          }
-        },
-        {
-          "ruleId": "CS0169",
-          "level": "warning",
-          "message": "The field 'Views_Pets_Delete.__tagHelperStringValueBuffer' is never used",
-          "suppressionStates": [
-            "suppressedInSource"
-          ],
-          "locations": [
-            {
-              "resultFile": {
-                "uri": "file:///D:/tspproject/Mvc/Where_is_my_Fluffymoon/Where_is_my_Fluffymoon/obj/Debug/net5.0/Razor/Views/Pets/Delete.cshtml.g.cs",
-                "region": {
-                  "startLine": 42,
-                  "startColumn": 24,
-                  "endLine": 42,
                   "endColumn": 52
                 }
               }
@@ -4142,6 +4118,78 @@
         {
           "ruleId": "CS0169",
           "level": "warning",
+          "message": "The field 'Views_Comments_Delete.__tagHelperStringValueBuffer' is never used",
+          "suppressionStates": [
+            "suppressedInSource"
+          ],
+          "locations": [
+            {
+              "resultFile": {
+                "uri": "file:///D:/tspproject/Mvc/Where_is_my_Fluffymoon/Where_is_my_Fluffymoon/obj/Debug/net5.0/Razor/Views/Comments/Delete.cshtml.g.cs",
+                "region": {
+                  "startLine": 42,
+                  "startColumn": 24,
+                  "endLine": 42,
+                  "endColumn": 52
+                }
+              }
+            }
+          ],
+          "properties": {
+            "warningLevel": 3
+          }
+        },
+        {
+          "ruleId": "CS0169",
+          "level": "warning",
+          "message": "The field 'Areas_Identity_Pages__ValidationScriptsPartial.__tagHelperStringValueBuffer' is never used",
+          "suppressionStates": [
+            "suppressedInSource"
+          ],
+          "locations": [
+            {
+              "resultFile": {
+                "uri": "file:///D:/tspproject/Mvc/Where_is_my_Fluffymoon/Where_is_my_Fluffymoon/obj/Debug/net5.0/Razor/Areas/Identity/Pages/_ValidationScriptsPartial.cshtml.g.cs",
+                "region": {
+                  "startLine": 66,
+                  "startColumn": 24,
+                  "endLine": 66,
+                  "endColumn": 52
+                }
+              }
+            }
+          ],
+          "properties": {
+            "warningLevel": 3
+          }
+        },
+        {
+          "ruleId": "CS0169",
+          "level": "warning",
+          "message": "The field 'Views_Pets_Edit.__tagHelperStringValueBuffer' is never used",
+          "suppressionStates": [
+            "suppressedInSource"
+          ],
+          "locations": [
+            {
+              "resultFile": {
+                "uri": "file:///D:/tspproject/Mvc/Where_is_my_Fluffymoon/Where_is_my_Fluffymoon/obj/Debug/net5.0/Razor/Views/Pets/Edit.cshtml.g.cs",
+                "region": {
+                  "startLine": 45,
+                  "startColumn": 24,
+                  "endLine": 45,
+                  "endColumn": 52
+                }
+              }
+            }
+          ],
+          "properties": {
+            "warningLevel": 3
+          }
+        },
+        {
+          "ruleId": "CS0169",
+          "level": "warning",
           "message": "The field 'Views_Shared__ValidationScriptsPartial.__tagHelperStringValueBuffer' is never used",
           "suppressionStates": [
             "suppressedInSource"
@@ -4166,18 +4214,18 @@
         {
           "ruleId": "CS0169",
           "level": "warning",
-          "message": "The field 'Views_Pets_Create.__tagHelperStringValueBuffer' is never used",
+          "message": "The field 'Views_Pets_Delete.__tagHelperStringValueBuffer' is never used",
           "suppressionStates": [
             "suppressedInSource"
           ],
           "locations": [
             {
               "resultFile": {
-                "uri": "file:///D:/tspproject/Mvc/Where_is_my_Fluffymoon/Where_is_my_Fluffymoon/obj/Debug/net5.0/Razor/Views/Pets/Create.cshtml.g.cs",
+                "uri": "file:///D:/tspproject/Mvc/Where_is_my_Fluffymoon/Where_is_my_Fluffymoon/obj/Debug/net5.0/Razor/Views/Pets/Delete.cshtml.g.cs",
                 "region": {
-                  "startLine": 44,
+                  "startLine": 42,
                   "startColumn": 24,
-                  "endLine": 44,
+                  "endLine": 42,
                   "endColumn": 52
                 }
               }
@@ -4214,66 +4262,18 @@
         {
           "ruleId": "CS0169",
           "level": "warning",
-          "message": "The field 'Views_Comments_Delete.__tagHelperStringValueBuffer' is never used",
+          "message": "The field 'Views_Pets_Create.__tagHelperStringValueBuffer' is never used",
           "suppressionStates": [
             "suppressedInSource"
           ],
           "locations": [
             {
               "resultFile": {
-                "uri": "file:///D:/tspproject/Mvc/Where_is_my_Fluffymoon/Where_is_my_Fluffymoon/obj/Debug/net5.0/Razor/Views/Comments/Delete.cshtml.g.cs",
+                "uri": "file:///D:/tspproject/Mvc/Where_is_my_Fluffymoon/Where_is_my_Fluffymoon/obj/Debug/net5.0/Razor/Views/Pets/Create.cshtml.g.cs",
                 "region": {
-                  "startLine": 42,
+                  "startLine": 44,
                   "startColumn": 24,
-                  "endLine": 42,
-                  "endColumn": 52
-                }
-              }
-            }
-          ],
-          "properties": {
-            "warningLevel": 3
-          }
-        },
-        {
-          "ruleId": "CS0169",
-          "level": "warning",
-          "message": "The field 'Views_Comments_Edit.__tagHelperStringValueBuffer' is never used",
-          "suppressionStates": [
-            "suppressedInSource"
-          ],
-          "locations": [
-            {
-              "resultFile": {
-                "uri": "file:///D:/tspproject/Mvc/Where_is_my_Fluffymoon/Where_is_my_Fluffymoon/obj/Debug/net5.0/Razor/Views/Comments/Edit.cshtml.g.cs",
-                "region": {
-                  "startLine": 45,
-                  "startColumn": 24,
-                  "endLine": 45,
-                  "endColumn": 52
-                }
-              }
-            }
-          ],
-          "properties": {
-            "warningLevel": 3
-          }
-        },
-        {
-          "ruleId": "CS0169",
-          "level": "warning",
-          "message": "The field 'Areas_Identity_Pages__ValidationScriptsPartial.__tagHelperStringValueBuffer' is never used",
-          "suppressionStates": [
-            "suppressedInSource"
-          ],
-          "locations": [
-            {
-              "resultFile": {
-                "uri": "file:///D:/tspproject/Mvc/Where_is_my_Fluffymoon/Where_is_my_Fluffymoon/obj/Debug/net5.0/Razor/Areas/Identity/Pages/_ValidationScriptsPartial.cshtml.g.cs",
-                "region": {
-                  "startLine": 66,
-                  "startColumn": 24,
-                  "endLine": 66,
+                  "endLine": 44,
                   "endColumn": 52
                 }
               }

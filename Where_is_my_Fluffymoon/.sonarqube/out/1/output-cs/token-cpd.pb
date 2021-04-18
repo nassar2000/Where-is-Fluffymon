@@ -290,7 +290,7 @@ hD:\tspproject\Mvc\Where_is_my_Fluffymoon\Where_is_my_Fluffymoon\Areas\Identity\
 ; 
 } 	
 } 
-} Ö?
+} Ý=
 lD:\tspproject\Mvc\Where_is_my_Fluffymoon\Where_is_my_Fluffymoon\Areas\Identity\Pages\Account\Login.cshtml.cs
 	namespace 	"
 Where_is_my_Fluffymoon
@@ -316,441 +316,429 @@ LoginModel 
 	PageModel '
 { 
 private 
-readonly 
-UserManager $
-<$ %
-ApplicationUser% 4
->4 5
-_userManager6 B
-;B C
+readonly 
+SignInManager &
+<& '
+ApplicationUser' 6
+>6 7
+_signInManager8 F
+;F G
 private 
-readonly 
-SignInManager &
-<& '
-ApplicationUser' 6
->6 7
-_signInManager8 F
-;F G
-private 
-readonly 
-ILogger  
-<  !
+readonly 
+ILogger  
+<  !
 
-LoginModel! +
->+ ,
-_logger- 4
-;4 5
-public 
+LoginModel! +
+>+ ,
+_logger- 4
+;4 5
+public 
 
-LoginModel 
-( 
-SignInManager '
-<' (
-ApplicationUser( 7
->7 8
-signInManager9 F
-,F G
-ILogger 
-< 
+LoginModel 
+( 
+SignInManager '
+<' (
+ApplicationUser( 7
+>7 8
+signInManager9 F
+,F G
+ILogger 
+< 
 
-LoginModel 
-> 
-logger  &
-,& '
-UserManager 
-< 
-ApplicationUser '
->' (
-userManager) 4
-)4 5
-{ 	
-_userManager 
-= 
-userManager &
-;& '
-_signInManager 
-= 
-signInManager *
-;* +
-_logger 
-= 
-logger 
-; 
-}   	
-["" 	
-BindProperty""	 
-]"" 
-public## 
+LoginModel 
+> 
+logger  &
+,& '
+UserManager 
+< 
+ApplicationUser '
+>' (
+userManager) 4
+)4 5
+{ 	
+_signInManager 
+= 
+signInManager *
+;* +
+_logger 
+= 
+logger 
+; 
+} 	
+[   	
+BindProperty  	 
+]   
+public!! 
 
-InputModel## 
-Input## 
-{##  !
-get##" %
-;##% &
-set##' *
-;##* +
-}##, -
-public%% 
-IList%% 
-<%%  
-AuthenticationScheme%% )
->%%) *
-ExternalLogins%%+ 9
-{%%: ;
-get%%< ?
-;%%? @
-set%%A D
-;%%D E
-}%%F G
-public'' 
-string'' 
-	ReturnUrl'' 
-{''  !
-get''" %
-;''% &
-set''' *
-;''* +
-}'', -
-[)) 	
-TempData))	 
-])) 
-public** 
-string** 
-ErrorMessage** "
-{**# $
-get**% (
-;**( )
-set*** -
-;**- .
-}**/ 0
-public,, 
-class,, 
+InputModel!! 
+Input!! 
+{!!  !
+get!!" %
+;!!% &
+set!!' *
+;!!* +
+}!!, -
+public## 
+IList## 
+<##  
+AuthenticationScheme## )
+>##) *
+ExternalLogins##+ 9
+{##: ;
+get##< ?
+;##? @
+set##A D
+;##D E
+}##F G
+public%% 
+string%% 
+	ReturnUrl%% 
+{%%  !
+get%%" %
+;%%% &
+set%%' *
+;%%* +
+}%%, -
+['' 	
+TempData''	 
+]'' 
+public(( 
+string(( 
+ErrorMessage(( "
+{((# $
+get((% (
+;((( )
+set((* -
+;((- .
+}((/ 0
+public** 
+class** 
 
-InputModel,, 
-{-- 	
-[.. 
-Required.. 
-].. 
-[// 
-EmailAddress// 
-]// 
-public00 
-string00 
-Email00 
-{00  !
-get00" %
-;00% &
-set00' *
-;00* +
-}00, -
-[22 
-Required22 
-]22 
-[33 
-DataType33 
-(33 
-DataType33 
-.33 
-Password33 '
-)33' (
-]33( )
-public44 
-string44 
-Password44 "
-{44# $
-get44% (
-;44( )
-set44* -
-;44- .
-}44/ 0
-[66 
-Display66 
-(66 
-Name66 
-=66 
-$str66 *
-)66* +
-]66+ ,
-public77 
-bool77 
+InputModel** 
+{++ 	
+[,, 
+Required,, 
+],, 
+[-- 
+EmailAddress-- 
+]-- 
+public.. 
+string.. 
+Email.. 
+{..  !
+get.." %
+;..% &
+set..' *
+;..* +
+}.., -
+[00 
+Required00 
+]00 
+[11 
+DataType11 
+(11 
+DataType11 
+.11 
+Password11 '
+)11' (
+]11( )
+public22 
+string22 
+Password22 "
+{22# $
+get22% (
+;22( )
+set22* -
+;22- .
+}22/ 0
+[44 
+Display44 
+(44 
+Name44 
+=44 
+$str44 *
+)44* +
+]44+ ,
+public55 
+bool55 
 
-RememberMe77 "
-{77# $
-get77% (
-;77( )
-set77* -
-;77- .
-}77/ 0
-}88 	
-public:: 
-async:: 
-Task:: 
+RememberMe55 "
+{55# $
+get55% (
+;55( )
+set55* -
+;55- .
+}55/ 0
+}66 	
+public88 
+async88 
+Task88 
 
-OnGetAsync:: $
-(::$ %
-string::% +
-	returnUrl::, 5
-=::6 7
-null::8 <
-)::< =
-{;; 	
-if<< 
-(<< 
-User<< 
-.<< 
-Identity<< 
-.<< 
-IsAuthenticated<< -
-)<<- .
-{== 
-Response>> 
-.>> 
-Redirect>> !
-(>>! "
-$str>>" %
-)>>% &
-;>>& '
-}?? 
-ifAA 
-(AA 
-!AA 
-stringAA 
-.AA 
-IsNullOrEmptyAA %
-(AA% &
-ErrorMessageAA& 2
-)AA2 3
-)AA3 4
-{BB 
+OnGetAsync88 $
+(88$ %
+string88% +
+	returnUrl88, 5
+=886 7
+null888 <
+)88< =
+{99 	
+if:: 
+(:: 
+User:: 
+.:: 
+Identity:: 
+.:: 
+IsAuthenticated:: -
+)::- .
+{;; 
+Response<< 
+.<< 
+Redirect<< !
+(<<! "
+$str<<" %
+)<<% &
+;<<& '
+}== 
+if?? 
+(?? 
+!?? 
+string?? 
+.?? 
+IsNullOrEmpty?? %
+(??% &
+ErrorMessage??& 2
+)??2 3
+)??3 4
+{@@ 
 
-ModelStateCC 
-.CC 
-AddModelErrorCC (
-(CC( )
-stringCC) /
-.CC/ 0
-EmptyCC0 5
-,CC5 6
-ErrorMessageCC7 C
-)CCC D
-;CCD E
-}DD 
-	returnUrlFF 
-??=FF 
-UrlFF 
-.FF 
-ContentFF %
-(FF% &
-$strFF& *
-)FF* +
-;FF+ ,
-awaitII 
-HttpContextII 
-.II 
-SignOutAsyncII *
-(II* +
-IdentityConstantsII+ <
-.II< =
-ExternalSchemeII= K
-)IIK L
-;IIL M
-ExternalLoginsKK 
-=KK 
-(KK 
-awaitKK #
-_signInManagerKK$ 2
-.KK2 31
-%GetExternalAuthenticationSchemesAsyncKK3 X
-(KKX Y
-)KKY Z
-)KKZ [
-.KK[ \
-ToListKK\ b
-(KKb c
-)KKc d
-;KKd e
-	ReturnUrlMM 
-=MM 
-	returnUrlMM !
-;MM! "
-}NN 	
-publicPP 
-asyncPP 
-TaskPP 
-<PP 
-IActionResultPP '
->PP' (
-OnPostAsyncPP) 4
-(PP4 5
-stringPP5 ;
-	returnUrlPP< E
-=PPF G
-nullPPH L
-)PPL M
-{QQ 	
-	returnUrlRR 
-??=RR 
-UrlRR 
-.RR 
-ContentRR %
-(RR% &
-$strRR& *
-)RR* +
-;RR+ ,
-ExternalLoginsTT 
-=TT 
-(TT 
-awaitTT #
-_signInManagerTT$ 2
-.TT2 31
-%GetExternalAuthenticationSchemesAsyncTT3 X
-(TTX Y
-)TTY Z
-)TTZ [
-.TT[ \
-ToListTT\ b
-(TTb c
-)TTc d
-;TTd e
-ifVV 
-(VV 
+ModelStateAA 
+.AA 
+AddModelErrorAA (
+(AA( )
+stringAA) /
+.AA/ 0
+EmptyAA0 5
+,AA5 6
+ErrorMessageAA7 C
+)AAC D
+;AAD E
+}BB 
+	returnUrlDD 
+??=DD 
+UrlDD 
+.DD 
+ContentDD %
+(DD% &
+$strDD& *
+)DD* +
+;DD+ ,
+awaitGG 
+HttpContextGG 
+.GG 
+SignOutAsyncGG *
+(GG* +
+IdentityConstantsGG+ <
+.GG< =
+ExternalSchemeGG= K
+)GGK L
+;GGL M
+ExternalLoginsII 
+=II 
+(II 
+awaitII #
+_signInManagerII$ 2
+.II2 31
+%GetExternalAuthenticationSchemesAsyncII3 X
+(IIX Y
+)IIY Z
+)IIZ [
+.II[ \
+ToListII\ b
+(IIb c
+)IIc d
+;IId e
+	ReturnUrlKK 
+=KK 
+	returnUrlKK !
+;KK! "
+}LL 	
+publicNN 
+asyncNN 
+TaskNN 
+<NN 
+IActionResultNN '
+>NN' (
+OnPostAsyncNN) 4
+(NN4 5
+stringNN5 ;
+	returnUrlNN< E
+=NNF G
+nullNNH L
+)NNL M
+{OO 	
+	returnUrlPP 
+??=PP 
+UrlPP 
+.PP 
+ContentPP %
+(PP% &
+$strPP& *
+)PP* +
+;PP+ ,
+ExternalLoginsRR 
+=RR 
+(RR 
+awaitRR #
+_signInManagerRR$ 2
+.RR2 31
+%GetExternalAuthenticationSchemesAsyncRR3 X
+(RRX Y
+)RRY Z
+)RRZ [
+.RR[ \
+ToListRR\ b
+(RRb c
+)RRc d
+;RRd e
+ifTT 
+(TT 
 
-ModelStateVV 
-.VV 
-IsValidVV "
-)VV" #
-{WW 
-varZZ 
-resultZZ 
-=ZZ 
-awaitZZ "
-_signInManagerZZ# 1
-.ZZ1 2
-PasswordSignInAsyncZZ2 E
-(ZZE F
-InputZZF K
-.ZZK L
-EmailZZL Q
-,ZZQ R
-InputZZS X
-.ZZX Y
-PasswordZZY a
-,ZZa b
-InputZZc h
-.ZZh i
+ModelStateTT 
+.TT 
+IsValidTT "
+)TT" #
+{UU 
+varXX 
+resultXX 
+=XX 
+awaitXX "
+_signInManagerXX# 1
+.XX1 2
+PasswordSignInAsyncXX2 E
+(XXE F
+InputXXF K
+.XXK L
+EmailXXL Q
+,XXQ R
+InputXXS X
+.XXX Y
+PasswordXXY a
+,XXa b
+InputXXc h
+.XXh i
 
-RememberMeZZi s
-,ZZs t
-lockoutOnFailure	ZZu …
+RememberMeXXi s
+,XXs t
+lockoutOnFailure	XXu …
 :
-ZZ… †
+XX… †
 false
-ZZ‡ Œ
+XX‡ Œ
 )
-ZZŒ 
+XXŒ 
 ;
-ZZ Ž
-if[[ 
-([[ 
-result[[ 
-.[[ 
-	Succeeded[[ $
-)[[$ %
-{\\ 
-_logger]] 
-.]] 
-LogInformation]] *
-(]]* +
-$str]]+ <
-)]]< =
-;]]= >
-return^^ 
-LocalRedirect^^ (
-(^^( )
-	returnUrl^^) 2
-)^^2 3
-;^^3 4
-}__ 
-if`` 
-(`` 
-result`` 
-.`` 
-RequiresTwoFactor`` ,
-)``, -
-{aa 
-returnbb 
-RedirectToPagebb )
-(bb) *
-$strbb* :
-,bb: ;
-newbb< ?
-{bb@ A
-	ReturnUrlbbB K
-=bbL M
-	returnUrlbbN W
-,bbW X
+XX Ž
+ifYY 
+(YY 
+resultYY 
+.YY 
+	SucceededYY $
+)YY$ %
+{ZZ 
+_logger[[ 
+.[[ 
+LogInformation[[ *
+([[* +
+$str[[+ <
+)[[< =
+;[[= >
+return\\ 
+LocalRedirect\\ (
+(\\( )
+	returnUrl\\) 2
+)\\2 3
+;\\3 4
+}]] 
+if^^ 
+(^^ 
+result^^ 
+.^^ 
+RequiresTwoFactor^^ ,
+)^^, -
+{__ 
+return`` 
+RedirectToPage`` )
+(``) *
+$str``* :
+,``: ;
+new``< ?
+{``@ A
+	ReturnUrl``B K
+=``L M
+	returnUrl``N W
+,``W X
 
-RememberMebbY c
-=bbd e
-Inputbbf k
-.bbk l
+RememberMe``Y c
+=``d e
+Input``f k
+.``k l
 
-RememberMebbl v
-}bbw x
-)bbx y
-;bby z
-}cc 
-ifdd 
-(dd 
-resultdd 
-.dd 
-IsLockedOutdd &
-)dd& '
-{ee 
-_loggerff 
-.ff 
+RememberMe``l v
+}``w x
+)``x y
+;``y z
+}aa 
+ifbb 
+(bb 
+resultbb 
+.bb 
+IsLockedOutbb &
+)bb& '
+{cc 
+_loggerdd 
+.dd 
 
-LogWarningff &
-(ff& '
-$strff' A
-)ffA B
-;ffB C
-returngg 
-RedirectToPagegg )
-(gg) *
-$strgg* 5
-)gg5 6
-;gg6 7
-}hh 
-elseii 
-{jj 
+LogWarningdd &
+(dd& '
+$strdd' A
+)ddA B
+;ddB C
+returnee 
+RedirectToPageee )
+(ee) *
+$stree* 5
+)ee5 6
+;ee6 7
+}ff 
+elsegg 
+{hh 
 
-ModelStatekk 
-.kk 
-AddModelErrorkk ,
-(kk, -
-stringkk- 3
-.kk3 4
-Emptykk4 9
-,kk9 :
-$strkk; S
-)kkS T
-;kkT U
-returnll 
-Pagell 
-(ll  
-)ll  !
-;ll! "
-}mm 
-}nn 
-returnqq 
-Pageqq 
-(qq 
-)qq 
-;qq 
-}rr 	
-}ss 
-}tt ÁY
+ModelStateii 
+.ii 
+AddModelErrorii ,
+(ii, -
+stringii- 3
+.ii3 4
+Emptyii4 9
+,ii9 :
+$strii; S
+)iiS T
+;iiT U
+returnjj 
+Pagejj 
+(jj  
+)jj  !
+;jj! "
+}kk 
+}ll 
+returnoo 
+Pageoo 
+(oo 
+)oo 
+;oo 
+}pp 	
+}qq 
+}rr ÁY
 oD:\tspproject\Mvc\Where_is_my_Fluffymoon\Where_is_my_Fluffymoon\Areas\Identity\Pages\Account\Register.cshtml.cs
 	namespace 	"
 Where_is_my_Fluffymoon
@@ -2368,7 +2356,7 @@ ActionName
 ££ 	
 }
 ¤¤ 
-}¥¥ Ì
+}¥¥ ç
 ]D:\tspproject\Mvc\Where_is_my_Fluffymoon\Where_is_my_Fluffymoon\Controllers\HomeController.cs
 	namespace 	"
 Where_is_my_Fluffymoon
@@ -2386,103 +2374,91 @@ ActionName
 :  !
 
 Controller" ,
-{ 
-private 
-readonly 
-ILogger  
-<  !
-HomeController! /
->/ 0
-_logger1 8
-;8 9
-public 
-HomeController 
-( 
-ILogger %
-<% &
-HomeController& 4
->4 5
-logger6 <
-)< =
-{ 	
-_logger 
-= 
-logger 
-; 
-} 	
-public 
-IActionResult 
-Index "
-(" #
-)# $
-{ 	
-return 
-View 
-( 
-) 
-; 
-} 	
-public 
-IActionResult 
-Pets !
-(! "
-)" #
-{ 	
-return 
-Redirect 
-( 
-$str #
-)# $
-;$ %
-} 	
-[!! 	
-ResponseCache!!	 
-(!! 
-Duration!! 
-=!!  !
-$num!!" #
-,!!# $
-Location!!% -
-=!!. /!
-ResponseCacheLocation!!0 E
-.!!E F
-None!!F J
-,!!J K
-NoStore!!L S
-=!!T U
-true!!V Z
-)!!Z [
-]!![ \
-public"" 
-IActionResult"" 
-Error"" "
-(""" #
-)""# $
-{## 	
-return$$ 
-View$$ 
-($$ 
-new$$ 
-ErrorViewModel$$ *
-{$$+ ,
-	RequestId$$- 6
-=$$7 8
-Activity$$9 A
-.$$A B
-Current$$B I
-?$$I J
-.$$J K
-Id$$K M
-??$$N P
-HttpContext$$Q \
-.$$\ ]
-TraceIdentifier$$] l
-}$$m n
-)$$n o
-;$$o p
-}%% 	
-}&& 
-}'' ‹[
+{ 
+public 
+HomeController 
+( 
+ILogger %
+<% &
+HomeController& 4
+>4 5
+logger6 <
+)< =
+{ 	
+} 	
+public 
+IActionResult 
+Index "
+(" #
+)# $
+{ 	
+return 
+View 
+( 
+) 
+; 
+} 	
+public 
+IActionResult 
+Pets !
+(! "
+)" #
+{ 	
+return 
+Redirect 
+( 
+$str #
+)# $
+;$ %
+} 	
+[ 	
+ResponseCache	 
+( 
+Duration 
+=  !
+$num" #
+,# $
+Location% -
+=. /!
+ResponseCacheLocation0 E
+.E F
+NoneF J
+,J K
+NoStoreL S
+=T U
+trueV Z
+)Z [
+][ \
+public   
+IActionResult   
+Error   "
+(  " #
+)  # $
+{!! 	
+return"" 
+View"" 
+("" 
+new"" 
+ErrorViewModel"" *
+{""+ ,
+	RequestId""- 6
+=""7 8
+Activity""9 A
+.""A B
+Current""B I
+?""I J
+.""J K
+Id""K M
+??""N P
+HttpContext""Q \
+.""\ ]
+TraceIdentifier""] l
+}""m n
+)""n o
+;""o p
+}## 	
+}$$ 
+}%% ‹[
 ]D:\tspproject\Mvc\Where_is_my_Fluffymoon\Where_is_my_Fluffymoon\Controllers\PetsController.cs
 	namespace 	"
 Where_is_my_Fluffymoon
@@ -6670,8 +6646,7 @@ ForeignKey	 
 ;7 8
 }9 :
 } 
-}   ®
-
+}   –
 JD:\tspproject\Mvc\Where_is_my_Fluffymoon\Where_is_my_Fluffymoon\Program.cs
 	namespace
 
@@ -6685,72 +6660,78 @@ JD:\tspproject\Mvc\Where_is_my_Fluffymoon\Where_is_my_Fluffymoon\Program.cs
 
 class 
 Program 
-{ 
-public 
-static 
-void 
-Main 
-(  
-string  &
-[& '
-]' (
-args) -
-)- .
-{ 	
-CreateHostBuilder 
-( 
-args "
-)" #
-.# $
-Build$ )
-() *
-)* +
-.+ ,
-Run, /
-(/ 0
-)0 1
-;1 2
+{ 
+	protected 
+Program 
+( 
+) 
+{ 	
 } 	
-public 
-static 
-IHostBuilder "
-CreateHostBuilder# 4
-(4 5
-string5 ;
-[; <
-]< =
-args> B
-)B C
-=>D F
-Host 
-.  
-CreateDefaultBuilder %
-(% &
-args& *
+public 
+static 
+void 
+Main 
+(  
+string  &
+[& '
+]' (
+args) -
+)- .
+{ 	
+CreateHostBuilder 
+( 
+args "
+)" #
+.# $
+Build$ )
+() *
 )* +
-. $
-ConfigureWebHostDefaults )
-() *
+.+ ,
+Run, /
+(/ 0
+)0 1
+;1 2
+} 	
+public 
+static 
+IHostBuilder "
+CreateHostBuilder# 4
+(4 5
+string5 ;
+[; <
+]< =
+args> B
+)B C
+=>D F
+Host 
+.  
+CreateDefaultBuilder %
+(% &
+args& *
+)* +
+. $
+ConfigureWebHostDefaults )
+() *
 
-webBuilder* 4
-=>5 7
-{ 
+webBuilder* 4
+=>5 7
+{ 
 
-webBuilder 
-. 
+webBuilder 
+. 
 
-UseStartup )
-<) *
-Startup* 1
->1 2
-(2 3
-)3 4
-;4 5
-} 
-) 
-; 
-} 
-} Ü
+UseStartup )
+<) *
+Startup* 1
+>1 2
+(2 3
+)3 4
+;4 5
+} 
+) 
+; 
+} 
+} Ü
 JD:\tspproject\Mvc\Where_is_my_Fluffymoon\Where_is_my_Fluffymoon\Startup.cs
 	namespace		 	"
 Where_is_my_Fluffymoon		
