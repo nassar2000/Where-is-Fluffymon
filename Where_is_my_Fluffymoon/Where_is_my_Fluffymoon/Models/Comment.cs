@@ -1,8 +1,5 @@
 ﻿using System;
-using System.Collections.Generic;
 using System.ComponentModel.DataAnnotations.Schema;
-using System.Linq;
-using System.Threading.Tasks;
 using Where_is_my_Fluffymoon.Areas.Identity.Data;
 
 namespace Where_is_my_Fluffymoon.Models

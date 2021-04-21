@@ -504,3 +504,6 @@ D:\tspproject\Mvc\Where_is_my_Fluffymoon\UnitTest\bin\Debug\net5.0\System.Web.We
 D:\tspproject\Mvc\Where_is_my_Fluffymoon\UnitTest\bin\Debug\net5.0\System.Web.WebPages.Razor.dll
 D:\tspproject\Mvc\Where_is_my_Fluffymoon\UnitTest\bin\Debug\net5.0\System.Web.WebPages.dll
 D:\tspproject\Mvc\Where_is_my_Fluffymoon\UnitTest\bin\Debug\net5.0\Microsoft.Web.Infrastructure.dll
+D:\tspproject\Mvc\Where_is_my_Fluffymoon\UnitTest\bin\Debug\net5.0\Microsoft.EntityFrameworkCore.InMemory.dll
+D:\tspproject\Mvc\Where_is_my_Fluffymoon\UnitTest\bin\Debug\net5.0\xunit.abstractions.dll
+D:\tspproject\Mvc\Where_is_my_Fluffymoon\UnitTest\bin\Debug\net5.0\xunit.core.dll
