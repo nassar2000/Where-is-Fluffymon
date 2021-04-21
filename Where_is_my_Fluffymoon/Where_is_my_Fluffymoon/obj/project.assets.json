@@ -7619,19 +7619,19 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\nassa\\.nuget\\packages\\": {}
+    "C:\\Users\\Subaru\\.nuget\\packages\\": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "D:\\tspproject\\Mvc\\Where_is_my_Fluffymoon\\Where_is_my_Fluffymoon\\Where_is_my_Fluffymoon.csproj",
+      "projectUniqueName": "C:\\Users\\Subaru\\source\\repos\\Where_is_my_Fluffymoon\\Where_is_my_Fluffymoon\\Where_is_my_Fluffymoon.csproj",
       "projectName": "Where_is_my_Fluffymoon",
-      "projectPath": "D:\\tspproject\\Mvc\\Where_is_my_Fluffymoon\\Where_is_my_Fluffymoon\\Where_is_my_Fluffymoon.csproj",
-      "packagesPath": "C:\\Users\\nassa\\.nuget\\packages\\",
-      "outputPath": "D:\\tspproject\\Mvc\\Where_is_my_Fluffymoon\\Where_is_my_Fluffymoon\\obj\\",
+      "projectPath": "C:\\Users\\Subaru\\source\\repos\\Where_is_my_Fluffymoon\\Where_is_my_Fluffymoon\\Where_is_my_Fluffymoon.csproj",
+      "packagesPath": "C:\\Users\\Subaru\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\Subaru\\source\\repos\\Where_is_my_Fluffymoon\\Where_is_my_Fluffymoon\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
-        "C:\\Users\\nassa\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Users\\Subaru\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [
@@ -7706,7 +7706,7 @@
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.201\\RuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.202\\RuntimeIdentifierGraph.json"
       }
     }
   }

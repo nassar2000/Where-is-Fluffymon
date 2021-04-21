@@ -1,4 +1,6 @@
-﻿@{
+﻿@model IEnumerable<Where_is_my_Fluffymoon.Models.Pet>
+
+@{
     ViewData["Title"] = "Home Page";
 }
 
@@ -6,3 +8,74 @@
     <h1 class="display-4">Welcome</h1>
     <p>Learn about <a href="https://docs.microsoft.com/aspnet/core">building Web apps with ASP.NET Core</a>.</p>
 </div>
+
+<table class="table">
+    <thead>
+        <tr>
+            <th>
+                Added By
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Name)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Description)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.ImagePath)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.CoordinatesLong)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.CoordinatesLat)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Created_at)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Updated_at)
+            </th>
+            <th></th>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (var item in Model)
+        {
+            <tr>
+                <td>
+                    @Html.DisplayFor(modelItem => item.ApplicationUser.FirstName) @Html.DisplayFor(modelItem => item.ApplicationUser.LastName)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.Name)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.Description)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.ImagePath)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.CoordinatesLong)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.CoordinatesLat)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.Created_at)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.Updated_at)
+                </td>
+            <td>
+                <a asp-action="Details" asp-route-id="@item.Id">Details</a>
+                @if (Convert.ToString(item.ApplicationUser.Id) == Convert.ToString(ViewData["userId"]))
+                {
+                     <a asp-action="Edit" asp-route-id="@item.Id" >Edit</a>
+                     <a asp-action="Delete" asp-route-id="@item.Id" >Delete</a>
+                }
+            </td>
+            </tr>
+        }
+    </tbody>
+</table>

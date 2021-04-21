@@ -1,7 +1,10 @@
-﻿using Microsoft.AspNetCore.Mvc;
+﻿using Microsoft.AspNetCore.Identity;
+using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Mvc.Rendering;
 using Microsoft.EntityFrameworkCore;
+using System;
 using System.Linq;
+using System.Security.Claims;
 using System.Threading.Tasks;
 using Where_is_my_Fluffymoon.Areas.Identity.Data;
 using Where_is_my_Fluffymoon.Data;
@@ -13,15 +16,20 @@ namespace Where_is_my_Fluffymoon.Views
     {
         private readonly AppDbContext _context;
 
-        public PetsController(AppDbContext context)
+        private readonly UserManager<ApplicationUser> _userManager;
+
+        public PetsController(AppDbContext context, UserManager<ApplicationUser> userManager)
         {
             _context = context;
+
+            _userManager = userManager;
         }
 
         // GET: Pets
         public async Task<IActionResult> Index()
         {
-            var appDbContext = _context.Pet.Include(p => p.ApplicationUser);
+            var appDbContext = _context.Pet.Include(p => p.ApplicationUser).Where(x => x.ApplicationUserId == User.FindFirstValue(ClaimTypes.NameIdentifier));
+
             return View(await appDbContext.ToListAsync());
         }
 
@@ -41,13 +49,14 @@ namespace Where_is_my_Fluffymoon.Views
                 return NotFound();
             }
 
+            ViewData["userId"] = User.FindFirstValue(ClaimTypes.NameIdentifier);
+
             return View(pet);
         }
 
         // GET: Pets/Create
         public IActionResult Create()
         {
-            ViewData["ApplicationUserId"] = new SelectList(_context.Set<ApplicationUser>(), "Id", "Id");
             return View();
         }
 
@@ -56,15 +65,18 @@ namespace Where_is_my_Fluffymoon.Views
         // For more details, see http://go.microsoft.com/fwlink/?LinkId=317598.
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public async Task<IActionResult> Create([Bind("Id,Name,Description,ImagePath,CoordinatesLong,CoordinatesLat,Created_at,Updated_at,ApplicationUserId")] Pet pet)
+        public async Task<IActionResult> Create([Bind("Id,Name,Description,ImagePath,CoordinatesLong,CoordinatesLat,ApplicationUserId")] Pet pet)
         {
             if (ModelState.IsValid)
             {
+                pet.ApplicationUserId = User.FindFirstValue(ClaimTypes.NameIdentifier);
+                pet.Created_at = DateTime.Now;
+                pet.Updated_at = DateTime.Now;
                 _context.Add(pet);
                 await _context.SaveChangesAsync();
                 return RedirectToAction(nameof(Index));
             }
-            ViewData["ApplicationUserId"] = new SelectList(_context.Set<ApplicationUser>(), "Id", "Id", pet.ApplicationUserId);
+            //ViewData["ApplicationUserId"] = new SelectList(_context.Set<ApplicationUser>(), "Id", "Id", pet.ApplicationUserId);
             return View(pet);
         }
 
@@ -81,7 +93,7 @@ namespace Where_is_my_Fluffymoon.Views
             {
                 return NotFound();
             }
-            ViewData["ApplicationUserId"] = new SelectList(_context.Set<ApplicationUser>(), "Id", "Id", pet.ApplicationUserId);
+            
             return View(pet);
         }
 
@@ -90,8 +102,11 @@ namespace Where_is_my_Fluffymoon.Views
         // For more details, see http://go.microsoft.com/fwlink/?LinkId=317598.
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public async Task<IActionResult> Edit(int id, [Bind("Id,Name,Description,ImagePath,CoordinatesLong,CoordinatesLat,Created_at,Updated_at,ApplicationUserId")] Pet pet)
+        public async Task<IActionResult> Edit(int id, [Bind("Id,Name,Description,ImagePath,CoordinatesLong,CoordinatesLat,Created_at")] Pet pet)
         {
+            pet.Updated_at = DateTime.Now;
+            pet.ApplicationUserId = User.FindFirstValue(ClaimTypes.NameIdentifier);
+
             if (id != pet.Id)
             {
                 return NotFound();
@@ -117,7 +132,7 @@ namespace Where_is_my_Fluffymoon.Views
                 }
                 return RedirectToAction(nameof(Index));
             }
-            ViewData["ApplicationUserId"] = new SelectList(_context.Set<ApplicationUser>(), "Id", "Id", pet.ApplicationUserId);
+
             return View(pet);
         }
 
