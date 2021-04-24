@@ -1,17 +1,20 @@
-﻿using Microsoft.AspNetCore.Identity;
-using Microsoft.AspNetCore.Mvc;
-using Microsoft.AspNetCore.Mvc.Rendering;
-using Microsoft.EntityFrameworkCore;
-using System;
+﻿using System;
+using System.Collections.Generic;
 using System.Linq;
 using System.Security.Claims;
 using System.Threading.Tasks;
+using Microsoft.AspNetCore.Authorization;
+using Microsoft.AspNetCore.Identity;
+using Microsoft.AspNetCore.Mvc;
+using Microsoft.AspNetCore.Mvc.Rendering;
+using Microsoft.EntityFrameworkCore;
 using Where_is_my_Fluffymoon.Areas.Identity.Data;
 using Where_is_my_Fluffymoon.Data;
 using Where_is_my_Fluffymoon.Models;
 
 namespace Where_is_my_Fluffymoon.Views
 {
+    [Authorize]
     public class PetsController : Controller
     {
         private readonly AppDbContext _context;
@@ -28,13 +31,12 @@ namespace Where_is_my_Fluffymoon.Views
         // GET: Pets
         public async Task<IActionResult> Index()
         {
-            var appDbContext = _context.Pet.Include(p => p.ApplicationUser).Where(x => x.ApplicationUserId == User.FindFirstValue(ClaimTypes.NameIdentifier));
-
-            return View(await appDbContext.ToListAsync());
+            var context = _context.Pet.Include(p => p.ApplicationUser).Where(x => x.ApplicationUserId == User.FindFirstValue(ClaimTypes.NameIdentifier));
+            return View(await context.ToListAsync());
         }
 
         // GET: Pets/Details/5
-        public async Task<IActionResult> Details(int? id)
+        public async Task<IActionResult> Details(string id)
         {
             if (id == null)
             {
@@ -57,6 +59,7 @@ namespace Where_is_my_Fluffymoon.Views
         // GET: Pets/Create
         public IActionResult Create()
         {
+            ViewData["ApplicationUserId"] = new SelectList(_context.Set<ApplicationUser>(), "Id", "Id");
             return View();
         }
 
@@ -65,10 +68,11 @@ namespace Where_is_my_Fluffymoon.Views
         // For more details, see http://go.microsoft.com/fwlink/?LinkId=317598.
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public async Task<IActionResult> Create([Bind("Id,Name,Description,ImagePath,CoordinatesLong,CoordinatesLat,ApplicationUserId")] Pet pet)
+        public async Task<IActionResult> Create([Bind("Name,Description,ImagePath,CoordinatesLong,CoordinatesLat,Created_at,Updated_at,ApplicationUserId")] Pet pet)
         {
             if (ModelState.IsValid)
             {
+                pet.Id = Guid.NewGuid().ToString();
                 pet.ApplicationUserId = User.FindFirstValue(ClaimTypes.NameIdentifier);
                 pet.Created_at = DateTime.Now;
                 pet.Updated_at = DateTime.Now;
@@ -81,7 +85,7 @@ namespace Where_is_my_Fluffymoon.Views
         }
 
         // GET: Pets/Edit/5
-        public async Task<IActionResult> Edit(int? id)
+        public async Task<IActionResult> Edit(string id)
         {
             if (id == null)
             {
@@ -93,7 +97,13 @@ namespace Where_is_my_Fluffymoon.Views
             {
                 return NotFound();
             }
-            
+
+            if (pet.ApplicationUserId != User.FindFirstValue(ClaimTypes.NameIdentifier))
+            {
+                return RedirectToAction("Forbidden", "Home");
+            }
+
+            ViewData["ApplicationUserId"] = new SelectList(_context.Set<ApplicationUser>(), "Id", "Id", pet.ApplicationUserId);
             return View(pet);
         }
 
@@ -102,8 +112,13 @@ namespace Where_is_my_Fluffymoon.Views
         // For more details, see http://go.microsoft.com/fwlink/?LinkId=317598.
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public async Task<IActionResult> Edit(int id, [Bind("Id,Name,Description,ImagePath,CoordinatesLong,CoordinatesLat,Created_at")] Pet pet)
+        public async Task<IActionResult> Edit(string id, [Bind("Id,Name,Description,ImagePath,CoordinatesLong,CoordinatesLat,Created_at,ApplicationUserId")] Pet pet)
         {
+            if (pet.ApplicationUserId != User.FindFirstValue(ClaimTypes.NameIdentifier).ToString())
+            {
+                return RedirectToAction("Forbidden", "Home");
+            }
+
             pet.Updated_at = DateTime.Now;
             pet.ApplicationUserId = User.FindFirstValue(ClaimTypes.NameIdentifier);
 
@@ -132,12 +147,12 @@ namespace Where_is_my_Fluffymoon.Views
                 }
                 return RedirectToAction(nameof(Index));
             }
-
+            //ViewData["ApplicationUserId"] = new SelectList(_context.Set<ApplicationUser>(), "Id", "Id", pet.ApplicationUserId);
             return View(pet);
         }
 
         // GET: Pets/Delete/5
-        public async Task<IActionResult> Delete(int? id)
+        public async Task<IActionResult> Delete(string id)
         {
             if (id == null)
             {
@@ -152,21 +167,32 @@ namespace Where_is_my_Fluffymoon.Views
                 return NotFound();
             }
 
+            if (pet.ApplicationUserId != User.FindFirstValue(ClaimTypes.NameIdentifier))
+            {
+                return RedirectToAction("Forbidden", "Home");
+            }
+
             return View(pet);
         }
 
         // POST: Pets/Delete/5
         [HttpPost, ActionName("Delete")]
         [ValidateAntiForgeryToken]
-        public async Task<IActionResult> DeleteConfirmed(int id)
+        public async Task<IActionResult> DeleteConfirmed(string id)
         {
             var pet = await _context.Pet.FindAsync(id);
+
+            if (pet.ApplicationUserId != User.FindFirstValue(ClaimTypes.NameIdentifier))
+            {
+                return RedirectToAction("Forbidden", "Home");
+            }
+
             _context.Pet.Remove(pet);
             await _context.SaveChangesAsync();
             return RedirectToAction(nameof(Index));
         }
 
-        private bool PetExists(int id)
+        private bool PetExists(string id)
         {
             return _context.Pet.Any(e => e.Id == id);
         }

@@ -3,7 +3,7 @@ using Microsoft.EntityFrameworkCore.Migrations;
 
 namespace Where_is_my_Fluffymoon.Migrations
 {
-    public partial class InitialCreate : Migration
+    public partial class Initial_Create : Migration
     {
         protected override void Up(MigrationBuilder migrationBuilder)
         {
@@ -158,8 +158,7 @@ namespace Where_is_my_Fluffymoon.Migrations
                 name: "Pet",
                 columns: table => new
                 {
-                    Id = table.Column<int>(type: "int", nullable: false)
-                        .Annotation("SqlServer:Identity", "1, 1"),
+                    Id = table.Column<string>(type: "nvarchar(450)", nullable: false),
                     Name = table.Column<string>(type: "nvarchar(max)", nullable: true),
                     Description = table.Column<string>(type: "nvarchar(max)", nullable: true),
                     ImagePath = table.Column<string>(type: "nvarchar(max)", nullable: true),
@@ -184,8 +183,7 @@ namespace Where_is_my_Fluffymoon.Migrations
                 name: "Comment",
                 columns: table => new
                 {
-                    Id = table.Column<int>(type: "int", nullable: false)
-                        .Annotation("SqlServer:Identity", "1, 1"),
+                    Id = table.Column<string>(type: "nvarchar(450)", nullable: false),
                     Message = table.Column<string>(type: "nvarchar(max)", nullable: true),
                     ImagePath = table.Column<string>(type: "nvarchar(max)", nullable: true),
                     CoordinatesLong = table.Column<string>(type: "nvarchar(max)", nullable: true),
@@ -193,7 +191,7 @@ namespace Where_is_my_Fluffymoon.Migrations
                     Created_at = table.Column<DateTime>(type: "datetime2", nullable: true),
                     Updated_at = table.Column<DateTime>(type: "datetime2", nullable: true),
                     ApplicationUserId = table.Column<string>(type: "nvarchar(450)", nullable: true),
-                    PetId = table.Column<int>(type: "int", nullable: false)
+                    PetId = table.Column<string>(type: "nvarchar(450)", nullable: true)
                 },
                 constraints: table =>
                 {
@@ -209,7 +207,7 @@ namespace Where_is_my_Fluffymoon.Migrations
                         column: x => x.PetId,
                         principalTable: "Pet",
                         principalColumn: "Id",
-                        onDelete: ReferentialAction.Cascade);
+                        onDelete: ReferentialAction.Restrict);
                 });
 
             migrationBuilder.CreateIndex(

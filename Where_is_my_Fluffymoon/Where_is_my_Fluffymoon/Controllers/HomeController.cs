@@ -1,10 +1,14 @@
 ﻿using Microsoft.AspNetCore.Authorization;
+using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Identity;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Mvc.Rendering;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.Logging;
+using System;
+using System.Collections.Generic;
 using System.Diagnostics;
+using System.Linq;
 using System.Security.Claims;
 using System.Threading.Tasks;
 using Where_is_my_Fluffymoon.Areas.Identity.Data;
@@ -16,7 +20,6 @@ namespace Where_is_my_Fluffymoon.Controllers
     [Authorize]
     public class HomeController : Controller
     {
-
         private readonly AppDbContext _context;
 
         private readonly UserManager<ApplicationUser> _userManager;
@@ -28,10 +31,16 @@ namespace Where_is_my_Fluffymoon.Controllers
             _userManager = userManager;
         }
 
-        //public IActionResult Index()
+        //// GET: HomeController
+        //public ActionResult Index()
         //{
         //    return View();
         //}
+
+        public IActionResult Forbidden()
+        {
+            return View();
+        }
 
         public async Task<IActionResult> Index()
         {
@@ -44,7 +53,7 @@ namespace Where_is_my_Fluffymoon.Controllers
 
         public IActionResult Pets()
         {
-            return Redirect("/pets");
+            return Redirect("/Pets");
         }
 
         [ResponseCache(Duration = 0, Location = ResponseCacheLocation.None, NoStore = true)]
@@ -54,7 +63,7 @@ namespace Where_is_my_Fluffymoon.Controllers
         }
 
         // GET: Pets/Details/5
-        public async Task<IActionResult> Details(int? id)
+        public async Task<IActionResult> Details(string? id)
         {
             if (id == null)
             {
@@ -73,7 +82,7 @@ namespace Where_is_my_Fluffymoon.Controllers
         }
 
         // GET: Pets/Edit/5
-        public async Task<IActionResult> Edit(int? id)
+        public async Task<IActionResult> Edit(string? id)
         {
             if (id == null)
             {
@@ -85,12 +94,18 @@ namespace Where_is_my_Fluffymoon.Controllers
             {
                 return NotFound();
             }
+
+            if (pet.ApplicationUserId != User.FindFirstValue(ClaimTypes.NameIdentifier))
+            {
+                return RedirectToAction("Forbidden", "Home");
+            }
+
             ViewData["ApplicationUserId"] = new SelectList(_context.Set<ApplicationUser>(), "Id", "Id", pet.ApplicationUserId);
             return Redirect("/Pets/Edit/" + id);
         }
 
         // GET: Pets/Delete/5
-        public async Task<IActionResult> Delete(int? id)
+        public async Task<IActionResult> Delete(string? id)
         {
             if (id == null)
             {
@@ -103,6 +118,11 @@ namespace Where_is_my_Fluffymoon.Controllers
             if (pet == null)
             {
                 return NotFound();
+            }
+
+            if (pet.ApplicationUserId != User.FindFirstValue(ClaimTypes.NameIdentifier))
+            {
+                return RedirectToAction("Forbidden", "Home");
             }
 
             return Redirect("/Pets/Delete/" + id);

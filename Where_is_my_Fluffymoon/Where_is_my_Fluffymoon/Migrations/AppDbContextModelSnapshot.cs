@@ -16,7 +16,7 @@ namespace Where_is_my_Fluffymoon.Migrations
 #pragma warning disable 612, 618
             modelBuilder
                 .HasAnnotation("Relational:MaxIdentifierLength", 128)
-                .HasAnnotation("ProductVersion", "5.0.4")
+                .HasAnnotation("ProductVersion", "5.0.5")
                 .HasAnnotation("SqlServer:ValueGenerationStrategy", SqlServerValueGenerationStrategy.IdentityColumn);
 
             modelBuilder.Entity("Microsoft.AspNetCore.Identity.IdentityRole", b =>
@@ -227,10 +227,8 @@ namespace Where_is_my_Fluffymoon.Migrations
 
             modelBuilder.Entity("Where_is_my_Fluffymoon.Models.Comment", b =>
                 {
-                    b.Property<int>("Id")
-                        .ValueGeneratedOnAdd()
-                        .HasColumnType("int")
-                        .HasAnnotation("SqlServer:ValueGenerationStrategy", SqlServerValueGenerationStrategy.IdentityColumn);
+                    b.Property<string>("Id")
+                        .HasColumnType("nvarchar(450)");
 
                     b.Property<string>("ApplicationUserId")
                         .HasColumnType("nvarchar(450)");
@@ -250,8 +248,8 @@ namespace Where_is_my_Fluffymoon.Migrations
                     b.Property<string>("Message")
                         .HasColumnType("nvarchar(max)");
 
-                    b.Property<int>("PetId")
-                        .HasColumnType("int");
+                    b.Property<string>("PetId")
+                        .HasColumnType("nvarchar(450)");
 
                     b.Property<DateTime?>("Updated_at")
                         .HasColumnType("datetime2");
@@ -267,10 +265,8 @@ namespace Where_is_my_Fluffymoon.Migrations
 
             modelBuilder.Entity("Where_is_my_Fluffymoon.Models.Pet", b =>
                 {
-                    b.Property<int>("Id")
-                        .ValueGeneratedOnAdd()
-                        .HasColumnType("int")
-                        .HasAnnotation("SqlServer:ValueGenerationStrategy", SqlServerValueGenerationStrategy.IdentityColumn);
+                    b.Property<string>("Id")
+                        .HasColumnType("nvarchar(450)");
 
                     b.Property<string>("ApplicationUserId")
                         .HasColumnType("nvarchar(450)");
@@ -362,9 +358,7 @@ namespace Where_is_my_Fluffymoon.Migrations
 
                     b.HasOne("Where_is_my_Fluffymoon.Models.Pet", "Pet")
                         .WithMany("Comments")
-                        .HasForeignKey("PetId")
-                        .OnDelete(DeleteBehavior.Cascade)
-                        .IsRequired();
+                        .HasForeignKey("PetId");
 
                     b.Navigation("ApplicationUser");
 

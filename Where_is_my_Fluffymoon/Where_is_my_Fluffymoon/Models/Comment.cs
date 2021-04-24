@@ -6,7 +6,7 @@ namespace Where_is_my_Fluffymoon.Models
 {
     public class Comment
     {
-        public int Id { get; set; }
+        public string Id { get; set; }
         public string Message { get; set; }
         public String ImagePath { get; set; }
         public String CoordinatesLong { get; set; }
@@ -19,7 +19,7 @@ namespace Where_is_my_Fluffymoon.Models
         public ApplicationUser ApplicationUser { get; set; }
 
         [ForeignKey("Pet")]
-        public int PetId { get; set; }
+        public string PetId { get; set; }
         public Pet Pet { get; set; }
     }
 }

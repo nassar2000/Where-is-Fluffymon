@@ -1,17 +1,15 @@
-﻿using Microsoft.AspNetCore.Identity.EntityFrameworkCore;
-using Microsoft.EntityFrameworkCore;
-using System.Collections;
+﻿using System;
+using System.Collections.Generic;
+using System.Linq;
 using System.Threading.Tasks;
-using Where_is_my_Fluffymoon.Areas.Identity.Data;
+using Microsoft.EntityFrameworkCore;
 using Where_is_my_Fluffymoon.Models;
 
 namespace Where_is_my_Fluffymoon.Data
 {
-    public class AppDbContext : IdentityDbContext<ApplicationUser>
+    public class Where_is_my_FluffymoonContext : DbContext
     {
-
-
-        public AppDbContext(DbContextOptions<AppDbContext> options)
+        public Where_is_my_FluffymoonContext (DbContextOptions<Where_is_my_FluffymoonContext> options)
             : base(options)
         {
         }
@@ -19,7 +17,5 @@ namespace Where_is_my_Fluffymoon.Data
         public DbSet<Where_is_my_Fluffymoon.Models.Pet> Pet { get; set; }
 
         public DbSet<Where_is_my_Fluffymoon.Models.Comment> Comment { get; set; }
-
-
     }
 }

@@ -14,7 +14,7 @@ namespace Where_is_my_Fluffymoon.Models
             this.Comments = new HashSet<Comment>();
         }
 
-        public int Id { get; set; }
+        public string Id { get; set; }
         public String Name { get; set; }
         public String Description { get; set; }
         public String ImagePath { get; set; }

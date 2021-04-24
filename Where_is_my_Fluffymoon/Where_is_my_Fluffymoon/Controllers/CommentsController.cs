@@ -1,4 +1,6 @@
-﻿using System.Linq;
+﻿using System;
+using System.Collections.Generic;
+using System.Linq;
 using System.Threading.Tasks;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Mvc.Rendering;
@@ -7,7 +9,7 @@ using Where_is_my_Fluffymoon.Areas.Identity.Data;
 using Where_is_my_Fluffymoon.Data;
 using Where_is_my_Fluffymoon.Models;
 
-namespace Where_is_my_Fluffymoon
+namespace Where_is_my_Fluffymoon.Views
 {
     public class CommentsController : Controller
     {
@@ -21,12 +23,12 @@ namespace Where_is_my_Fluffymoon
         // GET: Comments
         public async Task<IActionResult> Index()
         {
-            var appDbContext = _context.Comment.Include(c => c.ApplicationUser).Include(c => c.Pet);
-            return View(await appDbContext.ToListAsync());
+            var context = _context.Comment.Include(c => c.ApplicationUser).Include(c => c.Pet);
+            return View(await context.ToListAsync());
         }
 
         // GET: Comments/Details/5
-        public async Task<IActionResult> Details(int? id)
+        public async Task<IActionResult> Details(string id)
         {
             if (id == null)
             {
@@ -49,7 +51,7 @@ namespace Where_is_my_Fluffymoon
         public IActionResult Create()
         {
             ViewData["ApplicationUserId"] = new SelectList(_context.Set<ApplicationUser>(), "Id", "Id");
-            ViewData["PetId"] = new SelectList(_context.Set<Pet>(), "Id", "Id");
+            ViewData["PetId"] = new SelectList(_context.Pet, "Id", "Id");
             return View();
         }
 
@@ -67,12 +69,12 @@ namespace Where_is_my_Fluffymoon
                 return RedirectToAction(nameof(Index));
             }
             ViewData["ApplicationUserId"] = new SelectList(_context.Set<ApplicationUser>(), "Id", "Id", comment.ApplicationUserId);
-            ViewData["PetId"] = new SelectList(_context.Set<Pet>(), "Id", "Id", comment.PetId);
+            ViewData["PetId"] = new SelectList(_context.Pet, "Id", "Id", comment.PetId);
             return View(comment);
         }
 
         // GET: Comments/Edit/5
-        public async Task<IActionResult> Edit(int? id)
+        public async Task<IActionResult> Edit(string id)
         {
             if (id == null)
             {
@@ -85,7 +87,7 @@ namespace Where_is_my_Fluffymoon
                 return NotFound();
             }
             ViewData["ApplicationUserId"] = new SelectList(_context.Set<ApplicationUser>(), "Id", "Id", comment.ApplicationUserId);
-            ViewData["PetId"] = new SelectList(_context.Set<Pet>(), "Id", "Id", comment.PetId);
+            ViewData["PetId"] = new SelectList(_context.Pet, "Id", "Id", comment.PetId);
             return View(comment);
         }
 
@@ -94,7 +96,7 @@ namespace Where_is_my_Fluffymoon
         // For more details, see http://go.microsoft.com/fwlink/?LinkId=317598.
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public async Task<IActionResult> Edit(int id, [Bind("Id,Message,ImagePath,CoordinatesLong,CoordinatesLat,Created_at,Updated_at,ApplicationUserId,PetId")] Comment comment)
+        public async Task<IActionResult> Edit(string id, [Bind("Id,Message,ImagePath,CoordinatesLong,CoordinatesLat,Created_at,Updated_at,ApplicationUserId,PetId")] Comment comment)
         {
             if (id != comment.Id)
             {
@@ -122,12 +124,12 @@ namespace Where_is_my_Fluffymoon
                 return RedirectToAction(nameof(Index));
             }
             ViewData["ApplicationUserId"] = new SelectList(_context.Set<ApplicationUser>(), "Id", "Id", comment.ApplicationUserId);
-            ViewData["PetId"] = new SelectList(_context.Set<Pet>(), "Id", "Id", comment.PetId);
+            ViewData["PetId"] = new SelectList(_context.Pet, "Id", "Id", comment.PetId);
             return View(comment);
         }
 
         // GET: Comments/Delete/5
-        public async Task<IActionResult> Delete(int? id)
+        public async Task<IActionResult> Delete(string id)
         {
             if (id == null)
             {
@@ -149,7 +151,7 @@ namespace Where_is_my_Fluffymoon
         // POST: Comments/Delete/5
         [HttpPost, ActionName("Delete")]
         [ValidateAntiForgeryToken]
-        public async Task<IActionResult> DeleteConfirmed(int id)
+        public async Task<IActionResult> DeleteConfirmed(string id)
         {
             var comment = await _context.Comment.FindAsync(id);
             _context.Comment.Remove(comment);
@@ -157,7 +159,7 @@ namespace Where_is_my_Fluffymoon
             return RedirectToAction(nameof(Index));
         }
 
-        private bool CommentExists(int id)
+        private bool CommentExists(string id)
         {
             return _context.Comment.Any(e => e.Id == id);
         }
