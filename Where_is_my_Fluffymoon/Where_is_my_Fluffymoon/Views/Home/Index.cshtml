@@ -5,77 +5,33 @@
 }
 
 <div class="text-center">
-    <h1 class="display-4">Welcome</h1>
-    <p>Learn about <a href="https://docs.microsoft.com/aspnet/core">building Web apps with ASP.NET Core</a>.</p>
+    <h1 class="display-4 bg-light pb-2">Missing pets</h1>
 </div>
 
-<table class="table">
-    <thead>
-        <tr>
-            <th>
-                Added By
-            </th>
-            <th>
-                @Html.DisplayNameFor(model => model.Name)
-            </th>
-            <th>
-                @Html.DisplayNameFor(model => model.Description)
-            </th>
-            <th>
-                @Html.DisplayNameFor(model => model.ImagePath)
-            </th>
-            <th>
-                @Html.DisplayNameFor(model => model.CoordinatesLong)
-            </th>
-            <th>
-                @Html.DisplayNameFor(model => model.CoordinatesLat)
-            </th>
-            <th>
-                @Html.DisplayNameFor(model => model.Created_at)
-            </th>
-            <th>
-                @Html.DisplayNameFor(model => model.Updated_at)
-            </th>
-            <th></th>
-        </tr>
-    </thead>
-    <tbody>
-        @foreach (var item in Model)
-        {
-            <tr>
-                <td>
-                    @Html.DisplayFor(modelItem => item.ApplicationUser.FirstName) @Html.DisplayFor(modelItem => item.ApplicationUser.LastName)
-                </td>
-                <td>
-                    @Html.DisplayFor(modelItem => item.Name)
-                </td>
-                <td>
-                    @Html.DisplayFor(modelItem => item.Description)
-                </td>
-                <td>
-                    @Html.DisplayFor(modelItem => item.ImagePath)
-                </td>
-                <td>
-                    @Html.DisplayFor(modelItem => item.CoordinatesLong)
-                </td>
-                <td>
-                    @Html.DisplayFor(modelItem => item.CoordinatesLat)
-                </td>
-                <td>
-                    @Html.DisplayFor(modelItem => item.Created_at)
-                </td>
-                <td>
-                    @Html.DisplayFor(modelItem => item.Updated_at)
-                </td>
-            <td>
-                <a asp-action="Details" asp-route-id="@item.Id">Details</a>
-                @if (Convert.ToString(item.ApplicationUser.Id) == Convert.ToString(ViewData["userId"]))
-                {
-                     <a asp-action="Edit" asp-route-id="@item.Id" >Edit</a>
-                     <a asp-action="Delete" asp-route-id="@item.Id" >Delete</a>
-                }
-            </td>
-            </tr>
-        }
-    </tbody>
-</table>
+<div class="row text-center">
+    @foreach (var item in Model)
+    {
+        <div class="col-lg-4 col-md-6 mb-4">
+            <div class="card h-100">
+                <img class="card-img-top" src="https://images.dog.ceo/breeds/vizsla/n02100583_3413.jpg" alt="">
+                <div class="card-body">
+                    <h4 class="card-title">@Html.DisplayFor(modelItem => item.Name)</h4>
+                    <p class="card-text">@Html.DisplayFor(modelItem => item.Description)</p>
+                    <p class="card-text"><span class="font-weight-bold">Coordinates:</span> @Html.DisplayFor(modelItem => item.CoordinatesLong) | @Html.DisplayFor(modelItem => item.CoordinatesLat)</p>
+                    <hr />
+                    <p><span class="font-weight-bold">Added by:</span> @Html.DisplayFor(modelItem => item.ApplicationUser.FirstName) @Html.DisplayFor(modelItem => item.ApplicationUser.LastName)</p>
+                    <p><span class="font-weight-bold">Created at:</span> @Html.DisplayFor(modelItem => item.Created_at) </p>
+                    <p><span class="font-weight-bold">Updated at:</span> @Html.DisplayFor(modelItem => item.Updated_at)</p>
+                </div>
+                <div class="card-footer">
+                    <a asp-action="Details" asp-route-id="@item.Id" class="btn btn-primary">Details</a>
+                    @if (Convert.ToString(item.ApplicationUser.Id) == Convert.ToString(ViewData["userId"]))
+                    {
+                        <a asp-action="Edit" asp-route-id="@item.Id" class="btn btn-info">Edit</a>
+                        <a asp-action="Delete" asp-route-id="@item.Id" class="btn btn-danger">Delete</a>
+                    }
+                </div>
+            </div>
+        </div>
+    }
+</div>
