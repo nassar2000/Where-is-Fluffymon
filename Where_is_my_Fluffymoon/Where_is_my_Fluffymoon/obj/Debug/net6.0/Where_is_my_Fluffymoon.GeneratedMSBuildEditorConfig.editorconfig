@@ -1,0 +1,139 @@
+is_global = true
+build_property.TargetFramework = net6.0
+build_property.TargetPlatformMinVersion = 
+build_property.UsingMicrosoftNETSdkWeb = true
+build_property.ProjectTypeGuids = 
+build_property._SupportedPlatformList = Linux,macOS,Windows
+build_property.RootNamespace = Where_is_my_Fluffymoon
+build_property.RootNamespace = Where_is_my_Fluffymoon
+build_property.ProjectDir = C:\Users\Subaru\source\repos\Where_is_my_Fluffymoon\Where_is_my_Fluffymoon\
+build_property.RazorLangVersion = 5.0
+build_property.GenerateRazorMetadataSourceChecksumAttributes = 
+build_property.MSBuildProjectDirectory = C:\Users\Subaru\source\repos\Where_is_my_Fluffymoon\Where_is_my_Fluffymoon
+build_property._RazorSourceGeneratorDebug = 
+build_property._RazorSourceGeneratorLog = 
+
+[c:/Users/Subaru/source/repos/Where_is_my_Fluffymoon/Where_is_my_Fluffymoon/Areas/Identity/Pages/Account/Login.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Areas\Identity\Pages\Account\Login.cshtml
+build_metadata.AdditionalFiles.GeneratedOutputFullPath = C:\Users\Subaru\source\repos\Where_is_my_Fluffymoon\Where_is_my_Fluffymoon\obj\Debug\net6.0\Razor\Areas\Identity\Pages\Account\Login.cshtml.g.cs
+build_metadata.AdditionalFiles.CssScope = 
+
+[c:/Users/Subaru/source/repos/Where_is_my_Fluffymoon/Where_is_my_Fluffymoon/Areas/Identity/Pages/Account/Register.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Areas\Identity\Pages\Account\Register.cshtml
+build_metadata.AdditionalFiles.GeneratedOutputFullPath = C:\Users\Subaru\source\repos\Where_is_my_Fluffymoon\Where_is_my_Fluffymoon\obj\Debug\net6.0\Razor\Areas\Identity\Pages\Account\Register.cshtml.g.cs
+build_metadata.AdditionalFiles.CssScope = 
+
+[c:/Users/Subaru/source/repos/Where_is_my_Fluffymoon/Where_is_my_Fluffymoon/Areas/Identity/Pages/Account/_ViewImports.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Areas\Identity\Pages\Account\_ViewImports.cshtml
+build_metadata.AdditionalFiles.GeneratedOutputFullPath = C:\Users\Subaru\source\repos\Where_is_my_Fluffymoon\Where_is_my_Fluffymoon\obj\Debug\net6.0\Razor\Areas\Identity\Pages\Account\_ViewImports.cshtml.g.cs
+build_metadata.AdditionalFiles.CssScope = 
+
+[c:/Users/Subaru/source/repos/Where_is_my_Fluffymoon/Where_is_my_Fluffymoon/Areas/Identity/Pages/_ValidationScriptsPartial.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Areas\Identity\Pages\_ValidationScriptsPartial.cshtml
+build_metadata.AdditionalFiles.GeneratedOutputFullPath = C:\Users\Subaru\source\repos\Where_is_my_Fluffymoon\Where_is_my_Fluffymoon\obj\Debug\net6.0\Razor\Areas\Identity\Pages\_ValidationScriptsPartial.cshtml.g.cs
+build_metadata.AdditionalFiles.CssScope = 
+
+[c:/Users/Subaru/source/repos/Where_is_my_Fluffymoon/Where_is_my_Fluffymoon/Areas/Identity/Pages/_ViewImports.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Areas\Identity\Pages\_ViewImports.cshtml
+build_metadata.AdditionalFiles.GeneratedOutputFullPath = C:\Users\Subaru\source\repos\Where_is_my_Fluffymoon\Where_is_my_Fluffymoon\obj\Debug\net6.0\Razor\Areas\Identity\Pages\_ViewImports.cshtml.g.cs
+build_metadata.AdditionalFiles.CssScope = 
+
+[c:/Users/Subaru/source/repos/Where_is_my_Fluffymoon/Where_is_my_Fluffymoon/Areas/Identity/Pages/_ViewStart.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Areas\Identity\Pages\_ViewStart.cshtml
+build_metadata.AdditionalFiles.GeneratedOutputFullPath = C:\Users\Subaru\source\repos\Where_is_my_Fluffymoon\Where_is_my_Fluffymoon\obj\Debug\net6.0\Razor\Areas\Identity\Pages\_ViewStart.cshtml.g.cs
+build_metadata.AdditionalFiles.CssScope = 
+
+[c:/Users/Subaru/source/repos/Where_is_my_Fluffymoon/Where_is_my_Fluffymoon/Views/Comments/Create.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Views\Comments\Create.cshtml
+build_metadata.AdditionalFiles.GeneratedOutputFullPath = C:\Users\Subaru\source\repos\Where_is_my_Fluffymoon\Where_is_my_Fluffymoon\obj\Debug\net6.0\Razor\Views\Comments\Create.cshtml.g.cs
+build_metadata.AdditionalFiles.CssScope = 
+
+[c:/Users/Subaru/source/repos/Where_is_my_Fluffymoon/Where_is_my_Fluffymoon/Views/Comments/Delete.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Views\Comments\Delete.cshtml
+build_metadata.AdditionalFiles.GeneratedOutputFullPath = C:\Users\Subaru\source\repos\Where_is_my_Fluffymoon\Where_is_my_Fluffymoon\obj\Debug\net6.0\Razor\Views\Comments\Delete.cshtml.g.cs
+build_metadata.AdditionalFiles.CssScope = 
+
+[c:/Users/Subaru/source/repos/Where_is_my_Fluffymoon/Where_is_my_Fluffymoon/Views/Comments/Details.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Views\Comments\Details.cshtml
+build_metadata.AdditionalFiles.GeneratedOutputFullPath = C:\Users\Subaru\source\repos\Where_is_my_Fluffymoon\Where_is_my_Fluffymoon\obj\Debug\net6.0\Razor\Views\Comments\Details.cshtml.g.cs
+build_metadata.AdditionalFiles.CssScope = 
+
+[c:/Users/Subaru/source/repos/Where_is_my_Fluffymoon/Where_is_my_Fluffymoon/Views/Comments/Edit.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Views\Comments\Edit.cshtml
+build_metadata.AdditionalFiles.GeneratedOutputFullPath = C:\Users\Subaru\source\repos\Where_is_my_Fluffymoon\Where_is_my_Fluffymoon\obj\Debug\net6.0\Razor\Views\Comments\Edit.cshtml.g.cs
+build_metadata.AdditionalFiles.CssScope = 
+
+[c:/Users/Subaru/source/repos/Where_is_my_Fluffymoon/Where_is_my_Fluffymoon/Views/Comments/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Views\Comments\Index.cshtml
+build_metadata.AdditionalFiles.GeneratedOutputFullPath = C:\Users\Subaru\source\repos\Where_is_my_Fluffymoon\Where_is_my_Fluffymoon\obj\Debug\net6.0\Razor\Views\Comments\Index.cshtml.g.cs
+build_metadata.AdditionalFiles.CssScope = 
+
+[c:/Users/Subaru/source/repos/Where_is_my_Fluffymoon/Where_is_my_Fluffymoon/Views/Home/Forbidden.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Views\Home\Forbidden.cshtml
+build_metadata.AdditionalFiles.GeneratedOutputFullPath = C:\Users\Subaru\source\repos\Where_is_my_Fluffymoon\Where_is_my_Fluffymoon\obj\Debug\net6.0\Razor\Views\Home\Forbidden.cshtml.g.cs
+build_metadata.AdditionalFiles.CssScope = 
+
+[c:/Users/Subaru/source/repos/Where_is_my_Fluffymoon/Where_is_my_Fluffymoon/Views/Home/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Views\Home\Index.cshtml
+build_metadata.AdditionalFiles.GeneratedOutputFullPath = C:\Users\Subaru\source\repos\Where_is_my_Fluffymoon\Where_is_my_Fluffymoon\obj\Debug\net6.0\Razor\Views\Home\Index.cshtml.g.cs
+build_metadata.AdditionalFiles.CssScope = 
+
+[c:/Users/Subaru/source/repos/Where_is_my_Fluffymoon/Where_is_my_Fluffymoon/Views/Home/Privacy.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Views\Home\Privacy.cshtml
+build_metadata.AdditionalFiles.GeneratedOutputFullPath = C:\Users\Subaru\source\repos\Where_is_my_Fluffymoon\Where_is_my_Fluffymoon\obj\Debug\net6.0\Razor\Views\Home\Privacy.cshtml.g.cs
+build_metadata.AdditionalFiles.CssScope = 
+
+[c:/Users/Subaru/source/repos/Where_is_my_Fluffymoon/Where_is_my_Fluffymoon/Views/Pets/Create.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Views\Pets\Create.cshtml
+build_metadata.AdditionalFiles.GeneratedOutputFullPath = C:\Users\Subaru\source\repos\Where_is_my_Fluffymoon\Where_is_my_Fluffymoon\obj\Debug\net6.0\Razor\Views\Pets\Create.cshtml.g.cs
+build_metadata.AdditionalFiles.CssScope = 
+
+[c:/Users/Subaru/source/repos/Where_is_my_Fluffymoon/Where_is_my_Fluffymoon/Views/Pets/Delete.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Views\Pets\Delete.cshtml
+build_metadata.AdditionalFiles.GeneratedOutputFullPath = C:\Users\Subaru\source\repos\Where_is_my_Fluffymoon\Where_is_my_Fluffymoon\obj\Debug\net6.0\Razor\Views\Pets\Delete.cshtml.g.cs
+build_metadata.AdditionalFiles.CssScope = 
+
+[c:/Users/Subaru/source/repos/Where_is_my_Fluffymoon/Where_is_my_Fluffymoon/Views/Pets/Details.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Views\Pets\Details.cshtml
+build_metadata.AdditionalFiles.GeneratedOutputFullPath = C:\Users\Subaru\source\repos\Where_is_my_Fluffymoon\Where_is_my_Fluffymoon\obj\Debug\net6.0\Razor\Views\Pets\Details.cshtml.g.cs
+build_metadata.AdditionalFiles.CssScope = 
+
+[c:/Users/Subaru/source/repos/Where_is_my_Fluffymoon/Where_is_my_Fluffymoon/Views/Pets/Edit.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Views\Pets\Edit.cshtml
+build_metadata.AdditionalFiles.GeneratedOutputFullPath = C:\Users\Subaru\source\repos\Where_is_my_Fluffymoon\Where_is_my_Fluffymoon\obj\Debug\net6.0\Razor\Views\Pets\Edit.cshtml.g.cs
+build_metadata.AdditionalFiles.CssScope = 
+
+[c:/Users/Subaru/source/repos/Where_is_my_Fluffymoon/Where_is_my_Fluffymoon/Views/Pets/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Views\Pets\Index.cshtml
+build_metadata.AdditionalFiles.GeneratedOutputFullPath = C:\Users\Subaru\source\repos\Where_is_my_Fluffymoon\Where_is_my_Fluffymoon\obj\Debug\net6.0\Razor\Views\Pets\Index.cshtml.g.cs
+build_metadata.AdditionalFiles.CssScope = 
+
+[c:/Users/Subaru/source/repos/Where_is_my_Fluffymoon/Where_is_my_Fluffymoon/Views/Shared/Error.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Views\Shared\Error.cshtml
+build_metadata.AdditionalFiles.GeneratedOutputFullPath = C:\Users\Subaru\source\repos\Where_is_my_Fluffymoon\Where_is_my_Fluffymoon\obj\Debug\net6.0\Razor\Views\Shared\Error.cshtml.g.cs
+build_metadata.AdditionalFiles.CssScope = 
+
+[c:/Users/Subaru/source/repos/Where_is_my_Fluffymoon/Where_is_my_Fluffymoon/Views/Shared/_Layout.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Views\Shared\_Layout.cshtml
+build_metadata.AdditionalFiles.GeneratedOutputFullPath = C:\Users\Subaru\source\repos\Where_is_my_Fluffymoon\Where_is_my_Fluffymoon\obj\Debug\net6.0\Razor\Views\Shared\_Layout.cshtml.g.cs
+build_metadata.AdditionalFiles.CssScope = 
+
+[c:/Users/Subaru/source/repos/Where_is_my_Fluffymoon/Where_is_my_Fluffymoon/Views/Shared/_LoginPartial.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Views\Shared\_LoginPartial.cshtml
+build_metadata.AdditionalFiles.GeneratedOutputFullPath = C:\Users\Subaru\source\repos\Where_is_my_Fluffymoon\Where_is_my_Fluffymoon\obj\Debug\net6.0\Razor\Views\Shared\_LoginPartial.cshtml.g.cs
+build_metadata.AdditionalFiles.CssScope = 
+
+[c:/Users/Subaru/source/repos/Where_is_my_Fluffymoon/Where_is_my_Fluffymoon/Views/Shared/_ValidationScriptsPartial.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Views\Shared\_ValidationScriptsPartial.cshtml
+build_metadata.AdditionalFiles.GeneratedOutputFullPath = C:\Users\Subaru\source\repos\Where_is_my_Fluffymoon\Where_is_my_Fluffymoon\obj\Debug\net6.0\Razor\Views\Shared\_ValidationScriptsPartial.cshtml.g.cs
+build_metadata.AdditionalFiles.CssScope = 
+
+[c:/Users/Subaru/source/repos/Where_is_my_Fluffymoon/Where_is_my_Fluffymoon/Views/_ViewImports.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Views\_ViewImports.cshtml
+build_metadata.AdditionalFiles.GeneratedOutputFullPath = C:\Users\Subaru\source\repos\Where_is_my_Fluffymoon\Where_is_my_Fluffymoon\obj\Debug\net6.0\Razor\Views\_ViewImports.cshtml.g.cs
+build_metadata.AdditionalFiles.CssScope = 
+
+[c:/Users/Subaru/source/repos/Where_is_my_Fluffymoon/Where_is_my_Fluffymoon/Views/_ViewStart.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Views\_ViewStart.cshtml
+build_metadata.AdditionalFiles.GeneratedOutputFullPath = C:\Users\Subaru\source\repos\Where_is_my_Fluffymoon\Where_is_my_Fluffymoon\obj\Debug\net6.0\Razor\Views\_ViewStart.cshtml.g.cs
+build_metadata.AdditionalFiles.CssScope =

@@ -1,9 +1,37 @@
 ﻿@model Where_is_my_Fluffymoon.Models.Pet
 
+@using Where_is_my_Fluffymoon.Areas.Identity.Data
+@using Microsoft.AspNetCore.Identity
+
+@inject UserManager<ApplicationUser> UserManager
+
 @{
     ViewData["Title"] = "Details";
     Layout = "~/Views/Shared/_Layout.cshtml";
 }
+
+
+@{
+    string CalculateRelativeTime(DateTime date)
+    {
+        TimeSpan ts = DateTime.Now - date;
+        if (ts.TotalMinutes < 1)//seconds ago
+            return "just now";
+        if (ts.TotalHours < 1)//min ago
+            return ts.TotalMinutes == 1 ? "1 Minute ago" : (int)ts.TotalMinutes + " Minutes ago";
+        if (ts.TotalDays < 1)//hours ago
+            return ts.TotalHours == 1 ? "1 Hour ago" : (int)ts.TotalHours + " Hours ago";
+        if (ts.TotalDays < 7)//days ago
+            return ts.TotalDays == 1 ? "1 Day ago" : (int)ts.TotalDays + " Days ago";
+        if (ts.TotalDays < 30.4368)//weeks ago
+            return (ts.TotalDays / 7) == 1 ? "1 Week ago" : (int)(ts.TotalDays / 7) + " Weeks ago";
+        if (ts.TotalDays < 365.242)//months ago
+            return (ts.TotalDays / 30.4368) == 1 ? "1 Month ago" : (int)(ts.TotalDays / 30.4368) + " Months ago";
+        //years ago
+        return (ts.TotalDays / 365.242) == 1 ? "1 Year ago" : (int)(ts.TotalDays / 365.242) + " Years ago";
+    }
+}
+
 
 <h1>Details</h1>
 
@@ -12,56 +40,35 @@
 
     <div class="row">
         <div class="col-sm-4">
-            <img class="card-img" src="https://images.dog.ceo/breeds/vizsla/n02100583_3413.jpg" alt="">
+            @*<img class="card-img" src="https://images.dog.ceo/breeds/vizsla/n02100583_3413.jpg" alt="pet-image">*@
+            <img class="card-img" src="@Url.Content(string.Format("~/PetImages/{0}.jpg", Model.Id))" alt="pet-image">
         </div>
         <div class="col-sm-8">
             <dl class="row">
                 <dt class="col-sm-3">
-                    @Html.DisplayNameFor(model => model.Name)
-                </dt>
-                <dd class="col-sm-9">
                     @Html.DisplayFor(model => model.Name)
-                </dd>
-                <dt class="col-sm-3">
-                    @Html.DisplayNameFor(model => model.Description)
                 </dt>
                 <dd class="col-sm-9">
                     @Html.DisplayFor(model => model.Description)
                 </dd>
                 <dt class="col-sm-3">
-                    @Html.DisplayNameFor(model => model.ImagePath)
-                </dt>
-                <dd class="col-sm-9">
-                    @Html.DisplayFor(model => model.ImagePath)
-                </dd>
-                <dt class="col-sm-3">
-                    @Html.DisplayNameFor(model => model.CoordinatesLong)
-                </dt>
-                <dd class="col-sm-9">
-                    @Html.DisplayFor(model => model.CoordinatesLong)
-                </dd>
-                <dt class="col-sm-3">
-                    @Html.DisplayNameFor(model => model.CoordinatesLat)
-                </dt>
-                <dd class="col-sm-9">
-                    @Html.DisplayFor(model => model.CoordinatesLat)
-                </dd>
-                <dt class="col-sm-3">
-                    @Html.DisplayNameFor(model => model.Created_at)
+                    Created at
                 </dt>
                 <dd class="col-sm-9">
                     @Html.DisplayFor(model => model.Created_at)
                 </dd>
                 <dt class="col-sm-3">
-                    @Html.DisplayNameFor(model => model.Updated_at)
+                   Updated at
                 </dt>
                 <dd class="col-sm-9">
                     @Html.DisplayFor(model => model.Updated_at)
                 </dd>
             </dl>
+            <a target="_blank"  href='@string.Format("https://www.google.com/maps/?q={0},{1}", Model.CoordinatesLat, Model.CoordinatesLong)' class="btn btn-success">I was there</a>
         </div>
     </div>
 </div>
+<br />
 <div>
     <a asp-action="Index" class="btn btn-outline-primary">Back to List</a>
     @if (Convert.ToString(Model.ApplicationUser.Id) == Convert.ToString(ViewData["userId"]))
@@ -72,82 +79,115 @@
 
 <hr />
 <div class="comment-bottom bg-white p-2 px-4">
-    <div class="commented-section mt-2 p-2 rounded card">
-        <div class="row">
-            <div class="col-sm-2">
-                <img class="img-fluid img-responsive" src="https://i.imgur.com/qdiP4DB.jpg">
-            </div>
-            <div class="col-sm-10">
-                <span>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</span>
-            </div>
-        </div>
-        <hr / />
-        <div class="row">
-            <div class="col-sm-2 text-center">
-                <h5 class="mr-2">Corey oates</h5>
-            </div>
-            <div class="col-sm-10 text-right">
-                <span class="mr-1">4 hours ago</span>
-            </div>
-        </div>
-    </div>
-    <hr />
-    <div class="commented-section mt-2 p-2 rounded card">
-        <div class="row">
-            <div class="col-sm-2">
-                <img class="img-fluid img-responsive" src="https://i.imgur.com/qdiP4DB.jpg">
-            </div>
-            <div class="col-sm-10">
-                <span>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</span>
-            </div>
-        </div>
-        <hr / />
-        <div class="row">
-            <div class="col-sm-2 text-center">
-                <h5 class="mr-2">Corey oates</h5>
-            </div>
-            <div class="col-sm-10 text-right">
-                <span class="mr-1">4 hours ago</span>
-            </div>
-        </div>
-    </div>
-    <hr />
-    <div class="commented-section mt-2 p-2 rounded card">
-        <div class="row">
-            <div class="col-sm-2">
-                <img class="img-fluid img-responsive" src="https://i.imgur.com/qdiP4DB.jpg">
-            </div>
-            <div class="col-sm-10">
-                <span>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</span>
-            </div>
-        </div>
-        <hr / />
-        <div class="row">
-            <div class="col-sm-2 text-center">
-                <h5 class="mr-2">Corey oates</h5>
-            </div>
-            <div class="col-sm-10 text-right">
-                <span class="mr-1">4 hours ago</span>
-            </div>
-        </div>
-    </div>
-    <hr />
+
     <div class="border">
         <div class="px-2">
-            <h4>Add a comment</h4>
-            <div class="d-flex flex-row add-comment-section mt-4 mb-4">
-                <input type="text" class="form-control mr-3" placeholder="long" />
-                <input type="text" class="form-control mr-3" placeholder="lat" />
-                <button class="btn btn-primary" type="button">GPS</button>
+            <form asp-action="CommentsCreate" EncType="multipart/form-data">
+                <div class="form-group" hidden>
+                    <input name="PetId" for="PetId" class="form-control" value="@Model.Id"></input>
+                </div>
+                <h4>Add a comment</h4>
+                <div class="d-flex flex-row add-comment-section mt-4 mb-4">
+                    <input name="CoordinatesLong" for="CoordinatesLong" class="form-control mr-3" placeholder="longitude" />
+                    <input name="CoordinatesLat" for="CoordinatesLat" class="form-control mr-3" placeholder="latitude" />
+                    @*<span asp-validation-for="CoordinatesLong" class="text-danger"></span>
+                    <span asp-validation-for="CoordinatesLat" class="text-danger"></span>*@
+                    <button name="gps-button" class="btn btn-primary" type="button">GPS</button>
+                </div>
+                <div class="d-flex flex-row add-comment-section mt-4 mb-4">
+                    <input runat="server" type="file" for="ImagePath" class="form-control" id="customFile" name="customFile" />
+                    @*<span asp-validation-for="ImagePath" class="text-danger"></span>*@
+                </div>
+                <div class="d-flex flex-row add-comment-section mt-4 mb-4">
+                    <input name="Message" for="Message" class="form-control mr-3" placeholder="Add comment"/>
+                    @*<span asp-validation-for="Message" class="text-danger"></span>*@
+                    <button class="btn btn-primary" type="submit">Comment</button>
+                </div>
+            </form>
+        </div>
+    </div>
+
+    @foreach (var item in ViewBag.comments)
+    {
+        <hr />
+        <div class="commented-section mt-2 p-2 rounded card">
+            <div class="row">
+                <div class="col-sm-2">
+                    <img class="img-fluid img-responsive" src="https://i.imgur.com/qdiP4DB.jpg"> @*user image*@
+                </div>
+                <div class="col-sm-10">
+                    @if(item.CoordinatesLong != null && item.CoordinatesLat != null)
+                    {
+                        <a target="_blank"  href='@string.Format("https://www.google.com/maps/?q={0},{1}", item.CoordinatesLat, item.CoordinatesLong)' class="btn btn-success">I was there</a>
+                    }
+                    <br />
+                    <span>@item.Message</span>
+                    <br />
+                    @if (item.ImagePath != null && item.ImagePath.ToString() != "null-path") 
+                    {
+                        <img class="card-img" src="@Url.Content("~/CommentImages/"+item.Id+".jpg")" alt="comment-image" />
+                    }
+                </div>
             </div>
-            <div class="d-flex flex-row add-comment-section mt-4 mb-4">
-                <input type="file" class="form-control" id="customFile" />
+            <hr / />
+            <div class="row">
+                <div class="col-sm-2 text-center">
+                    <h5 class="mr-2">Corey oates</h5> @*name of user*@
+                </div>
+                <div class="col-sm-10 text-right">
+                    <span class="mr-1">@CalculateRelativeTime(item.Created_at)</span>
+                    @if(item.ApplicationUserId.ToString() == UserManager.GetUserAsync(User).Result.Id || UserManager.GetUserAsync(User).Result.Id == Model.ApplicationUserId.ToString())
+                    {
+                        <form asp-action="CommentDeleteConfirmed">
+                            <input type="hidden" asp-for="Id" value="@item.Id" />
+                            <input type="submit" value="Delete" class="btn btn-danger w-25" />
+                        </form>
+                    }
+                </div>
             </div>
-            <div class="d-flex flex-row add-comment-section mt-4 mb-4">
-                @*<img class="img-fluid img-responsive rounded-circle mr-2" src="https://i.imgur.com/qdiP4DB.jpg" width="38">*@
-                <input type="text" class="form-control mr-3" placeholder="Add comment">
-                <button class="btn btn-primary" type="button">Comment</button>
+        </div>
+    }
+    
+
+
+    @*<hr />
+    <div class="commented-section mt-2 p-2 rounded card">
+        <div class="row">
+            <div class="col-sm-2">
+                <img class="img-fluid img-responsive" src="https://i.imgur.com/qdiP4DB.jpg">
+            </div>
+            <div class="col-sm-10">
+                <span>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</span>
+            </div>
+        </div>
+        <hr / />
+        <div class="row">
+            <div class="col-sm-2 text-center">
+                <h5 class="mr-2">Corey oates</h5>
+            </div>
+            <div class="col-sm-10 text-right">
+                <span class="mr-1">4 hours ago</span>
             </div>
         </div>
     </div>
+    <hr />
+    <div class="commented-section mt-2 p-2 rounded card">
+        <div class="row">
+            <div class="col-sm-2">
+                <img class="img-fluid img-responsive" src="https://i.imgur.com/qdiP4DB.jpg">
+            </div>
+            <div class="col-sm-10">
+                <span>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</span>
+            </div>
+        </div>
+        <hr / />
+        <div class="row">
+            <div class="col-sm-2 text-center">
+                <h5 class="mr-2">Corey oates</h5>
+            </div>
+            <div class="col-sm-10 text-right">
+                <span class="mr-1">4 hours ago</span>
+            </div>
+        </div>
+    </div>*@
 </div>

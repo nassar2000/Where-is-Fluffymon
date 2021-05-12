@@ -1,10 +1,11 @@
 ﻿using Microsoft.AspNetCore.Mvc.RazorPages;
+using System;
 
 namespace Where_is_my_Fluffymoon.Views.Pets
 {
-    public class CommentsModel : PageModel
+    public class DetailsModel : PageModel
     {
-        public CommentsModel()
+        public DetailsModel()
         {
         }
     }

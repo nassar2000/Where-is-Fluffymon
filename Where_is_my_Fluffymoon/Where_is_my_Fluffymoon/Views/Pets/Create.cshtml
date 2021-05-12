@@ -18,7 +18,7 @@
 <div class="row">
     <div class="col-md-3"></div>
     <div class="col-md-6 card pt-2">
-        <form asp-action="Create">
+        <form asp-action="Create" EncType="multipart/form-data">
             <div asp-validation-summary="ModelOnly" class="text-danger"></div>
             <div class="form-group">
                 <label asp-for="Name" class="control-label"></label>
@@ -31,8 +31,8 @@
                 <span asp-validation-for="Description" class="text-danger"></span>
             </div>
             <div class="form-group">
-                <label asp-for="ImagePath" class="control-label"></label>
-                <input asp-for="ImagePath" class="form-control" />
+                <label asp-for="ImagePath" class="control-label">Image</label>
+                <input runat="server" type="file" asp-for="ImagePath" class="form-control" id="customFile" name="customFile" />
                 <span asp-validation-for="ImagePath" class="text-danger"></span>
             </div>
             <div class="form-group">
@@ -46,7 +46,7 @@
                 <span asp-validation-for="CoordinatesLat" class="text-danger"></span>
             </div>
             <div class="form-group text-right">
-                <input type="submit" value="Create" class="btn btn-primary w-50" />
+                <input runat="server" type="submit" value="Create" class="btn btn-primary w-50" />
             </div>
         </form>
     </div>

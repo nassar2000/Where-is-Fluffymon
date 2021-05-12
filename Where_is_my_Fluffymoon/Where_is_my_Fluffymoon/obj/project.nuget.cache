@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "dgSpecHash": "ddB44k9fQ8uReZ6Gyx2cvZJu6G/WoJI2FUbZM6mduMtOC6pa8NdCAwvH1JJZ9qm4jO03+WhpSOKw/iF/zHxJaA==",
+  "dgSpecHash": "EQQwZV7yJWAdIa1BKAIVzlIc4R6JRGJbuIUTw9/7TTXaQ39Yw0AqgvoW7QfPaTDHIvrNNjA2Mwn2HwFZRjiMYQ==",
   "success": true,
   "projectFilePath": "C:\\Users\\Subaru\\source\\repos\\Where_is_my_Fluffymoon\\Where_is_my_Fluffymoon\\Where_is_my_Fluffymoon.csproj",
   "expectedPackageFiles": [
@@ -83,7 +83,6 @@
     "C:\\Users\\Subaru\\.nuget\\packages\\system.composition.runtime\\1.0.31\\system.composition.runtime.1.0.31.nupkg.sha512",
     "C:\\Users\\Subaru\\.nuget\\packages\\system.composition.typedparts\\1.0.31\\system.composition.typedparts.1.0.31.nupkg.sha512",
     "C:\\Users\\Subaru\\.nuget\\packages\\system.configuration.configurationmanager\\4.7.0\\system.configuration.configurationmanager.4.7.0.nupkg.sha512",
-    "C:\\Users\\Subaru\\.nuget\\packages\\system.device.location.portable\\1.0.0\\system.device.location.portable.1.0.0.nupkg.sha512",
     "C:\\Users\\Subaru\\.nuget\\packages\\system.diagnostics.debug\\4.3.0\\system.diagnostics.debug.4.3.0.nupkg.sha512",
     "C:\\Users\\Subaru\\.nuget\\packages\\system.diagnostics.diagnosticsource\\5.0.1\\system.diagnostics.diagnosticsource.5.0.1.nupkg.sha512",
     "C:\\Users\\Subaru\\.nuget\\packages\\system.diagnostics.tools\\4.3.0\\system.diagnostics.tools.4.3.0.nupkg.sha512",
@@ -142,16 +141,5 @@
     "C:\\Users\\Subaru\\.nuget\\packages\\system.xml.xmldocument\\4.3.0\\system.xml.xmldocument.4.3.0.nupkg.sha512",
     "C:\\Users\\Subaru\\.nuget\\packages\\system.xml.xmlserializer\\4.3.0\\system.xml.xmlserializer.4.3.0.nupkg.sha512"
   ],
-  "logs": [
-    {
-      "code": "NU1701",
-      "level": "Warning",
-      "warningLevel": 1,
-      "message": "Package 'System.Device.Location.Portable 1.0.0' was restored using '.NETFramework,Version=v4.6.1, .NETFramework,Version=v4.6.2, .NETFramework,Version=v4.7, .NETFramework,Version=v4.7.1, .NETFramework,Version=v4.7.2, .NETFramework,Version=v4.8' instead of the project target framework 'net5.0'. This package may not be fully compatible with your project.",
-      "libraryId": "System.Device.Location.Portable",
-      "targetGraphs": [
-        "net5.0"
-      ]
-    }
-  ]
+  "logs": []
 }
