@@ -13,8 +13,14 @@
     {
         <div class="col-lg-4 col-md-6 mb-4">
             <div class="card h-100">
-                @*<img class="card-img-top" src="https://images.dog.ceo/breeds/vizsla/n02100583_3413.jpg" alt="pet-image">*@
-                <img class="card-img" src="@Url.Content(string.Format("~/PetImages/{0}.jpg", item.Id))" alt="pet-image">
+                @if(item.ImagePath != null)
+                {
+                        <img class="card-img" src="@Url.Content(string.Format("~/PetImages/{0}.jpg", item.Id))" alt="pet-image">
+                }
+                else
+                {
+                    <img class="card-img" src="@Url.Content("~/HelperImages/no-pet.jpg")" alt="no-pet-image">
+                }
                 <div class="card-body">
                     <h4 class="card-title">@Html.DisplayFor(modelItem => item.Name)</h4>
                     <p class="card-text">@Html.DisplayFor(modelItem => item.Description)</p>

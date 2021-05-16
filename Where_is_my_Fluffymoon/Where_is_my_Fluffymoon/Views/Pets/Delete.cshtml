@@ -25,8 +25,14 @@
 
     <div class="row">
         <div class="col-sm-4">
-            @*<img class="card-img" src="https://images.dog.ceo/breeds/vizsla/n02100583_3413.jpg" alt="pet-image">*@
-            <img class="card-img" src="@Url.Content(string.Format("~/PetImages/{0}.jpg", Model.Id))" alt="pet-image">
+            @if(Model.ImagePath != null)
+            {
+                    <img class="card-img" src="@Url.Content(string.Format("~/PetImages/{0}.jpg", Model.Id))" alt="pet-image">
+            }
+            else
+            {
+                <img class="card-img" src="@Url.Content("~/HelperImages/no-pet.jpg")" alt="no-pet-image">
+            }
         </div>
         <div class="col-sm-8">
             <dl class="row">

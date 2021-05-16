@@ -40,8 +40,14 @@
 
     <div class="row">
         <div class="col-sm-4">
-            @*<img class="card-img" src="https://images.dog.ceo/breeds/vizsla/n02100583_3413.jpg" alt="pet-image">*@
-            <img class="card-img" src="@Url.Content(string.Format("~/PetImages/{0}.jpg", Model.Id))" alt="pet-image">
+        @if(Model.ImagePath != null)
+        {
+                <img class="card-img" src="@Url.Content(string.Format("~/PetImages/{0}.jpg", Model.Id))" alt="pet-image">
+        }
+        else
+        {
+            <img class="card-img" src="@Url.Content("~/HelperImages/no-pet.jpg")" alt="no-pet-image">
+        }
         </div>
         <div class="col-sm-8">
             <dl class="row">
@@ -70,6 +76,7 @@
 </div>
 <br />
 <div>
+    <a asp-action="Home" class="btn btn-outline-primary">Back to Home</a>
     <a asp-action="Index" class="btn btn-outline-primary">Back to List</a>
     @if (Convert.ToString(Model.ApplicationUser.Id) == Convert.ToString(ViewData["userId"]))
     {
@@ -116,7 +123,9 @@
                     <img class="img-fluid img-responsive" src="https://i.imgur.com/qdiP4DB.jpg"> @*user image*@
                 </div>
                 <div class="col-sm-10">
-                    @if(item.CoordinatesLong != null && item.CoordinatesLat != null)
+                    @if((item.CoordinatesLong != null && item.CoordinatesLat != null) @*&&
+                        (item.CoordinatesLong.GetType() == typeof(double) || item.CoordinatesLong.GetType() == typeof(int)) &&
+                        (item.CoordinatesLat.GetType() == typeof(double) || item.CoordinatesLat.GetType() == typeof(int))*@)
                     {
                         <a target="_blank"  href='@string.Format("https://www.google.com/maps/?q={0},{1}", item.CoordinatesLat, item.CoordinatesLong)' class="btn btn-success">I was there</a>
                     }
@@ -132,7 +141,8 @@
             <hr / />
             <div class="row">
                 <div class="col-sm-2 text-center">
-                    <h5 class="mr-2">Corey oates</h5> @*name of user*@
+                    @*<h5 class="mr-2">Corey oates</h5>*@ @*name of user*@
+                    <h5 class=""mr-2">@UserManager.FindByIdAsync(item.ApplicationUserId).Result.FirstName @UserManager.FindByIdAsync(item.ApplicationUserId).Result.LastName</h5>
                 </div>
                 <div class="col-sm-10 text-right">
                     <span class="mr-1">@CalculateRelativeTime(item.Created_at)</span>

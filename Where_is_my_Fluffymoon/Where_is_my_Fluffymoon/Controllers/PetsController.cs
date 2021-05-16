@@ -42,6 +42,12 @@ namespace Where_is_my_Fluffymoon.Views
             return View(await context.ToListAsync());
         }
 
+        // GET: Pets
+        public async Task<IActionResult> Home()
+        {
+            return Redirect("/");
+        }
+
         // GET: Pets/Details/5
         public async Task<IActionResult> Details(string id)
         {
@@ -85,8 +91,6 @@ namespace Where_is_my_Fluffymoon.Views
                 pet.ApplicationUserId = User.FindFirstValue(ClaimTypes.NameIdentifier);
                 pet.Created_at = DateTime.Now;
                 pet.Updated_at = DateTime.Now;
-                _context.Add(pet);
-                await _context.SaveChangesAsync();
 
                 var files = HttpContext.Request.Form.Files;
                 foreach (var customFile in files)
@@ -99,11 +103,10 @@ namespace Where_is_my_Fluffymoon.Views
                             pet.ImagePath = pet.Id.ToString();
                         }
                     }
-                    else
-                    {
-                        pet.ImagePath = "null-path";
-                    }
                 }
+
+                _context.Add(pet);
+                await _context.SaveChangesAsync();
 
                 return RedirectToAction(nameof(Index));
             }
@@ -158,9 +161,6 @@ namespace Where_is_my_Fluffymoon.Views
             {
                 try
                 {
-                    _context.Update(pet);
-                    await _context.SaveChangesAsync();
-
                     var files = HttpContext.Request.Form.Files;
                     foreach (var customFile in files)
                     {
@@ -171,9 +171,13 @@ namespace Where_is_my_Fluffymoon.Views
                             using (var fileStream = new FileStream(Path.Combine(Path.Combine(_webHostEnvironment.ContentRootPath, "wwwroot/PetImages/"), pet.Id + ".jpg"), FileMode.Create))
                             {
                                 await customFile.CopyToAsync(fileStream);
+                                pet.ImagePath = pet.Id.ToString();
                             }
                         }
                     }
+
+                    _context.Update(pet);
+                    await _context.SaveChangesAsync();
                 }
                 catch (DbUpdateConcurrencyException)
                 {
@@ -186,10 +190,12 @@ namespace Where_is_my_Fluffymoon.Views
                         throw;
                     }
                 }
-                return RedirectToAction(nameof(Index));
+                return Redirect(string.Format("~/Pets/Details/{0}", pet.Id));
+                //return RedirectToAction(nameof(Index));
             }
             //ViewData["ApplicationUserId"] = new SelectList(_context.Set<ApplicationUser>(), "Id", "Id", pet.ApplicationUserId);
-            return View(pet);
+            return Redirect(string.Format("~/Pets/Details/{0}", pet.Id));
+            //return View(pet);
         }
 
         // GET: Pets/Delete/5
@@ -256,7 +262,6 @@ namespace Where_is_my_Fluffymoon.Views
                 comment.ApplicationUserId = User.FindFirstValue(ClaimTypes.NameIdentifier);
                 comment.Created_at = DateTime.Now;
                 comment.Updated_at = DateTime.Now;
-                comment.ImagePath = "null-path";
 
                 var files = HttpContext.Request.Form.Files;
                 foreach (var customFile in files)
@@ -271,14 +276,15 @@ namespace Where_is_my_Fluffymoon.Views
                     }
                 }
 
-                if (!(comment.Message.Length > 0))
+                if (comment.Message == null)
                 {
-                    return RedirectToAction(nameof(Index));
+                    return Redirect(string.Format("~/Pets/Details/{0}", comment.PetId));
                 }
 
                 _context.Add(comment);
                 await _context.SaveChangesAsync();
-                return RedirectToAction(nameof(Index));
+
+                return Redirect(string.Format("~/Pets/Details/{0}", comment.PetId));
             }
             //ViewData["ApplicationUserId"] = new SelectList(_context.Set<ApplicationUser>(), "Id", "Id", comment.ApplicationUserId);
             //ViewData["PetId"] = new SelectList(_context.Pet, "Id", "Id", comment.PetId);
@@ -294,12 +300,12 @@ namespace Where_is_my_Fluffymoon.Views
             _context.Comment.Remove(comment);
             await _context.SaveChangesAsync();
 
-            if(comment.ImagePath.ToString() != "null-path")
+            if(comment.ImagePath != null)
             {
                 System.IO.File.Delete(Path.Combine(_webHostEnvironment.ContentRootPath, "wwwroot/CommentImages/" + id + ".jpg"));
             }
 
-            return RedirectToAction(nameof(Index));
+            return Redirect(string.Format("~/Pets/Details/{0}", comment.PetId));
         }
     }
 }

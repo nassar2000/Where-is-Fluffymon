@@ -904,3 +904,4 @@ C:\Users\Subaru\source\repos\Where_is_my_Fluffymoon\Where_is_my_Fluffymoon\obj\D
 C:\Users\Subaru\source\repos\Where_is_my_Fluffymoon\Where_is_my_Fluffymoon\obj\Debug\net5.0\ref\Where_is_my_Fluffymoon.dll
 C:\Users\Subaru\source\repos\Where_is_my_Fluffymoon\Where_is_my_Fluffymoon\obj\Debug\net5.0\Where_is_my_Fluffymoon.pdb
 C:\Users\Subaru\source\repos\Where_is_my_Fluffymoon\Where_is_my_Fluffymoon\obj\Debug\net5.0\Where_is_my_Fluffymoon.genruntimeconfig.cache
+C:\Users\Subaru\source\repos\Where_is_my_Fluffymoon\Where_is_my_Fluffymoon\obj\Debug\net5.0\Where_is_my_Fluffymoon.csproj.AssemblyReference.cache
