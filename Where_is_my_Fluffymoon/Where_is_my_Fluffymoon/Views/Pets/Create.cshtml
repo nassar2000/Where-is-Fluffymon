@@ -5,6 +5,8 @@
     Layout = "~/Views/Shared/_Layout.cshtml";
 }
 
+<script src="@Url.Content("~/scripts/maps.js")"></script>
+
 <div class="row">
     <div class="col-md-3 justify-content-center align-self-center">
         <a asp-action="Index" class="btn btn-outline-primary">Back to List</a>
@@ -37,13 +39,14 @@
             </div>
             <div class="form-group">
                 <label asp-for="CoordinatesLong" class="control-label"></label>
-                <input asp-for="CoordinatesLong" class="form-control" />
+                <input asp-for="CoordinatesLong" class="form-control" id="long" />
                 <span asp-validation-for="CoordinatesLong" class="text-danger"></span>
             </div>
             <div class="form-group">
                 <label asp-for="CoordinatesLat" class="control-label"></label>
-                <input asp-for="CoordinatesLat" class="form-control" />
+                <input asp-for="CoordinatesLat" class="form-control" id="lat" />
                 <span asp-validation-for="CoordinatesLat" class="text-danger"></span>
+                <button name="gps-button" class="btn btn-primary" type="button" onclick="setGPSCoords()">GPS</button>
             </div>
             <div class="form-group text-right">
                 <input runat="server" type="submit" value="Create" class="btn btn-primary w-50" />
@@ -52,6 +55,7 @@
     </div>
     <div class="col-md-3"></div>
 </div>
+<div id="map" style="width:500px; height:500px;"></div>
 
 @section Scripts {
     @{await Html.RenderPartialAsync("_ValidationScriptsPartial");}

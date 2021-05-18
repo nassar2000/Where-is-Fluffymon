@@ -32,6 +32,8 @@
     }
 }
 
+<script src="@Url.Content("~/scripts/maps.js")"></script>
+
 
 <h1>Details</h1>
 
@@ -95,11 +97,11 @@
                 </div>
                 <h4>Add a comment</h4>
                 <div class="d-flex flex-row add-comment-section mt-4 mb-4">
-                    <input name="CoordinatesLong" for="CoordinatesLong" class="form-control mr-3" placeholder="longitude" />
-                    <input name="CoordinatesLat" for="CoordinatesLat" class="form-control mr-3" placeholder="latitude" />
+                    <input name="CoordinatesLong" for="CoordinatesLong" class="form-control mr-3" placeholder="longitude" id="long" />
+                    <input name="CoordinatesLat" for="CoordinatesLat" class="form-control mr-3" placeholder="latitude" id="lat" />
                     @*<span asp-validation-for="CoordinatesLong" class="text-danger"></span>
                     <span asp-validation-for="CoordinatesLat" class="text-danger"></span>*@
-                    <button name="gps-button" class="btn btn-primary" type="button">GPS</button>
+                    <button name="gps-button" class="btn btn-primary" type="button" onclick="setGPSCoords()">GPS</button>
                 </div>
                 <div class="d-flex flex-row add-comment-section mt-4 mb-4">
                     <input runat="server" type="file" for="ImagePath" class="form-control" id="customFile" name="customFile" />
@@ -113,6 +115,7 @@
             </form>
         </div>
     </div>
+    <div id="map" style="width:500px; height:500px;"></div>
 
     @foreach (var item in ViewBag.comments)
     {
