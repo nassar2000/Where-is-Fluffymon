@@ -18,7 +18,6 @@
 </div>
 <hr />
 <div class="row">
-    <div class="col-md-3"></div>
     <div class="col-md-6 card pt-2">
         <form asp-action="Edit" EncType="multipart/form-data">
             <div asp-validation-summary="ModelOnly" class="text-danger"></div>
@@ -47,7 +46,6 @@
                 <label asp-for="CoordinatesLat" class="control-label"></label>
                 <input asp-for="CoordinatesLat" class="form-control" id="lat" />
                 <span asp-validation-for="CoordinatesLat" class="text-danger"></span>
-                <button name="gps-button" class="btn btn-primary" type="button" onclick="setGPSCoords()">GPS</button>
             </div>
             <div class="form-group" hidden>
                 <label asp-for="Created_at" class="control-label"></label>
@@ -55,23 +53,25 @@
                 <span asp-validation-for="Created_at" class="text-danger"></span>
             </div>
             @*<div class="form-group">
-                    <label asp-for="Updated_at" class="control-label"></label>
-                    <input asp-for="Updated_at" class="form-control" />
-                    <span asp-validation-for="Updated_at" class="text-danger"></span>
-                </div>*@
+            <label asp-for="Updated_at" class="control-label"></label>
+            <input asp-for="Updated_at" class="form-control" />
+            <span asp-validation-for="Updated_at" class="text-danger"></span>
+        </div>*@
             <div class="form-group" hidden>
                 <label asp-for="ApplicationUserId" class="control-label"></label>
                 <select asp-for="ApplicationUserId" class="form-control" asp-items="ViewBag.ApplicationUserId"></select>
                 <span asp-validation-for="ApplicationUserId" class="text-danger"></span>
             </div>
-            <div class="form-group text-right">
-                <input runat="server" type="submit" value="Save" class="btn btn-primary w-50" />
+            <div class="form-group d-flex justify-content-between">
+                <button name="gps-button" class="btn btn-info w-25" type="button" onclick="setGPSCoords()">GPS</button>
+                <input runat="server" type="submit" value="Save" class="btn btn-primary w-50 justify-content-end" />
             </div>
         </form>
     </div>
-    <div class="col-md-3"></div>
+    <div class="col-md-6">
+        <div id="map" style="width:100%; height: 100%;"></div>
+    </div>
 </div>
-<div id="map" style="width:500px; height:500px;"></div>
 
 
     @section Scripts {

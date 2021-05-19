@@ -34,6 +34,40 @@
 
 <script src="@Url.Content("~/scripts/maps.js")"></script>
 
+<style>
+    .date {
+        font-size: 11px
+    }
+
+    .comment-text {
+        font-size: 12px
+    }
+
+    .fs-12 {
+        font-size: 12px
+    }
+
+    .shadow-none {
+        box-shadow: none
+    }
+
+    .name {
+        color: #007bff
+    }
+
+    .cursor:hover {
+        color: blue
+    }
+
+    .cursor {
+        cursor: pointer
+    }
+
+    .textarea {
+        resize: none
+    }
+</style>
+
 
 <h1>Details</h1>
 
@@ -87,120 +121,125 @@
 </div>
 
 <hr />
-<div class="comment-bottom bg-white p-2 px-4">
-
-    <div class="border">
-        <div class="px-2">
-            <form asp-action="CommentsCreate" EncType="multipart/form-data">
-                <div class="form-group" hidden>
-                    <input name="PetId" for="PetId" class="form-control" value="@Model.Id"></input>
-                </div>
-                <h4>Add a comment</h4>
-                <div class="d-flex flex-row add-comment-section mt-4 mb-4">
-                    <input name="CoordinatesLong" for="CoordinatesLong" class="form-control mr-3" placeholder="longitude" id="long" />
-                    <input name="CoordinatesLat" for="CoordinatesLat" class="form-control mr-3" placeholder="latitude" id="lat" />
-                    @*<span asp-validation-for="CoordinatesLong" class="text-danger"></span>
+<h4>Add a comment</h4>
+<div class="row">
+    <div class="col-md-6 card h-100">
+        <form asp-action="CommentsCreate" EncType="multipart/form-data" class="my-auto">
+            <div class="form-group" hidden>
+                <input name="PetId" for="PetId" class="form-control" value="@Model.Id"></input>
+            </div>
+            <div class="d-flex flex-row add-comment-section mt-4 mb-4">
+                <input name="CoordinatesLong" for="CoordinatesLong" class="form-control mr-3" placeholder="longitude" id="long" />
+                <input name="CoordinatesLat" for="CoordinatesLat" class="form-control mr-3" placeholder="latitude" id="lat" />
+                @*<span asp-validation-for="CoordinatesLong" class="text-danger"></span>
                     <span asp-validation-for="CoordinatesLat" class="text-danger"></span>*@
-                    <button name="gps-button" class="btn btn-primary" type="button" onclick="setGPSCoords()">GPS</button>
-                </div>
-                <div class="d-flex flex-row add-comment-section mt-4 mb-4">
-                    <input runat="server" type="file" for="ImagePath" class="form-control" id="customFile" name="customFile" />
-                    @*<span asp-validation-for="ImagePath" class="text-danger"></span>*@
-                </div>
-                <div class="d-flex flex-row add-comment-section mt-4 mb-4">
-                    <input name="Message" for="Message" class="form-control mr-3" placeholder="Add comment"/>
-                    @*<span asp-validation-for="Message" class="text-danger"></span>*@
-                    <button class="btn btn-primary" type="submit">Comment</button>
-                </div>
-            </form>
-        </div>
+                <button name="gps-button" class="btn btn-info" type="button" onclick="setGPSCoords()">GPS</button>
+            </div>
+            <div class="d-flex flex-row add-comment-section mt-4 mb-4">
+                <input runat="server" type="file" for="ImagePath" class="form-control" id="customFile" name="customFile" />
+                @*<span asp-validation-for="ImagePath" class="text-danger"></span>*@
+            </div>
+            <div class="d-flex flex-row add-comment-section mt-4 mb-4">
+                <input name="Message" for="Message" class="form-control mr-3" placeholder="Add comment" />
+                @*<span asp-validation-for="Message" class="text-danger"></span>*@
+                <button class="btn btn-primary" type="submit">Comment</button>
+            </div>
+        </form>
     </div>
-    <div id="map" style="width:500px; height:500px;"></div>
+    <div class="col-md-6" style="min-height: 400px;">
+        <div id="map" style="width:100%; height: 100%;"></div>
+    </div>
+</div>
 
+<hr />
+
+<div class="comment-bottom bg-white p-2 px-4">
     @foreach (var item in ViewBag.comments)
     {
-        <hr />
+        <div class="container mt-5">
+            <div class="d-flex justify-content-center row">
+                <div class="col-md-8">
+                    <div class="d-flex flex-column comment-section shadow p-1">
+                        <div class="bg-white p-2">
+                            <div class="d-flex flex-row user-info">
+                                <img class="rounded-circle" src="https://i.imgur.com/qdiP4DB.jpg" width="40"> @*user image*@
+                                <div class="d-flex flex-column justify-content-start ml-2"><span class="d-block font-weight-bold name">@UserManager.FindByIdAsync(item.ApplicationUserId).Result.FirstName @UserManager.FindByIdAsync(item.ApplicationUserId).Result.LastName</span><span class="date text-black-50">Shared publicly - @CalculateRelativeTime(item.Created_at)</span></div>
+                            </div>
+                            <div class="mt-2">
+                                <p class="comment-text">@item.Message</p>
+                                @if (item.ImagePath != null && item.ImagePath.ToString() != "null-path")
+                                {
+                                    <img class="card-img" src="@Url.Content("~/CommentImages/"+item.Id+".jpg")" alt="comment-image" />
+                                }
+                            </div>
+                        </div>
+                        <div class="bg-white">
+                            <div class="d-flex flex-row fs-12">
+                                <div class="like cursor ml-1"><span>
+                                    @if ((item.CoordinatesLong != null && item.CoordinatesLat != null)@*&&
+                                        (item.CoordinatesLong.GetType() == typeof(double) || item.CoordinatesLong.GetType() == typeof(int)) &&
+                                        (item.CoordinatesLat.GetType() == typeof(double) || item.CoordinatesLat.GetType() == typeof(int))*@)
+                                    {
+                                    <a target="_blank" href='@string.Format("https://www.google.com/maps/?q={0},{1}", item.CoordinatesLat, item.CoordinatesLong)' class="btn btn-outline-success">I was there</a>
+                                    }
+                            </span></div>
+                                <div class="like cursor ml-1"><span>
+                                    @if (item.ApplicationUserId.ToString() == UserManager.GetUserAsync(User).Result.Id || UserManager.GetUserAsync(User).Result.Id == Model.ApplicationUserId.ToString())
+                                    {
+                                        <form asp-action="CommentDeleteConfirmed">
+                                            <input type="hidden" asp-for="Id" value="@item.Id" />
+                                            <input type="submit" value="Delete" class="btn btn-outline-danger" />
+                                        </form>
+                                    }
+                            </span></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    }
+
+
+
+    @*<hr />
         <div class="commented-section mt-2 p-2 rounded card">
             <div class="row">
                 <div class="col-sm-2">
-                    <img class="img-fluid img-responsive" src="https://i.imgur.com/qdiP4DB.jpg"> @*user image*@
+                    <img class="img-fluid img-responsive" src="https://i.imgur.com/qdiP4DB.jpg">
                 </div>
                 <div class="col-sm-10">
-                    @if((item.CoordinatesLong != null && item.CoordinatesLat != null) @*&&
-                        (item.CoordinatesLong.GetType() == typeof(double) || item.CoordinatesLong.GetType() == typeof(int)) &&
-                        (item.CoordinatesLat.GetType() == typeof(double) || item.CoordinatesLat.GetType() == typeof(int))*@)
-                    {
-                        <a target="_blank"  href='@string.Format("https://www.google.com/maps/?q={0},{1}", item.CoordinatesLat, item.CoordinatesLong)' class="btn btn-success">I was there</a>
-                    }
-                    <br />
-                    <span>@item.Message</span>
-                    <br />
-                    @if (item.ImagePath != null && item.ImagePath.ToString() != "null-path") 
-                    {
-                        <img class="card-img" src="@Url.Content("~/CommentImages/"+item.Id+".jpg")" alt="comment-image" />
-                    }
+                    <span>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</span>
                 </div>
             </div>
             <hr / />
             <div class="row">
                 <div class="col-sm-2 text-center">
-                    @*<h5 class="mr-2">Corey oates</h5>*@ @*name of user*@
-                    <h5 class=""mr-2">@UserManager.FindByIdAsync(item.ApplicationUserId).Result.FirstName @UserManager.FindByIdAsync(item.ApplicationUserId).Result.LastName</h5>
+                    <h5 class="mr-2">Corey oates</h5>
                 </div>
                 <div class="col-sm-10 text-right">
-                    <span class="mr-1">@CalculateRelativeTime(item.Created_at)</span>
-                    @if(item.ApplicationUserId.ToString() == UserManager.GetUserAsync(User).Result.Id || UserManager.GetUserAsync(User).Result.Id == Model.ApplicationUserId.ToString())
-                    {
-                        <form asp-action="CommentDeleteConfirmed">
-                            <input type="hidden" asp-for="Id" value="@item.Id" />
-                            <input type="submit" value="Delete" class="btn btn-danger w-25" />
-                        </form>
-                    }
+                    <span class="mr-1">4 hours ago</span>
                 </div>
             </div>
         </div>
-    }
-    
-
-
-    @*<hr />
-    <div class="commented-section mt-2 p-2 rounded card">
-        <div class="row">
-            <div class="col-sm-2">
-                <img class="img-fluid img-responsive" src="https://i.imgur.com/qdiP4DB.jpg">
+        <hr />
+        <div class="commented-section mt-2 p-2 rounded card">
+            <div class="row">
+                <div class="col-sm-2">
+                    <img class="img-fluid img-responsive" src="https://i.imgur.com/qdiP4DB.jpg">
+                </div>
+                <div class="col-sm-10">
+                    <span>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</span>
+                </div>
             </div>
-            <div class="col-sm-10">
-                <span>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</span>
+            <hr / />
+            <div class="row">
+                <div class="col-sm-2 text-center">
+                    <h5 class="mr-2">Corey oates</h5>
+                </div>
+                <div class="col-sm-10 text-right">
+                    <span class="mr-1">4 hours ago</span>
+                </div>
             </div>
-        </div>
-        <hr / />
-        <div class="row">
-            <div class="col-sm-2 text-center">
-                <h5 class="mr-2">Corey oates</h5>
-            </div>
-            <div class="col-sm-10 text-right">
-                <span class="mr-1">4 hours ago</span>
-            </div>
-        </div>
-    </div>
-    <hr />
-    <div class="commented-section mt-2 p-2 rounded card">
-        <div class="row">
-            <div class="col-sm-2">
-                <img class="img-fluid img-responsive" src="https://i.imgur.com/qdiP4DB.jpg">
-            </div>
-            <div class="col-sm-10">
-                <span>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</span>
-            </div>
-        </div>
-        <hr / />
-        <div class="row">
-            <div class="col-sm-2 text-center">
-                <h5 class="mr-2">Corey oates</h5>
-            </div>
-            <div class="col-sm-10 text-right">
-                <span class="mr-1">4 hours ago</span>
-            </div>
-        </div>
-    </div>*@
+        </div>*@
 </div>
