@@ -38,12 +38,12 @@
             </div>
             <div class="form-group">
                 <label asp-for="CoordinatesLong" class="control-label"></label>
-                <input asp-for="CoordinatesLong" class="form-control" id="long" />
+                <input asp-for="CoordinatesLong" class="form-control" id="long" type="number" step="any" />
                 <span asp-validation-for="CoordinatesLong" class="text-danger"></span>
             </div>
             <div class="form-group">
                 <label asp-for="CoordinatesLat" class="control-label"></label>
-                <input asp-for="CoordinatesLat" class="form-control" id="lat" />
+                <input asp-for="CoordinatesLat" class="form-control" id="lat" type="number" step="any" />
                 <span asp-validation-for="CoordinatesLat" class="text-danger"></span>
             </div>
             <div class="form-group d-flex justify-content-between">

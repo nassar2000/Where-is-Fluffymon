@@ -882,7 +882,6 @@ C:\Users\Subaru\source\repos\Where_is_my_Fluffymoon\Where_is_my_Fluffymoon\obj\D
 C:\Users\Subaru\source\repos\Where_is_my_Fluffymoon\Where_is_my_Fluffymoon\obj\Debug\net5.0\Razor\Views\Comments\Details.cshtml.g.cs
 C:\Users\Subaru\source\repos\Where_is_my_Fluffymoon\Where_is_my_Fluffymoon\obj\Debug\net5.0\Razor\Views\Comments\Edit.cshtml.g.cs
 C:\Users\Subaru\source\repos\Where_is_my_Fluffymoon\Where_is_my_Fluffymoon\obj\Debug\net5.0\Razor\Views\Comments\Index.cshtml.g.cs
-C:\Users\Subaru\source\repos\Where_is_my_Fluffymoon\Where_is_my_Fluffymoon\obj\Debug\net5.0\Razor\Views\Home\Forbidden.cshtml.g.cs
 C:\Users\Subaru\source\repos\Where_is_my_Fluffymoon\Where_is_my_Fluffymoon\obj\Debug\net5.0\Razor\Views\Home\Index.cshtml.g.cs
 C:\Users\Subaru\source\repos\Where_is_my_Fluffymoon\Where_is_my_Fluffymoon\obj\Debug\net5.0\Razor\Views\Home\Privacy.cshtml.g.cs
 C:\Users\Subaru\source\repos\Where_is_my_Fluffymoon\Where_is_my_Fluffymoon\obj\Debug\net5.0\Razor\Views\Pets\Create.cshtml.g.cs
@@ -904,4 +903,12 @@ C:\Users\Subaru\source\repos\Where_is_my_Fluffymoon\Where_is_my_Fluffymoon\obj\D
 C:\Users\Subaru\source\repos\Where_is_my_Fluffymoon\Where_is_my_Fluffymoon\obj\Debug\net5.0\ref\Where_is_my_Fluffymoon.dll
 C:\Users\Subaru\source\repos\Where_is_my_Fluffymoon\Where_is_my_Fluffymoon\obj\Debug\net5.0\Where_is_my_Fluffymoon.pdb
 C:\Users\Subaru\source\repos\Where_is_my_Fluffymoon\Where_is_my_Fluffymoon\obj\Debug\net5.0\Where_is_my_Fluffymoon.genruntimeconfig.cache
+C:\Users\Subaru\source\repos\Where_is_my_Fluffymoon\Where_is_my_Fluffymoon\obj\Debug\net5.0\Razor\Areas\Identity\Pages\Account\Manage\ChangePassword.cshtml.g.cs
+C:\Users\Subaru\source\repos\Where_is_my_Fluffymoon\Where_is_my_Fluffymoon\obj\Debug\net5.0\Razor\Areas\Identity\Pages\Account\Manage\Index.cshtml.g.cs
+C:\Users\Subaru\source\repos\Where_is_my_Fluffymoon\Where_is_my_Fluffymoon\obj\Debug\net5.0\Razor\Areas\Identity\Pages\Account\Manage\_Layout.cshtml.g.cs
+C:\Users\Subaru\source\repos\Where_is_my_Fluffymoon\Where_is_my_Fluffymoon\obj\Debug\net5.0\Razor\Areas\Identity\Pages\Account\Manage\_ManageNav.cshtml.g.cs
+C:\Users\Subaru\source\repos\Where_is_my_Fluffymoon\Where_is_my_Fluffymoon\obj\Debug\net5.0\Razor\Areas\Identity\Pages\Account\Manage\_ViewImports.cshtml.g.cs
+C:\Users\Subaru\source\repos\Where_is_my_Fluffymoon\Where_is_my_Fluffymoon\obj\Debug\net5.0\Razor\Views\Home\Error403.cshtml.g.cs
+C:\Users\Subaru\source\repos\Where_is_my_Fluffymoon\Where_is_my_Fluffymoon\obj\Debug\net5.0\Razor\Views\Home\Error404.cshtml.g.cs
 C:\Users\Subaru\source\repos\Where_is_my_Fluffymoon\Where_is_my_Fluffymoon\obj\Debug\net5.0\Where_is_my_Fluffymoon.csproj.AssemblyReference.cache
+C:\Users\Subaru\source\repos\Where_is_my_Fluffymoon\Where_is_my_Fluffymoon\bin\Debug\net5.0\System.Device.Portable.dll

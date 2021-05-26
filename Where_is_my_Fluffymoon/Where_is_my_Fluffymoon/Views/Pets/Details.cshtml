@@ -117,6 +117,7 @@
     @if (Convert.ToString(Model.ApplicationUser.Id) == Convert.ToString(ViewData["userId"]))
     {
         <a asp-action="Edit" asp-route-id="@Model.Id" class="btn btn-info">Edit</a>
+        <a asp-action="Delete" asp-route-id="@Model.Id" class="btn btn-danger">Delete</a>
     }
 </div>
 
@@ -129,19 +130,15 @@
                 <input name="PetId" for="PetId" class="form-control" value="@Model.Id"></input>
             </div>
             <div class="d-flex flex-row add-comment-section mt-4 mb-4">
-                <input name="CoordinatesLong" for="CoordinatesLong" class="form-control mr-3" placeholder="longitude" id="long" />
-                <input name="CoordinatesLat" for="CoordinatesLat" class="form-control mr-3" placeholder="latitude" id="lat" />
-                @*<span asp-validation-for="CoordinatesLong" class="text-danger"></span>
-                    <span asp-validation-for="CoordinatesLat" class="text-danger"></span>*@
+                <input name="CoordinatesLong" for="CoordinatesLong" class="form-control mr-3" placeholder="longitude" id="long" type="number" step="any" />
+                <input name="CoordinatesLat" for="CoordinatesLat" class="form-control mr-3" placeholder="latitude" id="lat" type="number" step="any" />
                 <button name="gps-button" class="btn btn-info" type="button" onclick="setGPSCoords()">GPS</button>
             </div>
             <div class="d-flex flex-row add-comment-section mt-4 mb-4">
                 <input runat="server" type="file" for="ImagePath" class="form-control" id="customFile" name="customFile" />
-                @*<span asp-validation-for="ImagePath" class="text-danger"></span>*@
             </div>
             <div class="d-flex flex-row add-comment-section mt-4 mb-4">
                 <input name="Message" for="Message" class="form-control mr-3" placeholder="Add comment" />
-                @*<span asp-validation-for="Message" class="text-danger"></span>*@
                 <button class="btn btn-primary" type="submit">Comment</button>
             </div>
         </form>
@@ -162,8 +159,7 @@
                     <div class="d-flex flex-column comment-section shadow p-1">
                         <div class="bg-white p-2">
                             <div class="d-flex flex-row user-info">
-                                <img class="rounded-circle" src="https://i.imgur.com/qdiP4DB.jpg" width="40"> @*user image*@
-                                <div class="d-flex flex-column justify-content-start ml-2"><span class="d-block font-weight-bold name">@UserManager.FindByIdAsync(item.ApplicationUserId).Result.FirstName @UserManager.FindByIdAsync(item.ApplicationUserId).Result.LastName</span><span class="date text-black-50">Shared publicly - @CalculateRelativeTime(item.Created_at)</span></div>
+                                <div class="d-flex flex-column justify-content-start"><span class="d-block font-weight-bold name">@UserManager.FindByIdAsync(item.ApplicationUserId).Result.FirstName @UserManager.FindByIdAsync(item.ApplicationUserId).Result.LastName</span><span class="date text-black-50">Shared publicly - @CalculateRelativeTime(item.Created_at)</span></div>
                             </div>
                             <div class="mt-2">
                                 <p class="comment-text">@item.Message</p>
@@ -199,47 +195,4 @@
             </div>
         </div>
     }
-
-
-
-    @*<hr />
-        <div class="commented-section mt-2 p-2 rounded card">
-            <div class="row">
-                <div class="col-sm-2">
-                    <img class="img-fluid img-responsive" src="https://i.imgur.com/qdiP4DB.jpg">
-                </div>
-                <div class="col-sm-10">
-                    <span>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</span>
-                </div>
-            </div>
-            <hr / />
-            <div class="row">
-                <div class="col-sm-2 text-center">
-                    <h5 class="mr-2">Corey oates</h5>
-                </div>
-                <div class="col-sm-10 text-right">
-                    <span class="mr-1">4 hours ago</span>
-                </div>
-            </div>
-        </div>
-        <hr />
-        <div class="commented-section mt-2 p-2 rounded card">
-            <div class="row">
-                <div class="col-sm-2">
-                    <img class="img-fluid img-responsive" src="https://i.imgur.com/qdiP4DB.jpg">
-                </div>
-                <div class="col-sm-10">
-                    <span>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</span>
-                </div>
-            </div>
-            <hr / />
-            <div class="row">
-                <div class="col-sm-2 text-center">
-                    <h5 class="mr-2">Corey oates</h5>
-                </div>
-                <div class="col-sm-10 text-right">
-                    <span class="mr-1">4 hours ago</span>
-                </div>
-            </div>
-        </div>*@
 </div>

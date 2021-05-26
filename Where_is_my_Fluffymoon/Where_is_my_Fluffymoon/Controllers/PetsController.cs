@@ -1,5 +1,4 @@
 ﻿using System;
-using System.Collections.Generic;
 using System.IO;
 using System.Linq;
 using System.Security.Claims;
@@ -10,7 +9,6 @@ using Microsoft.AspNetCore.Identity;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Mvc.Rendering;
 using Microsoft.EntityFrameworkCore;
-using Microsoft.VisualStudio.Web.CodeGeneration.Contracts.Messaging;
 using Where_is_my_Fluffymoon.Areas.Identity.Data;
 using Where_is_my_Fluffymoon.Data;
 using Where_is_my_Fluffymoon.Models;
@@ -53,7 +51,7 @@ namespace Where_is_my_Fluffymoon.Views
         {
             if (id == null)
             {
-                return NotFound();
+                return RedirectToAction("Error404", "Home");
             }
 
             var pet = await _context.Pet
@@ -61,7 +59,7 @@ namespace Where_is_my_Fluffymoon.Views
                 .FirstOrDefaultAsync(m => m.Id == id);
             if (pet == null)
             {
-                return NotFound();
+                return RedirectToAction("Error404", "Home");
             }
 
             ViewData["userId"] = User.FindFirstValue(ClaimTypes.NameIdentifier);
@@ -85,6 +83,15 @@ namespace Where_is_my_Fluffymoon.Views
         [ValidateAntiForgeryToken]
         public async Task<IActionResult> Create([Bind("Name,Description,ImagePath,CoordinatesLong,CoordinatesLat,Created_at,Updated_at,ApplicationUserId")] Pet pet)
         {
+            if (pet.Name == null)
+            {
+                ModelState.AddModelError("Name", "You have to put a name");
+            }
+            if (pet.Description == null)
+            {
+                ModelState.AddModelError("Description", "You have to put a description");
+            }
+
             if (ModelState.IsValid)
             {
                 pet.Id = Guid.NewGuid().ToString();
@@ -95,6 +102,15 @@ namespace Where_is_my_Fluffymoon.Views
                 var files = HttpContext.Request.Form.Files;
                 foreach (var customFile in files)
                 {
+                    var ext = Path.GetExtension(customFile.FileName).ToString();
+                    if (!(ext == ".jpeg" || ext == ".jpg" || ext == ".png" || ext == ".bmp"))
+                    {
+                        ModelState.AddModelError("ImagePath", "The file to upload should be jpg, jpeg, bmp or png!");
+                        if(!ModelState.IsValid)
+                        {
+                            return View(pet);
+                        }
+                    }
                     if (customFile != null && customFile.Length > 0)
                     {
                         using (var fileStream = new FileStream(Path.Combine(Path.Combine(_webHostEnvironment.ContentRootPath, "wwwroot/PetImages/"), pet.Id + ".jpg"), FileMode.Create))
@@ -110,7 +126,7 @@ namespace Where_is_my_Fluffymoon.Views
 
                 return RedirectToAction(nameof(Index));
             }
-            //ViewData["ApplicationUserId"] = new SelectList(_context.Set<ApplicationUser>(), "Id", "Id", pet.ApplicationUserId);
+            
             return View(pet);
         }
 
@@ -119,18 +135,18 @@ namespace Where_is_my_Fluffymoon.Views
         {
             if (id == null)
             {
-                return NotFound();
+                return RedirectToAction("Error404", "Home");
             }
 
             var pet = await _context.Pet.FindAsync(id);
             if (pet == null)
             {
-                return NotFound();
+                return RedirectToAction("Error404", "Home");
             }
 
             if (pet.ApplicationUserId != User.FindFirstValue(ClaimTypes.NameIdentifier))
             {
-                return RedirectToAction("Forbidden", "Home");
+                return RedirectToAction("Error403", "Home");
             }
 
             ViewData["ApplicationUserId"] = new SelectList(_context.Set<ApplicationUser>(), "Id", "Id", pet.ApplicationUserId);
@@ -146,7 +162,7 @@ namespace Where_is_my_Fluffymoon.Views
         {
             if (pet.ApplicationUserId != User.FindFirstValue(ClaimTypes.NameIdentifier).ToString())
             {
-                return RedirectToAction("Forbidden", "Home");
+                return RedirectToAction("Error403", "Home");
             }
 
             pet.Updated_at = DateTime.Now;
@@ -154,7 +170,7 @@ namespace Where_is_my_Fluffymoon.Views
 
             if (id != pet.Id)
             {
-                return NotFound();
+                return RedirectToAction("Error404", "Home");
             }
 
             if (ModelState.IsValid)
@@ -164,6 +180,15 @@ namespace Where_is_my_Fluffymoon.Views
                     var files = HttpContext.Request.Form.Files;
                     foreach (var customFile in files)
                     {
+                        var ext = Path.GetExtension(customFile.FileName).ToString();
+                        if (!(ext == ".jpeg" || ext == ".jpg" || ext == ".png" || ext == ".bmp"))
+                        {
+                            ModelState.AddModelError("ImagePath", "The file to upload should be jpg, jpeg, bmp or png!");
+                            if (!ModelState.IsValid)
+                            {
+                                return View(pet);
+                            }
+                        }
                         if (customFile != null && customFile.Length > 0)
                         {
                             System.IO.File.Delete(Path.Combine(_webHostEnvironment.ContentRootPath, "wwwroot/PetImages/" + id + ".jpg"));
@@ -176,6 +201,11 @@ namespace Where_is_my_Fluffymoon.Views
                         }
                     }
 
+                    if (System.IO.File.Exists(Path.Combine(_webHostEnvironment.WebRootPath, Path.Combine("PetImages", pet.Id.ToString() + ".jpg"))))
+                    {
+                        pet.ImagePath = pet.Id.ToString();
+                    }
+
                     _context.Update(pet);
                     await _context.SaveChangesAsync();
                 }
@@ -183,7 +213,7 @@ namespace Where_is_my_Fluffymoon.Views
                 {
                     if (!PetExists(pet.Id))
                     {
-                        return NotFound();
+                        return RedirectToAction("Error404", "Home");
                     }
                     else
                     {
@@ -191,11 +221,9 @@ namespace Where_is_my_Fluffymoon.Views
                     }
                 }
                 return Redirect(string.Format("~/Pets/Details/{0}", pet.Id));
-                //return RedirectToAction(nameof(Index));
             }
-            //ViewData["ApplicationUserId"] = new SelectList(_context.Set<ApplicationUser>(), "Id", "Id", pet.ApplicationUserId);
+            
             return Redirect(string.Format("~/Pets/Details/{0}", pet.Id));
-            //return View(pet);
         }
 
         // GET: Pets/Delete/5
@@ -203,7 +231,7 @@ namespace Where_is_my_Fluffymoon.Views
         {
             if (id == null)
             {
-                return NotFound();
+                return RedirectToAction("Error404", "Home");
             }
 
             var pet = await _context.Pet
@@ -211,12 +239,12 @@ namespace Where_is_my_Fluffymoon.Views
                 .FirstOrDefaultAsync(m => m.Id == id);
             if (pet == null)
             {
-                return NotFound();
+                return RedirectToAction("Error404", "Home");
             }
 
             if (pet.ApplicationUserId != User.FindFirstValue(ClaimTypes.NameIdentifier))
             {
-                return RedirectToAction("Forbidden", "Home");
+                return RedirectToAction("Error403", "Home");
             }
 
             return View(pet);
@@ -231,7 +259,18 @@ namespace Where_is_my_Fluffymoon.Views
 
             if (pet.ApplicationUserId != User.FindFirstValue(ClaimTypes.NameIdentifier))
             {
-                return RedirectToAction("Forbidden", "Home");
+                return RedirectToAction("Error403", "Home");
+            }
+
+            var comms = _context.Comment.Where(x => x.PetId == pet.Id);
+
+            foreach (var comm in comms)
+            {
+                if (comm.ImagePath != null)
+                {
+                    System.IO.File.Delete(Path.Combine(_webHostEnvironment.ContentRootPath, "wwwroot/CommentImages/" + comm.Id + ".jpg"));
+                }
+                _context.Remove(comm);
             }
 
             _context.Pet.Remove(pet);
@@ -263,22 +302,28 @@ namespace Where_is_my_Fluffymoon.Views
                 comment.Created_at = DateTime.Now;
                 comment.Updated_at = DateTime.Now;
 
+                if (comment.Message == null)
+                {
+                    ModelState.AddModelError("Message", "Write a message please!");
+
+                    return Redirect(string.Format("~/Pets/Details/{0}", comment.PetId));
+                }
+
                 var files = HttpContext.Request.Form.Files;
                 foreach (var customFile in files)
                 {
-                    if (customFile != null && customFile.Length > 0)
+                    var ext = Path.GetExtension(customFile.FileName).ToString();
+                    if (ext == ".jpeg" || ext == ".jpg" || ext == ".png" || ext == ".bmp")
                     {
-                        using (var fileStream = new FileStream(Path.Combine(Path.Combine(_webHostEnvironment.ContentRootPath, "wwwroot/CommentImages/"), comment.Id + ".jpg"), FileMode.Create))
+                        if (customFile != null && customFile.Length > 0)
                         {
-                            await customFile.CopyToAsync(fileStream);
-                            comment.ImagePath = comment.Id.ToString();
+                            using (var fileStream = new FileStream(Path.Combine(Path.Combine(_webHostEnvironment.ContentRootPath, "wwwroot/CommentImages/"), comment.Id + ".jpg"), FileMode.Create))
+                            {
+                                await customFile.CopyToAsync(fileStream);
+                                comment.ImagePath = comment.Id.ToString();
+                            }
                         }
                     }
-                }
-
-                if (comment.Message == null)
-                {
-                    return Redirect(string.Format("~/Pets/Details/{0}", comment.PetId));
                 }
 
                 _context.Add(comment);
@@ -286,9 +331,8 @@ namespace Where_is_my_Fluffymoon.Views
 
                 return Redirect(string.Format("~/Pets/Details/{0}", comment.PetId));
             }
-            //ViewData["ApplicationUserId"] = new SelectList(_context.Set<ApplicationUser>(), "Id", "Id", comment.ApplicationUserId);
-            //ViewData["PetId"] = new SelectList(_context.Pet, "Id", "Id", comment.PetId);
-            return View(comment);
+
+            return Redirect(string.Format("~/Pets/Details/{0}", comment.PetId));
         }
 
         // POST: Comments/Delete/5

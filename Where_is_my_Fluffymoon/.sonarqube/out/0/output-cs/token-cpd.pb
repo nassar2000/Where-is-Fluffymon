@@ -1,73 +1,89 @@
-à
+ì
 
-cD:\tspproject\Mvc\Where_is_my_Fluffymoon\Where_is_my_Fluffymoon\Areas\Identity\Data\AppDbContext.cs
-	namespace 	"
-Where_is_my_Fluffymoon
+nC:\Users\Subaru\source\repos\Where_is_my_Fluffymoon\Where_is_my_Fluffymoon\Areas\Identity\Data\AppDbContext.cs
+	namespace 	"
+Where_is_my_Fluffymoon
   
-.  !
-Data! %
-{ 
-public 
+.  !
+Data! %
+{		 
+public
+
+ 
 
-class 
-AppDbContext 
-: 
-IdentityDbContext  1
-<1 2
-ApplicationUser2 A
->A B
-{ 
-public 
-AppDbContext 
-( 
-DbContextOptions ,
-<, -
-AppDbContext- 9
->9 :
-options; B
-)B C
-: 
-base 
-( 
-options 
-) 
-{ 	
-} 	
-public 
-DbSet 
-< "
-Where_is_my_Fluffymoon +
-.+ ,
-Models, 2
-.2 3
-Pet3 6
->6 7
-Pet8 ;
-{< =
-get> A
-;A B
-setC F
-;F G
-}H I
-public 
-DbSet 
-< "
-Where_is_my_Fluffymoon +
-.+ ,
-Models, 2
-.2 3
-Comment3 :
->: ;
-Comment< C
-{D E
-getF I
-;I J
-setK N
-;N O
-}P Q
-} 
-} Ç
-fD:\tspproject\Mvc\Where_is_my_Fluffymoon\Where_is_my_Fluffymoon\Areas\Identity\Data\ApplicationUser.cs
+class
+
+ 
+AppDbContext
+
+ 
+:
+
+ 
+IdentityDbContext
+
+  1
+<
+
+1 2
+ApplicationUser
+
+2 A
+>
+
+A B
+{ 
+public 
+AppDbContext 
+( 
+DbContextOptions ,
+<, -
+AppDbContext- 9
+>9 :
+options; B
+)B C
+: 
+base 
+( 
+options 
+) 
+{ 	
+} 	
+public 
+DbSet 
+< "
+Where_is_my_Fluffymoon +
+.+ ,
+Models, 2
+.2 3
+Pet3 6
+>6 7
+Pet8 ;
+{< =
+get> A
+;A B
+setC F
+;F G
+}H I
+public 
+DbSet 
+< "
+Where_is_my_Fluffymoon +
+.+ ,
+Models, 2
+.2 3
+Comment3 :
+>: ;
+Comment< C
+{D E
+getF I
+;I J
+setK N
+;N O
+}P Q
+} 
+} ç
+qC:\Users\Subaru\source\repos\Where_is_my_Fluffymoon\Where_is_my_Fluffymoon\Areas\Identity\Data\ApplicationUser.cs
 	namespace		 	"
 Where_is_my_Fluffymoon		
   
@@ -182,8 +198,8 @@ fD:\tspproject\Mvc\Where_is_my_Fluffymoon\Where_is_my_Fluffymoon\Areas\Identity\
 ;7 8
 }9 :
 } 
-}   ¥
-hD:\tspproject\Mvc\Where_is_my_Fluffymoon\Where_is_my_Fluffymoon\Areas\Identity\IdentityHostingStartup.cs
+}   ø
+sC:\Users\Subaru\source\repos\Where_is_my_Fluffymoon\Where_is_my_Fluffymoon\Areas\Identity\IdentityHostingStartup.cs
 [ 
 assembly 	
 :	 
@@ -290,456 +306,1683 @@ hD:\tspproject\Mvc\Where_is_my_Fluffymoon\Where_is_my_Fluffymoon\Areas\Identity\
 ; 
 } 	
 } 
-} ›=
-lD:\tspproject\Mvc\Where_is_my_Fluffymoon\Where_is_my_Fluffymoon\Areas\Identity\Pages\Account\Login.cshtml.cs
-	namespace 	"
-Where_is_my_Fluffymoon
+} Ë=
+wC:\Users\Subaru\source\repos\Where_is_my_Fluffymoon\Where_is_my_Fluffymoon\Areas\Identity\Pages\Account\Login.cshtml.cs
+	namespace 	"
+Where_is_my_Fluffymoon
   
-.  !
-Areas! &
-.& '
-Identity' /
-./ 0
-Pages0 5
-.5 6
-Account6 =
-{ 
-[ 
-AllowAnonymous 
-] 
-public 
+.  !
+Areas! &
+.& '
+Identity' /
+./ 0
+Pages0 5
+.5 6
+Account6 =
+{ 
+[ 
+AllowAnonymous 
+] 
+public 
 
-class 
+class 
 
-LoginModel 
-: 
-	PageModel '
-{ 
-private 
-readonly 
-SignInManager &
-<& '
-ApplicationUser' 6
->6 7
-_signInManager8 F
-;F G
-private 
-readonly 
-ILogger  
-<  !
+LoginModel 
+: 
+	PageModel '
+{ 
+private 
+readonly 
+SignInManager &
+<& '
+ApplicationUser' 6
+>6 7
+_signInManager8 F
+;F G
+private 
+readonly 
+ILogger  
+<  !
 
-LoginModel! +
->+ ,
-_logger- 4
-;4 5
-public 
+LoginModel! +
+>+ ,
+_logger- 4
+;4 5
+public 
 
-LoginModel 
-( 
-SignInManager '
-<' (
-ApplicationUser( 7
->7 8
-signInManager9 F
-,F G
-ILogger 
-< 
+LoginModel 
+( 
+SignInManager '
+<' (
+ApplicationUser( 7
+>7 8
+signInManager9 F
+,F G
+ILogger 
+< 
 
-LoginModel 
-> 
-logger  &
-,& '
-UserManager 
-< 
-ApplicationUser '
->' (
-userManager) 4
-)4 5
-{ 	
-_signInManager 
-= 
-signInManager *
-;* +
-_logger 
-= 
-logger 
-; 
-} 	
-[   	
-BindProperty  	 
-]   
-public!! 
+LoginModel 
+> 
+logger  &
+,& '
+UserManager 
+< 
+ApplicationUser '
+>' (
+userManager) 4
+)4 5
+{ 	
+_signInManager 
+= 
+signInManager *
+;* +
+_logger 
+= 
+logger 
+; 
+} 	
+[ 	
+BindProperty	 
+] 
+public 
 
-InputModel!! 
-Input!! 
-{!!  !
-get!!" %
-;!!% &
-set!!' *
-;!!* +
-}!!, -
-public## 
-IList## 
-<##  
-AuthenticationScheme## )
->##) *
-ExternalLogins##+ 9
-{##: ;
-get##< ?
-;##? @
-set##A D
-;##D E
-}##F G
+InputModel 
+Input 
+{  !
+get" %
+;% &
+set' *
+;* +
+}, -
+public   
+IList   
+<    
+AuthenticationScheme   )
+>  ) *
+ExternalLogins  + 9
+{  : ;
+get  < ?
+;  ? @
+set  A D
+;  D E
+}  F G
+public"" 
+string"" 
+	ReturnUrl"" 
+{""  !
+get""" %
+;""% &
+set""' *
+;""* +
+}"", -
+[$$ 	
+TempData$$	 
+]$$ 
 public%% 
-string%% 
-	ReturnUrl%% 
-{%%  !
-get%%" %
-;%%% &
-set%%' *
-;%%* +
-}%%, -
-['' 	
-TempData''	 
-]'' 
-public(( 
-string(( 
-ErrorMessage(( "
-{((# $
-get((% (
-;((( )
-set((* -
-;((- .
-}((/ 0
-public** 
-class** 
+string%% 
+ErrorMessage%% "
+{%%# $
+get%%% (
+;%%( )
+set%%* -
+;%%- .
+}%%/ 0
+public'' 
+class'' 
 
-InputModel** 
-{++ 	
-[,, 
-Required,, 
-],, 
-[-- 
-EmailAddress-- 
-]-- 
-public.. 
-string.. 
-Email.. 
-{..  !
-get.." %
-;..% &
-set..' *
-;..* +
-}.., -
-[00 
-Required00 
-]00 
-[11 
-DataType11 
-(11 
-DataType11 
-.11 
-Password11 '
-)11' (
-]11( )
-public22 
-string22 
-Password22 "
+InputModel'' 
+{(( 	
+[)) 
+Required)) 
+])) 
+[** 
+EmailAddress** 
+]** 
+public++ 
+string++ 
+Email++ 
+{++  !
+get++" %
+;++% &
+set++' *
+;++* +
+}++, -
+[-- 
+Required-- 
+]-- 
+[.. 
+DataType.. 
+(.. 
+DataType.. 
+... 
+Password.. '
+)..' (
+]..( )
+public// 
+string// 
+Password// "
+{//# $
+get//% (
+;//( )
+set//* -
+;//- .
+}/// 0
+[11 
+Display11 
+(11 
+Name11 
+=11 
+$str11 *
+)11* +
+]11+ ,
+public22 
+bool22 
+
+RememberMe22 "
 {22# $
 get22% (
 ;22( )
 set22* -
 ;22- .
 }22/ 0
-[44 
-Display44 
-(44 
-Name44 
-=44 
-$str44 *
-)44* +
-]44+ ,
-public55 
-bool55 
+}33 	
+public55 
+async55 
+Task55 
 
-RememberMe55 "
-{55# $
-get55% (
-;55( )
-set55* -
-;55- .
-}55/ 0
-}66 	
-public88 
-async88 
-Task88 
+OnGetAsync55 $
+(55$ %
+string55% +
+	returnUrl55, 5
+=556 7
+null558 <
+)55< =
+{66 	
+if77 
+(77 
+User77 
+.77 
+Identity77 
+.77 
+IsAuthenticated77 -
+)77- .
+{88 
+Response99 
+.99 
+Redirect99 !
+(99! "
+$str99" %
+)99% &
+;99& '
+}:: 
+if<< 
+(<< 
+!<< 
+string<< 
+.<< 
+IsNullOrEmpty<< %
+(<<% &
+ErrorMessage<<& 2
+)<<2 3
+)<<3 4
+{== 
 
-OnGetAsync88 $
-(88$ %
-string88% +
-	returnUrl88, 5
-=886 7
-null888 <
-)88< =
-{99 	
-if:: 
-(:: 
-User:: 
-.:: 
-Identity:: 
-.:: 
-IsAuthenticated:: -
-)::- .
-{;; 
-Response<< 
-.<< 
-Redirect<< !
-(<<! "
-$str<<" %
-)<<% &
-;<<& '
-}== 
+ModelState>> 
+.>> 
+AddModelError>> (
+(>>( )
+string>>) /
+.>>/ 0
+Empty>>0 5
+,>>5 6
+ErrorMessage>>7 C
+)>>C D
+;>>D E
+}?? 
+	returnUrlAA 
+??=AA 
+UrlAA 
+.AA 
+ContentAA %
+(AA% &
+$strAA& *
+)AA* +
+;AA+ ,
+awaitDD 
+HttpContextDD 
+.DD 
+SignOutAsyncDD *
+(DD* +
+IdentityConstantsDD+ <
+.DD< =
+ExternalSchemeDD= K
+)DDK L
+;DDL M
+ExternalLoginsFF 
+=FF 
+(FF 
+awaitFF #
+_signInManagerFF$ 2
+.FF2 31
+%GetExternalAuthenticationSchemesAsyncFF3 X
+(FFX Y
+)FFY Z
+)FFZ [
+.FF[ \
+ToListFF\ b
+(FFb c
+)FFc d
+;FFd e
+	ReturnUrlHH 
+=HH 
+	returnUrlHH !
+;HH! "
+}II 	
+publicKK 
+asyncKK 
+TaskKK 
+<KK 
+IActionResultKK '
+>KK' (
+OnPostAsyncKK) 4
+(KK4 5
+stringKK5 ;
+	returnUrlKK< E
+=KKF G
+nullKKH L
+)KKL M
+{LL 	
+	returnUrlMM 
+??=MM 
+UrlMM 
+.MM 
+ContentMM %
+(MM% &
+$strMM& *
+)MM* +
+;MM+ ,
+ExternalLoginsOO 
+=OO 
+(OO 
+awaitOO #
+_signInManagerOO$ 2
+.OO2 31
+%GetExternalAuthenticationSchemesAsyncOO3 X
+(OOX Y
+)OOY Z
+)OOZ [
+.OO[ \
+ToListOO\ b
+(OOb c
+)OOc d
+;OOd e
+ifQQ 
+(QQ 
+
+ModelStateQQ 
+.QQ 
+IsValidQQ "
+)QQ" #
+{RR 
+varUU 
+resultUU 
+=UU 
+awaitUU "
+_signInManagerUU# 1
+.UU1 2
+PasswordSignInAsyncUU2 E
+(UUE F
+InputUUF K
+.UUK L
+EmailUUL Q
+,UUQ R
+InputUUS X
+.UUX Y
+PasswordUUY a
+,UUa b
+InputUUc h
+.UUh i
+
+RememberMeUUi s
+,UUs t
+lockoutOnFailure	UUu Ö
+:
+UUÖ Ü
+false
+UUá å
+)
+UUå ç
+;
+UUç é
+ifVV 
+(VV 
+resultVV 
+.VV 
+	SucceededVV $
+)VV$ %
+{WW 
+_loggerXX 
+.XX 
+LogInformationXX *
+(XX* +
+$strXX+ <
+)XX< =
+;XX= >
+returnYY 
+LocalRedirectYY (
+(YY( )
+	returnUrlYY) 2
+)YY2 3
+;YY3 4
+}ZZ 
+if[[ 
+([[ 
+result[[ 
+.[[ 
+RequiresTwoFactor[[ ,
+)[[, -
+{\\ 
+return]] 
+RedirectToPage]] )
+(]]) *
+$str]]* :
+,]]: ;
+new]]< ?
+{]]@ A
+	ReturnUrl]]B K
+=]]L M
+	returnUrl]]N W
+,]]W X
+
+RememberMe]]Y c
+=]]d e
+Input]]f k
+.]]k l
+
+RememberMe]]l v
+}]]w x
+)]]x y
+;]]y z
+}^^ 
+if__ 
+(__ 
+result__ 
+.__ 
+IsLockedOut__ &
+)__& '
+{`` 
+_loggeraa 
+.aa 
+
+LogWarningaa &
+(aa& '
+$straa' A
+)aaA B
+;aaB C
+returnbb 
+RedirectToPagebb )
+(bb) *
+$strbb* 5
+)bb5 6
+;bb6 7
+}cc 
+elsedd 
+{ee 
+
+ModelStateff 
+.ff 
+AddModelErrorff ,
+(ff, -
+stringff- 3
+.ff3 4
+Emptyff4 9
+,ff9 :
+$strff; S
+)ffS T
+;ffT U
+returngg 
+Pagegg 
+(gg  
+)gg  !
+;gg! "
+}hh 
+}ii 
+returnll 
+Pagell 
+(ll 
+)ll 
+;ll 
+}mm 	
+}nn 
+}oo Ú>
+áC:\Users\Subaru\source\repos\Where_is_my_Fluffymoon\Where_is_my_Fluffymoon\Areas\Identity\Pages\Account\Manage\ChangePassword.cshtml.cs
+	namespace 	"
+Where_is_my_Fluffymoon
+  
+.  !
+Areas! &
+.& '
+Identity' /
+./ 0
+Pages0 5
+.5 6
+Account6 =
+.= >
+Manage> D
+{ 
+public 
+
+class 
+ChangePasswordModel $
+:% &
+	PageModel' 0
+{ 
+private 
+readonly 
+UserManager $
+<$ %
+ApplicationUser% 4
+>4 5
+_userManager6 B
+;B C
+private 
+readonly 
+SignInManager &
+<& '
+ApplicationUser' 6
+>6 7
+_signInManager8 F
+;F G
+private 
+readonly 
+ILogger  
+<  !
+ChangePasswordModel! 4
+>4 5
+_logger6 =
+;= >
+public 
+ChangePasswordModel "
+(" #
+UserManager 
+< 
+ApplicationUser '
+>' (
+userManager) 4
+,4 5
+SignInManager 
+< 
+ApplicationUser )
+>) *
+signInManager+ 8
+,8 9
+ILogger 
+< 
+ChangePasswordModel '
+>' (
+logger) /
+)/ 0
+{ 	
+_userManager 
+= 
+userManager &
+;& '
+_signInManager 
+= 
+signInManager *
+;* +
+_logger 
+= 
+logger 
+; 
+} 	
+[ 	
+BindProperty	 
+] 
+public 
+
+InputModel 
+Input 
+{  !
+get" %
+;% &
+set' *
+;* +
+}, -
+[   	
+TempData  	 
+]   
+public!! 
+string!! 
+StatusMessage!! #
+{!!$ %
+get!!& )
+;!!) *
+set!!+ .
+;!!. /
+}!!0 1
+public## 
+class## 
+
+InputModel## 
+{$$ 	
+[%% 
+Required%% 
+]%% 
+[&& 
+DataType&& 
+(&& 
+DataType&& 
+.&& 
+Password&& '
+)&&' (
+]&&( )
+['' 
+Display'' 
+('' 
+Name'' 
+='' 
+$str'' .
+)''. /
+]''/ 0
+public(( 
+string(( 
+OldPassword(( %
+{((& '
+get((( +
+;((+ ,
+set((- 0
+;((0 1
+}((2 3
+[** 
+Required** 
+]** 
+[++ 
+StringLength++ 
+(++ 
+$num++ 
+,++ 
+ErrorMessage++ +
+=++, -
+$str++. l
+,++l m
+MinimumLength++n {
+=++| }
+$num++~ 
+)	++ Ä
+]
+++Ä Å
+[,, 
+DataType,, 
+(,, 
+DataType,, 
+.,, 
+Password,, '
+),,' (
+],,( )
+[-- 
+Display-- 
+(-- 
+Name-- 
+=-- 
+$str-- *
+)--* +
+]--+ ,
+public.. 
+string.. 
+NewPassword.. %
+{..& '
+get..( +
+;..+ ,
+set..- 0
+;..0 1
+}..2 3
+[00 
+DataType00 
+(00 
+DataType00 
+.00 
+Password00 '
+)00' (
+]00( )
+[11 
+Display11 
+(11 
+Name11 
+=11 
+$str11 2
+)112 3
+]113 4
+[22 
+Compare22 
+(22 
+$str22 "
+,22" #
+ErrorMessage22$ 0
+=221 2
+$str223 m
+)22m n
+]22n o
+public33 
+string33 
+ConfirmPassword33 )
+{33* +
+get33, /
+;33/ 0
+set331 4
+;334 5
+}336 7
+}44 	
+public66 
+async66 
+Task66 
+<66 
+IActionResult66 '
+>66' (
+
+OnGetAsync66) 3
+(663 4
+)664 5
+{77 	
+var88 
+user88 
+=88 
+await88 
+_userManager88 )
+.88) *
+GetUserAsync88* 6
+(886 7
+User887 ;
+)88; <
+;88< =
+if99 
+(99 
+user99 
+==99 
+null99 
+)99 
+{:: 
+return;; 
+NotFound;; 
+(;;  
+$";;  ")
+Unable to load user with ID ';;" ?
+{;;? @
+_userManager;;@ L
+.;;L M
+	GetUserId;;M V
+(;;V W
+User;;W [
+);;[ \
+};;\ ]
+'.;;] _
+";;_ `
+);;` a
+;;;a b
+}<< 
+var>> 
+hasPassword>> 
+=>> 
+await>> #
+_userManager>>$ 0
+.>>0 1
+HasPasswordAsync>>1 A
+(>>A B
+user>>B F
+)>>F G
+;>>G H
 if?? 
 (?? 
-!?? 
-string?? 
-.?? 
-IsNullOrEmpty?? %
-(??% &
-ErrorMessage??& 2
-)??2 3
-)??3 4
-{@@ 
+!?? 
+hasPassword?? 
+)?? 
+{@@ 
+returnAA 
+RedirectToPageAA %
+(AA% &
+$strAA& 5
+)AA5 6
+;AA6 7
+}BB 
+returnDD 
+PageDD 
+(DD 
+)DD 
+;DD 
+}EE 	
+publicGG 
+asyncGG 
+TaskGG 
+<GG 
+IActionResultGG '
+>GG' (
+OnPostAsyncGG) 4
+(GG4 5
+)GG5 6
+{HH 	
+ifII 
+(II 
+!II 
 
-ModelStateAA 
-.AA 
-AddModelErrorAA (
-(AA( )
-stringAA) /
-.AA/ 0
-EmptyAA0 5
-,AA5 6
-ErrorMessageAA7 C
-)AAC D
-;AAD E
-}BB 
-	returnUrlDD 
-??=DD 
-UrlDD 
-.DD 
-ContentDD %
-(DD% &
-$strDD& *
-)DD* +
-;DD+ ,
-awaitGG 
-HttpContextGG 
-.GG 
-SignOutAsyncGG *
-(GG* +
-IdentityConstantsGG+ <
-.GG< =
-ExternalSchemeGG= K
-)GGK L
-;GGL M
-ExternalLoginsII 
-=II 
-(II 
-awaitII #
-_signInManagerII$ 2
-.II2 31
-%GetExternalAuthenticationSchemesAsyncII3 X
-(IIX Y
-)IIY Z
-)IIZ [
-.II[ \
-ToListII\ b
-(IIb c
-)IIc d
-;IId e
-	ReturnUrlKK 
-=KK 
-	returnUrlKK !
-;KK! "
-}LL 	
-publicNN 
-asyncNN 
-TaskNN 
-<NN 
-IActionResultNN '
->NN' (
-OnPostAsyncNN) 4
-(NN4 5
-stringNN5 ;
-	returnUrlNN< E
-=NNF G
-nullNNH L
-)NNL M
-{OO 	
-	returnUrlPP 
-??=PP 
-UrlPP 
-.PP 
-ContentPP %
-(PP% &
-$strPP& *
-)PP* +
-;PP+ ,
-ExternalLoginsRR 
-=RR 
-(RR 
-awaitRR #
-_signInManagerRR$ 2
-.RR2 31
-%GetExternalAuthenticationSchemesAsyncRR3 X
-(RRX Y
-)RRY Z
-)RRZ [
-.RR[ \
-ToListRR\ b
-(RRb c
-)RRc d
-;RRd e
-ifTT 
-(TT 
+ModelStateII 
+.II 
+IsValidII #
+)II# $
+{JJ 
+returnKK 
+PageKK 
+(KK 
+)KK 
+;KK 
+}LL 
+varNN 
+userNN 
+=NN 
+awaitNN 
+_userManagerNN )
+.NN) *
+GetUserAsyncNN* 6
+(NN6 7
+UserNN7 ;
+)NN; <
+;NN< =
+ifOO 
+(OO 
+userOO 
+==OO 
+nullOO 
+)OO 
+{PP 
+returnQQ 
+NotFoundQQ 
+(QQ  
+$"QQ  ")
+Unable to load user with ID 'QQ" ?
+{QQ? @
+_userManagerQQ@ L
+.QQL M
+	GetUserIdQQM V
+(QQV W
+UserQQW [
+)QQ[ \
+}QQ\ ]
+'.QQ] _
+"QQ_ `
+)QQ` a
+;QQa b
+}RR 
+varTT  
+changePasswordResultTT $
+=TT% &
+awaitTT' ,
+_userManagerTT- 9
+.TT9 :
+ChangePasswordAsyncTT: M
+(TTM N
+userTTN R
+,TTR S
+InputTTT Y
+.TTY Z
+OldPasswordTTZ e
+,TTe f
+InputTTg l
+.TTl m
+NewPasswordTTm x
+)TTx y
+;TTy z
+ifUU 
+(UU 
+!UU  
+changePasswordResultUU %
+.UU% &
+	SucceededUU& /
+)UU/ 0
+{VV 
+foreachWW 
+(WW 
+varWW 
+errorWW "
+inWW# % 
+changePasswordResultWW& :
+.WW: ;
+ErrorsWW; A
+)WWA B
+{XX 
 
-ModelStateTT 
-.TT 
-IsValidTT "
-)TT" #
-{UU 
-varXX 
-resultXX 
-=XX 
-awaitXX "
-_signInManagerXX# 1
-.XX1 2
-PasswordSignInAsyncXX2 E
-(XXE F
-InputXXF K
-.XXK L
-EmailXXL Q
-,XXQ R
-InputXXS X
-.XXX Y
-PasswordXXY a
-,XXa b
-InputXXc h
-.XXh i
+ModelStateYY 
+.YY 
+AddModelErrorYY ,
+(YY, -
+stringYY- 3
+.YY3 4
+EmptyYY4 9
+,YY9 :
+errorYY; @
+.YY@ A
+DescriptionYYA L
+)YYL M
+;YYM N
+}ZZ 
+return[[ 
+Page[[ 
+([[ 
+)[[ 
+;[[ 
+}\\ 
+await^^ 
+_signInManager^^  
+.^^  !
+RefreshSignInAsync^^! 3
+(^^3 4
+user^^4 8
+)^^8 9
+;^^9 :
+_logger__ 
+.__ 
+LogInformation__ "
+(__" #
+$str__# N
+)__N O
+;__O P
+StatusMessage`` 
+=`` 
+$str`` =
+;``= >
+returnbb 
+RedirectToPagebb !
+(bb! "
+)bb" #
+;bb# $
+}cc 	
+}dd 
+}ee §H
+~C:\Users\Subaru\source\repos\Where_is_my_Fluffymoon\Where_is_my_Fluffymoon\Areas\Identity\Pages\Account\Manage\Index.cshtml.cs
+	namespace 	"
+Where_is_my_Fluffymoon
+  
+.  !
+Areas! &
+.& '
+Identity' /
+./ 0
+Pages0 5
+.5 6
+Account6 =
+.= >
+Manage> D
+{ 
+public 
+
+partial 
+class 
 
-RememberMeXXi s
-,XXs t
-lockoutOnFailure	XXu Ö
-:
-XXÖ Ü
-false
-XXá å
-)
-XXå ç
-;
-XXç é
-ifYY 
-(YY 
-resultYY 
-.YY 
-	SucceededYY $
-)YY$ %
-{ZZ 
-_logger[[ 
-.[[ 
-LogInformation[[ *
-([[* +
-$str[[+ <
-)[[< =
-;[[= >
-return\\ 
-LocalRedirect\\ (
-(\\( )
-	returnUrl\\) 2
-)\\2 3
-;\\3 4
-}]] 
-if^^ 
-(^^ 
-result^^ 
-.^^ 
-RequiresTwoFactor^^ ,
-)^^, -
-{__ 
+IndexModel #
+:$ %
+	PageModel& /
+{ 
+private 
+readonly 
+UserManager $
+<$ %
+ApplicationUser% 4
+>4 5
+_userManager6 B
+;B C
+private 
+readonly 
+SignInManager &
+<& '
+ApplicationUser' 6
+>6 7
+_signInManager8 F
+;F G
+public 
+
+IndexModel 
+( 
+UserManager 
+< 
+ApplicationUser '
+>' (
+userManager) 4
+,4 5
+SignInManager 
+< 
+ApplicationUser )
+>) *
+signInManager+ 8
+)8 9
+{ 	
+_userManager 
+= 
+userManager &
+;& '
+_signInManager 
+= 
+signInManager *
+;* +
+} 	
+public 
+string 
+Username 
+{  
+get! $
+;$ %
+set& )
+;) *
+}+ ,
+[ 	
+TempData	 
+] 
+public 
+string 
+StatusMessage #
+{$ %
+get& )
+;) *
+set+ .
+;. /
+}0 1
+[ 	
+BindProperty	 
+] 
+public   
+
+InputModel   
+Input   
+{    !
+get  " %
+;  % &
+set  ' *
+;  * +
+}  , -
+public"" 
+class"" 
+
+InputModel"" 
+{## 	
+[$$ 
+DataType$$ 
+($$ 
+DataType$$ 
+.$$ 
+Text$$ #
+)$$# $
+]$$$ %
+[%% 
+Display%% 
+(%% 
+Name%% 
+=%% 
+$str%% (
+)%%( )
+]%%) *
+public&& 
+string&& 
+	FirstName&& #
+{&&$ %
+get&&& )
+;&&) *
+set&&+ .
+;&&. /
+}&&0 1
+[(( 
+DataType(( 
+((( 
+DataType(( 
+.(( 
+Text(( #
+)((# $
+](($ %
+[)) 
+Display)) 
+()) 
+Name)) 
+=)) 
+$str)) '
+)))' (
+]))( )
+public** 
+string** 
+LastName** "
+{**# $
+get**% (
+;**( )
+set*** -
+;**- .
+}**/ 0
+}++ 	
+private-- 
+async-- 
+Task-- 
+	LoadAsync-- $
+(--$ %
+ApplicationUser--% 4
+user--5 9
+)--9 :
+{.. 	
+var// 
+userName// 
+=// 
+await//  
+_userManager//! -
+.//- .
+GetUserNameAsync//. >
+(//> ?
+user//? C
+)//C D
+;//D E
+var00 
+phoneNumber00 
+=00 
+await00 #
+_userManager00$ 0
+.000 1
+GetPhoneNumberAsync001 D
+(00D E
+user00E I
+)00I J
+;00J K
+var11 
+	firstName11 
+=11 
+_userManager11 (
+.11( )
+FindByIdAsync11) 6
+(116 7
+user117 ;
+.11; <
+Id11< >
+)11> ?
+.11? @
+Result11@ F
+.11F G
+	FirstName11G P
+;11P Q
+var22 
+lastName22 
+=22 
+_userManager22 '
+.22' (
+FindByIdAsync22( 5
+(225 6
+user226 :
+.22: ;
+Id22; =
+)22= >
+.22> ?
+Result22? E
+.22E F
+LastName22F N
+;22N O
+Username44 
+=44 
+userName44 
+;44  
+Input66 
+=66 
+new66 
+
+InputModel66 "
+{77 
+	FirstName88 
+=88 
+	firstName88 %
+,88% &
+LastName99 
+=99 
+lastName99 #
+}:: 
+;:: 
+};; 	
+public== 
+async== 
+Task== 
+<== 
+IActionResult== '
+>==' (
+
+OnGetAsync==) 3
+(==3 4
+)==4 5
+{>> 	
+var?? 
+user?? 
+=?? 
+await?? 
+_userManager?? )
+.??) *
+GetUserAsync??* 6
+(??6 7
+User??7 ;
+)??; <
+;??< =
+if@@ 
+(@@ 
+user@@ 
+==@@ 
+null@@ 
+)@@ 
+{AA 
+returnBB 
+NotFoundBB 
+(BB  
+$"BB  ")
+Unable to load user with ID 'BB" ?
+{BB? @
+_userManagerBB@ L
+.BBL M
+	GetUserIdBBM V
+(BBV W
+UserBBW [
+)BB[ \
+}BB\ ]
+'.BB] _
+"BB_ `
+)BB` a
+;BBa b
+}CC 
+awaitEE 
+	LoadAsyncEE 
+(EE 
+userEE  
+)EE  !
+;EE! "
+returnFF 
+PageFF 
+(FF 
+)FF 
+;FF 
+}GG 	
+publicII 
+asyncII 
+TaskII 
+<II 
+IActionResultII '
+>II' (
+OnPostAsyncII) 4
+(II4 5
+)II5 6
+{JJ 	
+varKK 
+userKK 
+=KK 
+awaitKK 
+_userManagerKK )
+.KK) *
+GetUserAsyncKK* 6
+(KK6 7
+UserKK7 ;
+)KK; <
+;KK< =
+ifLL 
+(LL 
+userLL 
+==LL 
+nullLL 
+)LL 
+{MM 
+returnNN 
+NotFoundNN 
+(NN  
+$"NN  ")
+Unable to load user with ID 'NN" ?
+{NN? @
+_userManagerNN@ L
+.NNL M
+	GetUserIdNNM V
+(NNV W
+UserNNW [
+)NN[ \
+}NN\ ]
+'.NN] _
+"NN_ `
+)NN` a
+;NNa b
+}OO 
+ifQQ 
+(QQ 
+!QQ 
+
+ModelStateQQ 
+.QQ 
+IsValidQQ #
+)QQ# $
+{RR 
+awaitSS 
+	LoadAsyncSS 
+(SS  
+userSS  $
+)SS$ %
+;SS% &
+returnTT 
+PageTT 
+(TT 
+)TT 
+;TT 
+}UU 
+varWW 
+	firstNameWW 
+=WW 
+_userManagerWW (
+.WW( )
+FindByIdAsyncWW) 6
+(WW6 7
+userWW7 ;
+.WW; <
+IdWW< >
+)WW> ?
+.WW? @
+ResultWW@ F
+.WWF G
+	FirstNameWWG P
+;WWP Q
+ifXX 
+(XX 
+InputXX 
+.XX 
+	FirstNameXX 
+!=XX  "
+	firstNameXX# ,
+)XX, -
+{YY 
+userZZ 
+.ZZ 
+	FirstNameZZ 
+=ZZ  
+InputZZ! &
+.ZZ& '
+	FirstNameZZ' 0
+;ZZ0 1
+var\\ 
+setFirstNameResult\\ &
+=\\' (
+await\\) .
+_userManager\\/ ;
+.\\; <
+UpdateAsync\\< G
+(\\G H
+user\\H L
+)\\L M
+;\\M N
+if]] 
+(]] 
+!]] 
+setFirstNameResult]] '
+.]]' (
+	Succeeded]]( 1
+)]]1 2
+{^^ 
+StatusMessage__ !
+=__" #
+$str__$ U
+;__U V
 return`` 
 RedirectToPage`` )
-(``) *
-$str``* :
-,``: ;
-new``< ?
-{``@ A
-	ReturnUrl``B K
-=``L M
-	returnUrl``N W
-,``W X
+(``) *
+)``* +
+;``+ ,
+}aa 
+}bb 
+vardd 
+lastNamedd 
+=dd 
+_userManagerdd '
+.dd' (
+FindByIdAsyncdd( 5
+(dd5 6
+userdd6 :
+.dd: ;
+Iddd; =
+)dd= >
+.dd> ?
+Resultdd? E
+.ddE F
+LastNameddF N
+;ddN O
+ifee 
+(ee 
+Inputee 
+.ee 
+LastNameee 
+!=ee !
+lastNameee" *
+)ee* +
+{ff 
+usergg 
+.gg 
+LastNamegg 
+=gg 
+Inputgg  %
+.gg% &
+LastNamegg& .
+;gg. /
+varii 
+setLastNameResultii %
+=ii& '
+awaitii( -
+_userManagerii. :
+.ii: ;
+UpdateAsyncii; F
+(iiF G
+useriiG K
+)iiK L
+;iiL M
+ifjj 
+(jj 
+!jj 
+setLastNameResultjj &
+.jj& '
+	Succeededjj' 0
+)jj0 1
+{kk 
+StatusMessagell !
+=ll" #
+$strll$ T
+;llT U
+returnmm 
+RedirectToPagemm )
+(mm) *
+)mm* +
+;mm+ ,
+}nn 
+}oo 
+awaitqq 
+_signInManagerqq  
+.qq  !
+RefreshSignInAsyncqq! 3
+(qq3 4
+userqq4 8
+)qq8 9
+;qq9 :
+StatusMessagerr 
+=rr 
+$strrr ;
+;rr; <
+returnss 
+RedirectToPagess !
+(ss! "
+)ss" #
+;ss# $
+}tt 	
+}uu 
+}vv )
+ÄC:\Users\Subaru\source\repos\Where_is_my_Fluffymoon\Where_is_my_Fluffymoon\Areas\Identity\Pages\Account\Manage\ManageNavPages.cs
+	namespace 	"
+Where_is_my_Fluffymoon
+  
+.  !
+Areas! &
+.& '
+Identity' /
+./ 0
+Pages0 5
+.5 6
+Account6 =
+.= >
+Manage> D
+{ 
+public		 
+
+static		 
+class		 
+ManageNavPages		 &
+{
+
+ 
+public 
+static 
+string 
+Index "
+=># %
+$str& -
+;- .
+public 
+static 
+string 
+Email "
+=># %
+$str& -
+;- .
+public 
+static 
+string 
+ChangePassword +
+=>, .
+$str/ ?
+;? @
+public 
+static 
+string  
+DownloadPersonalData 1
+=>2 4
+$str5 K
+;K L
+public 
+static 
+string 
+DeletePersonalData /
+=>0 2
+$str3 G
+;G H
+public 
+static 
+string 
+ExternalLogins +
+=>, .
+$str/ ?
+;? @
+public 
+static 
+string 
+PersonalData )
+=>* ,
+$str- ;
+;; <
+public 
+static 
+string #
+TwoFactorAuthentication 4
+=>5 7
+$str8 Q
+;Q R
+public 
+static 
+string 
+IndexNavClass *
+(* +
+ViewContext+ 6
+viewContext7 B
+)B C
+=>D F
+PageNavClassG S
+(S T
+viewContextT _
+,_ `
+Indexa f
+)f g
+;g h
+public 
+static 
+string 
+EmailNavClass *
+(* +
+ViewContext+ 6
+viewContext7 B
+)B C
+=>D F
+PageNavClassG S
+(S T
+viewContextT _
+,_ `
+Emaila f
+)f g
+;g h
+public 
+static 
+string "
+ChangePasswordNavClass 3
+(3 4
+ViewContext4 ?
+viewContext@ K
+)K L
+=>M O
+PageNavClassP \
+(\ ]
+viewContext] h
+,h i
+ChangePasswordj x
+)x y
+;y z
+public!! 
+static!! 
+string!! (
+DownloadPersonalDataNavClass!! 9
+(!!9 :
+ViewContext!!: E
+viewContext!!F Q
+)!!Q R
+=>!!S U
+PageNavClass!!V b
+(!!b c
+viewContext!!c n
+,!!n o!
+DownloadPersonalData	!!p Ñ
+)
+!!Ñ Ö
+;
+!!Ö Ü
+public## 
+static## 
+string## &
+DeletePersonalDataNavClass## 7
+(##7 8
+ViewContext##8 C
+viewContext##D O
+)##O P
+=>##Q S
+PageNavClass##T `
+(##` a
+viewContext##a l
+,##l m
+DeletePersonalData	##n Ä
+)
+##Ä Å
+;
+##Å Ç
+public%% 
+static%% 
+string%% "
+ExternalLoginsNavClass%% 3
+(%%3 4
+ViewContext%%4 ?
+viewContext%%@ K
+)%%K L
+=>%%M O
+PageNavClass%%P \
+(%%\ ]
+viewContext%%] h
+,%%h i
+ExternalLogins%%j x
+)%%x y
+;%%y z
+public'' 
+static'' 
+string''  
+PersonalDataNavClass'' 1
+(''1 2
+ViewContext''2 =
+viewContext''> I
+)''I J
+=>''K M
+PageNavClass''N Z
+(''Z [
+viewContext''[ f
+,''f g
+PersonalData''h t
+)''t u
+;''u v
+public)) 
+static)) 
+string)) +
+TwoFactorAuthenticationNavClass)) <
+())< =
+ViewContext))= H
+viewContext))I T
+)))T U
+=>))V X
+PageNavClass))Y e
+())e f
+viewContext))f q
+,))q r$
+TwoFactorAuthentication	))s ä
+)
+))ä ã
+;
+))ã å
+private++ 
+static++ 
+string++ 
+PageNavClass++ *
+(++* +
+ViewContext+++ 6
+viewContext++7 B
+,++B C
+string++D J
+page++K O
+)++O P
+{,, 	
+var-- 
 
-RememberMe``Y c
-=``d e
-Input``f k
-.``k l
+activePage-- 
+=-- 
+viewContext-- (
+.--( )
+ViewData--) 1
+[--1 2
+$str--2 >
+]--> ?
+as--@ B
+string--C I
+??.. 
+System.. 
+... 
+IO.. 
+... 
+Path.. !
+...! "'
+GetFileNameWithoutExtension.." =
+(..= >
+viewContext..> I
+...I J
+ActionDescriptor..J Z
+...Z [
+DisplayName..[ f
+)..f g
+;..g h
+return// 
+string// 
+.// 
+Equals//  
+(//  !
 
-RememberMe``l v
-}``w x
-)``x y
-;``y z
-}aa 
-ifbb 
-(bb 
-resultbb 
-.bb 
-IsLockedOutbb &
-)bb& '
-{cc 
-_loggerdd 
-.dd 
-
-LogWarningdd &
-(dd& '
-$strdd' A
-)ddA B
-;ddB C
-returnee 
-RedirectToPageee )
-(ee) *
-$stree* 5
-)ee5 6
-;ee6 7
-}ff 
-elsegg 
-{hh 
-
-ModelStateii 
-.ii 
-AddModelErrorii ,
-(ii, -
-stringii- 3
-.ii3 4
-Emptyii4 9
-,ii9 :
-$strii; S
-)iiS T
-;iiT U
-returnjj 
-Pagejj 
-(jj  
-)jj  !
-;jj! "
-}kk 
-}ll 
-returnoo 
-Pageoo 
-(oo 
-)oo 
-;oo 
-}pp 	
-}qq 
-}rr ¡Y
-oD:\tspproject\Mvc\Where_is_my_Fluffymoon\Where_is_my_Fluffymoon\Areas\Identity\Pages\Account\Register.cshtml.cs
+activePage//! +
+,//+ ,
+page//- 1
+,//1 2
+StringComparison//3 C
+.//C D
+OrdinalIgnoreCase//D U
+)//U V
+?//W X
+$str//Y a
+://b c
+null//d h
+;//h i
+}00 	
+}11 
+}22 ÃY
+zC:\Users\Subaru\source\repos\Where_is_my_Fluffymoon\Where_is_my_Fluffymoon\Areas\Identity\Pages\Account\Register.cshtml.cs
 	namespace 	"
 Where_is_my_Fluffymoon
   
@@ -1378,1088 +2621,8 @@ ModelStatezz 
 ÄÄ 	
 }
 ÅÅ 
-}ÇÇ Ùl
-aD:\tspproject\Mvc\Where_is_my_Fluffymoon\Where_is_my_Fluffymoon\Controllers\CommentsController.cs
-	namespace
-
- 	"
-Where_is_my_Fluffymoon
-
-
-  
-{ 
-public 
-
-class 
-CommentsController #
-:$ %
-
-Controller& 0
-{ 
-private 
-readonly 
-AppDbContext %
-_context& .
-;. /
-public 
-CommentsController !
-(! "
-AppDbContext" .
-context/ 6
-)6 7
-{ 	
-_context 
-= 
-context 
-; 
-} 	
-public 
-async 
-Task 
-< 
-IActionResult '
->' (
-Index) .
-(. /
-)/ 0
-{ 	
-var 
-appDbContext 
-= 
-_context '
-.' (
-Comment( /
-./ 0
-Include0 7
-(7 8
-c8 9
-=>: <
-c= >
-.> ?
-ApplicationUser? N
-)N O
-.O P
-IncludeP W
-(W X
-cX Y
-=>Z \
-c] ^
-.^ _
-Pet_ b
-)b c
-;c d
-return 
-View 
-( 
-await 
-appDbContext *
-.* +
-ToListAsync+ 6
-(6 7
-)7 8
-)8 9
-;9 :
-} 	
-public 
-async 
-Task 
-< 
-IActionResult '
->' (
-Details) 0
-(0 1
-int1 4
-?4 5
-id6 8
-)8 9
-{ 	
-if 
-( 
-id 
-== 
-null 
-) 
-{   
-return!! 
-NotFound!! 
-(!!  
-)!!  !
-;!!! "
-}"" 
-var$$ 
-comment$$ 
-=$$ 
-await$$ 
-_context$$  (
-.$$( )
-Comment$$) 0
-.%% 
-Include%% 
-(%% 
-c%% 
-=>%% 
-c%% 
-.%%  
-ApplicationUser%%  /
-)%%/ 0
-.&& 
-Include&& 
-(&& 
-c&& 
-=>&& 
-c&& 
-.&&  
-Pet&&  #
-)&&# $
-.'' 
-FirstOrDefaultAsync'' $
-(''$ %
-m''% &
-=>''' )
-m''* +
-.''+ ,
-Id'', .
-==''/ 1
-id''2 4
-)''4 5
-;''5 6
-if(( 
-((( 
-comment(( 
-==(( 
-null(( 
-)((  
-{)) 
-return** 
-NotFound** 
-(**  
-)**  !
-;**! "
-}++ 
-return-- 
-View-- 
-(-- 
-comment-- 
-)--  
-;--  !
-}.. 	
-public11 
-IActionResult11 
-Create11 #
-(11# $
-)11$ %
-{22 	
-ViewData33 
-[33 
-$str33 (
-]33( )
-=33* +
-new33, /
-
-SelectList330 :
-(33: ;
-_context33; C
-.33C D
-Set33D G
-<33G H
-ApplicationUser33H W
->33W X
-(33X Y
-)33Y Z
-,33Z [
-$str33\ `
-,33` a
-$str33b f
-)33f g
-;33g h
-ViewData44 
-[44 
-$str44 
-]44 
-=44 
-new44  #
-
-SelectList44$ .
-(44. /
-_context44/ 7
-.447 8
-Set448 ;
-<44; <
-Pet44< ?
->44? @
-(44@ A
-)44A B
-,44B C
-$str44D H
-,44H I
-$str44J N
-)44N O
-;44O P
-return55 
-View55 
-(55 
-)55 
-;55 
-}66 	
-[;; 	
-HttpPost;;	 
-];; 
-[<< 	$
-ValidateAntiForgeryToken<<	 !
-]<<! "
-public== 
-async== 
-Task== 
-<== 
-IActionResult== '
->==' (
-Create==) /
-(==/ 0
-[==0 1
-Bind==1 5
-(==5 6
-$str	==6 ô
-)
-==ô ö
-]
-==ö õ
-Comment
-==ú £
-comment
-==§ ´
-)
-==´ ¨
-{>> 	
-if?? 
-(?? 
-
-ModelState?? 
-.?? 
-IsValid?? "
-)??" #
-{@@ 
-_contextAA 
-.AA 
-AddAA 
-(AA 
-commentAA $
-)AA$ %
-;AA% &
-awaitBB 
-_contextBB 
-.BB 
-SaveChangesAsyncBB /
-(BB/ 0
-)BB0 1
-;BB1 2
-returnCC 
-RedirectToActionCC '
-(CC' (
-nameofCC( .
-(CC. /
-IndexCC/ 4
-)CC4 5
-)CC5 6
-;CC6 7
-}DD 
-ViewDataEE 
-[EE 
-$strEE (
-]EE( )
-=EE* +
-newEE, /
-
-SelectListEE0 :
-(EE: ;
-_contextEE; C
-.EEC D
-SetEED G
-<EEG H
-ApplicationUserEEH W
->EEW X
-(EEX Y
-)EEY Z
-,EEZ [
-$strEE\ `
-,EE` a
-$strEEb f
-,EEf g
-commentEEh o
-.EEo p
-ApplicationUserId	EEp Å
-)
-EEÅ Ç
-;
-EEÇ É
-ViewDataFF 
-[FF 
-$strFF 
-]FF 
-=FF 
-newFF  #
-
-SelectListFF$ .
-(FF. /
-_contextFF/ 7
-.FF7 8
-SetFF8 ;
-<FF; <
-PetFF< ?
->FF? @
-(FF@ A
-)FFA B
-,FFB C
-$strFFD H
-,FFH I
-$strFFJ N
-,FFN O
-commentFFP W
-.FFW X
-PetIdFFX ]
-)FF] ^
-;FF^ _
-returnGG 
-ViewGG 
-(GG 
-commentGG 
-)GG  
-;GG  !
-}HH 	
-publicKK 
-asyncKK 
-TaskKK 
-<KK 
-IActionResultKK '
->KK' (
-EditKK) -
-(KK- .
-intKK. 1
-?KK1 2
-idKK3 5
-)KK5 6
-{LL 	
-ifMM 
-(MM 
-idMM 
-==MM 
-nullMM 
-)MM 
-{NN 
-returnOO 
-NotFoundOO 
-(OO  
-)OO  !
-;OO! "
-}PP 
-varRR 
-commentRR 
-=RR 
-awaitRR 
-_contextRR  (
-.RR( )
-CommentRR) 0
-.RR0 1
-	FindAsyncRR1 :
-(RR: ;
-idRR; =
-)RR= >
-;RR> ?
-ifSS 
-(SS 
-commentSS 
-==SS 
-nullSS 
-)SS  
-{TT 
-returnUU 
-NotFoundUU 
-(UU  
-)UU  !
-;UU! "
-}VV 
-ViewDataWW 
-[WW 
-$strWW (
-]WW( )
-=WW* +
-newWW, /
-
-SelectListWW0 :
-(WW: ;
-_contextWW; C
-.WWC D
-SetWWD G
-<WWG H
-ApplicationUserWWH W
->WWW X
-(WWX Y
-)WWY Z
-,WWZ [
-$strWW\ `
-,WW` a
-$strWWb f
-,WWf g
-commentWWh o
-.WWo p
-ApplicationUserId	WWp Å
-)
-WWÅ Ç
-;
-WWÇ É
-ViewDataXX 
-[XX 
-$strXX 
-]XX 
-=XX 
-newXX  #
-
-SelectListXX$ .
-(XX. /
-_contextXX/ 7
-.XX7 8
-SetXX8 ;
-<XX; <
-PetXX< ?
->XX? @
-(XX@ A
-)XXA B
-,XXB C
-$strXXD H
-,XXH I
-$strXXJ N
-,XXN O
-commentXXP W
-.XXW X
-PetIdXXX ]
-)XX] ^
-;XX^ _
-returnYY 
-ViewYY 
-(YY 
-commentYY 
-)YY  
-;YY  !
-}ZZ 	
-[__ 	
-HttpPost__	 
-]__ 
-[`` 	$
-ValidateAntiForgeryToken``	 !
-]``! "
-publicaa 
-asyncaa 
-Taskaa 
-<aa 
-IActionResultaa '
->aa' (
-Editaa) -
-(aa- .
-intaa. 1
-idaa2 4
-,aa4 5
-[aa6 7
-Bindaa7 ;
-(aa; <
-$str	aa< ü
-)
-aaü †
-]
-aa† °
-Comment
-aa¢ ©
-comment
-aa™ ±
-)
-aa± ≤
-{bb 	
-ifcc 
-(cc 
-idcc 
-!=cc 
-commentcc 
-.cc 
-Idcc  
-)cc  !
-{dd 
-returnee 
-NotFoundee 
-(ee  
-)ee  !
-;ee! "
-}ff 
-ifhh 
-(hh 
-
-ModelStatehh 
-.hh 
-IsValidhh "
-)hh" #
-{ii 
-tryjj 
-{kk 
-_contextll 
-.ll 
-Updatell #
-(ll# $
-commentll$ +
-)ll+ ,
-;ll, -
-awaitmm 
-_contextmm "
-.mm" #
-SaveChangesAsyncmm# 3
-(mm3 4
-)mm4 5
-;mm5 6
-}nn 
-catchoo 
-(oo (
-DbUpdateConcurrencyExceptionoo 3
-)oo3 4
-{pp 
-ifqq 
-(qq 
-!qq 
-CommentExistsqq &
-(qq& '
-commentqq' .
-.qq. /
-Idqq/ 1
-)qq1 2
-)qq2 3
-{rr 
-returnss 
-NotFoundss '
-(ss' (
-)ss( )
-;ss) *
-}tt 
-elseuu 
-{vv 
-throwww 
-;ww 
-}xx 
-}yy 
-returnzz 
-RedirectToActionzz '
-(zz' (
-nameofzz( .
-(zz. /
-Indexzz/ 4
-)zz4 5
-)zz5 6
-;zz6 7
-}{{ 
-ViewData|| 
-[|| 
-$str|| (
-]||( )
-=||* +
-new||, /
-
-SelectList||0 :
-(||: ;
-_context||; C
-.||C D
-Set||D G
-<||G H
-ApplicationUser||H W
->||W X
-(||X Y
-)||Y Z
-,||Z [
-$str||\ `
-,||` a
-$str||b f
-,||f g
-comment||h o
-.||o p
-ApplicationUserId	||p Å
-)
-||Å Ç
-;
-||Ç É
-ViewData}} 
-[}} 
-$str}} 
-]}} 
-=}} 
-new}}  #
-
-SelectList}}$ .
-(}}. /
-_context}}/ 7
-.}}7 8
-Set}}8 ;
-<}}; <
-Pet}}< ?
->}}? @
-(}}@ A
-)}}A B
-,}}B C
-$str}}D H
-,}}H I
-$str}}J N
-,}}N O
-comment}}P W
-.}}W X
-PetId}}X ]
-)}}] ^
-;}}^ _
-return~~ 
-View~~ 
-(~~ 
-comment~~ 
-)~~  
-;~~  !
-} 	
-public
-ÇÇ 
-async
-ÇÇ 
-Task
-ÇÇ 
-<
-ÇÇ 
-IActionResult
-ÇÇ '
->
-ÇÇ' (
-Delete
-ÇÇ) /
-(
-ÇÇ/ 0
-int
-ÇÇ0 3
-?
-ÇÇ3 4
-id
-ÇÇ5 7
-)
-ÇÇ7 8
-{
-ÉÉ 	
-if
-ÑÑ 
-(
-ÑÑ 
-id
-ÑÑ 
-==
-ÑÑ 
-null
-ÑÑ 
-)
-ÑÑ 
-{
-ÖÖ 
-return
-ÜÜ 
-NotFound
-ÜÜ 
-(
-ÜÜ  
-)
-ÜÜ  !
-;
-ÜÜ! "
-}
-áá 
-var
-ââ 
-comment
-ââ 
-=
-ââ 
-await
-ââ 
-_context
-ââ  (
-.
-ââ( )
-Comment
-ââ) 0
-.
-ää 
-Include
-ää 
-(
-ää 
-c
-ää 
-=>
-ää 
-c
-ää 
-.
-ää  
-ApplicationUser
-ää  /
-)
-ää/ 0
-.
-ãã 
-Include
-ãã 
-(
-ãã 
-c
-ãã 
-=>
-ãã 
-c
-ãã 
-.
-ãã  
-Pet
-ãã  #
-)
-ãã# $
-.
-åå !
-FirstOrDefaultAsync
-åå $
-(
-åå$ %
-m
-åå% &
-=>
-åå' )
-m
-åå* +
-.
-åå+ ,
-Id
-åå, .
-==
-åå/ 1
-id
-åå2 4
-)
-åå4 5
-;
-åå5 6
-if
-çç 
-(
-çç 
-comment
-çç 
-==
-çç 
-null
-çç 
-)
-çç  
-{
-éé 
-return
-èè 
-NotFound
-èè 
-(
-èè  
-)
-èè  !
-;
-èè! "
-}
-êê 
-return
-íí 
-View
-íí 
-(
-íí 
-comment
-íí 
-)
-íí  
-;
-íí  !
-}
-ìì 	
-[
-ññ 	
-HttpPost
-ññ	 
-,
-ññ 
-
-ActionName
-ññ 
-(
-ññ 
-$str
-ññ &
-)
-ññ& '
-]
-ññ' (
-[
-óó 	&
-ValidateAntiForgeryToken
-óó	 !
-]
-óó! "
-public
-òò 
-async
-òò 
-Task
-òò 
-<
-òò 
-IActionResult
-òò '
->
-òò' (
-DeleteConfirmed
-òò) 8
-(
-òò8 9
-int
-òò9 <
-id
-òò= ?
-)
-òò? @
-{
-ôô 	
-var
-öö 
-comment
-öö 
-=
-öö 
-await
-öö 
-_context
-öö  (
-.
-öö( )
-Comment
-öö) 0
-.
-öö0 1
-	FindAsync
-öö1 :
-(
-öö: ;
-id
-öö; =
-)
-öö= >
-;
-öö> ?
-_context
-õõ 
-.
-õõ 
-Comment
-õõ 
-.
-õõ 
-Remove
-õõ #
-(
-õõ# $
-comment
-õõ$ +
-)
-õõ+ ,
-;
-õõ, -
-await
-úú 
-_context
-úú 
-.
-úú 
-SaveChangesAsync
-úú +
-(
-úú+ ,
-)
-úú, -
-;
-úú- .
-return
-ùù 
-RedirectToAction
-ùù #
-(
-ùù# $
-nameof
-ùù$ *
-(
-ùù* +
-Index
-ùù+ 0
-)
-ùù0 1
-)
-ùù1 2
-;
-ùù2 3
-}
-ûû 	
-private
-†† 
-bool
-†† 
-CommentExists
-†† "
-(
-††" #
-int
-††# &
-id
-††' )
-)
-††) *
-{
-°° 	
-return
-¢¢ 
-_context
-¢¢ 
-.
-¢¢ 
-Comment
-¢¢ #
-.
-¢¢# $
-Any
-¢¢$ '
-(
-¢¢' (
-e
-¢¢( )
-=>
-¢¢* ,
-e
-¢¢- .
-.
-¢¢. /
-Id
-¢¢/ 1
-==
-¢¢2 4
-id
-¢¢5 7
-)
-¢¢7 8
-;
-¢¢8 9
-}
-££ 	
-}
-§§ 
-}•• Á
-]D:\tspproject\Mvc\Where_is_my_Fluffymoon\Where_is_my_Fluffymoon\Controllers\HomeController.cs
-	namespace 	"
-Where_is_my_Fluffymoon
-  
-.  !
-Controllers! ,
-{ 
-[ 
-	Authorize 
-] 
-public 
-
-class 
-HomeController 
-:  !
-
-Controller" ,
-{ 
-public 
-HomeController 
-( 
-ILogger %
-<% &
-HomeController& 4
->4 5
-logger6 <
-)< =
-{ 	
-} 	
-public 
-IActionResult 
-Index "
-(" #
-)# $
-{ 	
-return 
-View 
-( 
-) 
-; 
-} 	
-public 
-IActionResult 
-Pets !
-(! "
-)" #
-{ 	
-return 
-Redirect 
-( 
-$str #
-)# $
-;$ %
-} 	
-[ 	
-ResponseCache	 
-( 
-Duration 
-=  !
-$num" #
-,# $
-Location% -
-=. /!
-ResponseCacheLocation0 E
-.E F
-NoneF J
-,J K
-NoStoreL S
-=T U
-trueV Z
-)Z [
-][ \
-public   
-IActionResult   
-Error   "
-(  " #
-)  # $
-{!! 	
-return"" 
-View"" 
-("" 
-new"" 
-ErrorViewModel"" *
-{""+ ,
-	RequestId""- 6
-=""7 8
-Activity""9 A
-.""A B
-Current""B I
-?""I J
-.""J K
-Id""K M
-??""N P
-HttpContext""Q \
-.""\ ]
-TraceIdentifier""] l
-}""m n
-)""n o
-;""o p
-}## 	
-}$$ 
-}%% ã[
-]D:\tspproject\Mvc\Where_is_my_Fluffymoon\Where_is_my_Fluffymoon\Controllers\PetsController.cs
+}ÇÇ ‘j
+lC:\Users\Subaru\source\repos\Where_is_my_Fluffymoon\Where_is_my_Fluffymoon\Controllers\CommentsController.cs
 	namespace 	"
 Where_is_my_Fluffymoon
   
@@ -2468,23 +2631,23 @@ Controller" ,
 { 
 public 
 
-class 
-PetsController 
-:  !
+class 
+CommentsController #
+:$ %
 
-Controller" ,
+Controller& 0
 { 
 private 
 readonly 
 AppDbContext %
 _context& .
 ;. /
-public 
-PetsController 
-( 
-AppDbContext *
-context+ 2
-)2 3
+public 
+CommentsController !
+(! "
+AppDbContext" .
+context/ 6
+)6 7
 { 	
 _context 
 = 
@@ -2501,33 +2664,42 @@ Controller" ,
 (. /
 )/ 0
 { 	
-var 
-appDbContext 
-= 
-_context '
-.' (
-Pet( +
-.+ ,
-Include, 3
-(3 4
-p4 5
-=>6 8
-p9 :
-.: ;
-ApplicationUser; J
-)J K
-;K L
+var 
+context 
+= 
+_context "
+." #
+Comment# *
+.* +
+Include+ 2
+(2 3
+c3 4
+=>5 7
+c8 9
+.9 :
+ApplicationUser: I
+)I J
+.J K
+IncludeK R
+(R S
+cS T
+=>U W
+cX Y
+.Y Z
+PetZ ]
+)] ^
+;^ _
 return 
 View 
 ( 
-await 
-appDbContext *
-.* +
-ToListAsync+ 6
-(6 7
-)7 8
-)8 9
-;9 :
+await 
+context %
+.% &
+ToListAsync& 1
+(1 2
+)2 3
+)3 4
+;4 5
 } 	
 public 
 async 
@@ -2536,11 +2708,10 @@ Controller" ,
 IActionResult '
 >' (
 Details) 0
-(0 1
-int1 4
-?4 5
-id6 8
-)8 9
+(0 1
+string1 7
+id8 :
+): ;
 {   	
 if!! 
 (!! 
@@ -2555,729 +2726,4546 @@ Controller" ,
 )##  !
 ;##! "
 }$$ 
-var&& 
-pet&& 
-=&& 
-await&& 
-_context&& $
-.&&$ %
-Pet&&% (
+var&& 
+comment&& 
+=&& 
+await&& 
+_context&&  (
+.&&( )
+Comment&&) 0
 .'' 
 Include'' 
 ('' 
-p'' 
+c'' 
 =>'' 
-p'' 
+c'' 
 .''  
 ApplicationUser''  /
 )''/ 0
-.(( 
-FirstOrDefaultAsync(( $
-((($ %
-m((% &
-=>((' )
-m((* +
-.((+ ,
-Id((, .
-==((/ 1
-id((2 4
-)((4 5
-;((5 6
-if)) 
-()) 
-pet)) 
-==)) 
-null)) 
-))) 
-{** 
-return++ 
-NotFound++ 
-(++  
-)++  !
-;++! "
-},, 
-return.. 
-View.. 
-(.. 
-pet.. 
-).. 
-;.. 
-}// 	
-public22 
-IActionResult22 
-Create22 #
-(22# $
-)22$ %
-{33 	
-ViewData44 
-[44 
-$str44 (
-]44( )
-=44* +
-new44, /
+.(( 
+Include(( 
+((( 
+c(( 
+=>(( 
+c(( 
+.((  
+Pet((  #
+)((# $
+.)) 
+FirstOrDefaultAsync)) $
+())$ %
+m))% &
+=>))' )
+m))* +
+.))+ ,
+Id)), .
+==))/ 1
+id))2 4
+)))4 5
+;))5 6
+if** 
+(** 
+comment** 
+==** 
+null** 
+)**  
+{++ 
+return,, 
+NotFound,, 
+(,,  
+),,  !
+;,,! "
+}-- 
+return// 
+View// 
+(// 
+comment// 
+)//  
+;//  !
+}00 	
+public33 
+IActionResult33 
+Create33 #
+(33# $
+)33$ %
+{44 	
+ViewData55 
+[55 
+$str55 (
+]55( )
+=55* +
+new55, /
 
-SelectList440 :
-(44: ;
-_context44; C
-.44C D
-Set44D G
-<44G H
-ApplicationUser44H W
->44W X
-(44X Y
-)44Y Z
-,44Z [
-$str44\ `
-,44` a
-$str44b f
-)44f g
-;44g h
-return55 
-View55 
-(55 
-)55 
-;55 
-}66 	
-[;; 	
-HttpPost;;	 
-];; 
-[<< 	$
-ValidateAntiForgeryToken<<	 !
-]<<! "
-public== 
-async== 
-Task== 
-<== 
-IActionResult== '
->==' (
-Create==) /
-(==/ 0
-[==0 1
-Bind==1 5
-(==5 6
-$str	==6 ú
+SelectList550 :
+(55: ;
+_context55; C
+.55C D
+Set55D G
+<55G H
+ApplicationUser55H W
+>55W X
+(55X Y
+)55Y Z
+,55Z [
+$str55\ `
+,55` a
+$str55b f
+)55f g
+;55g h
+ViewData66 
+[66 
+$str66 
+]66 
+=66 
+new66  #
+
+SelectList66$ .
+(66. /
+_context66/ 7
+.667 8
+Pet668 ;
+,66; <
+$str66= A
+,66A B
+$str66C G
+)66G H
+;66H I
+return77 
+View77 
+(77 
+)77 
+;77 
+}88 	
+[== 	
+HttpPost==	 
+]== 
+[>> 	$
+ValidateAntiForgeryToken>>	 !
+]>>! "
+public?? 
+async?? 
+Task?? 
+<?? 
+IActionResult?? '
+>??' (
+Create??) /
+(??/ 0
+[??0 1
+Bind??1 5
+(??5 6
+$str	??6 ô
 )
-==ú ù
+??ô ö
 ]
-==ù û
-Pet
-==ü ¢
-pet
-==£ ¶
+??ö õ
+Comment
+??ú £
+comment
+??§ ´
 )
-==¶ ß
-{>> 	
-if?? 
-(?? 
+??´ ¨
+{@@ 	
+ifAA 
+(AA 
 
-ModelState?? 
-.?? 
-IsValid?? "
-)??" #
-{@@ 
-_contextAA 
-.AA 
-AddAA 
-(AA 
-petAA  
-)AA  !
-;AA! "
-awaitBB 
-_contextBB 
-.BB 
-SaveChangesAsyncBB /
-(BB/ 0
-)BB0 1
-;BB1 2
-returnCC 
-RedirectToActionCC '
-(CC' (
-nameofCC( .
-(CC. /
-IndexCC/ 4
-)CC4 5
-)CC5 6
-;CC6 7
-}DD 
-ViewDataEE 
-[EE 
-$strEE (
-]EE( )
-=EE* +
-newEE, /
+ModelStateAA 
+.AA 
+IsValidAA "
+)AA" #
+{BB 
+_contextCC 
+.CC 
+AddCC 
+(CC 
+commentCC $
+)CC$ %
+;CC% &
+awaitDD 
+_contextDD 
+.DD 
+SaveChangesAsyncDD /
+(DD/ 0
+)DD0 1
+;DD1 2
+returnEE 
+RedirectToActionEE '
+(EE' (
+nameofEE( .
+(EE. /
+IndexEE/ 4
+)EE4 5
+)EE5 6
+;EE6 7
+}FF 
+ViewDataGG 
+[GG 
+$strGG (
+]GG( )
+=GG* +
+newGG, /
 
-SelectListEE0 :
-(EE: ;
-_contextEE; C
-.EEC D
-SetEED G
-<EEG H
-ApplicationUserEEH W
->EEW X
-(EEX Y
-)EEY Z
-,EEZ [
-$strEE\ `
-,EE` a
-$strEEb f
-,EEf g
-petEEh k
-.EEk l
-ApplicationUserIdEEl }
-)EE} ~
-;EE~ 
-returnFF 
-ViewFF 
-(FF 
-petFF 
-)FF 
-;FF 
-}GG 	
-publicJJ 
-asyncJJ 
-TaskJJ 
-<JJ 
-IActionResultJJ '
->JJ' (
-EditJJ) -
-(JJ- .
-intJJ. 1
-?JJ1 2
-idJJ3 5
-)JJ5 6
-{KK 	
-ifLL 
-(LL 
-idLL 
-==LL 
-nullLL 
-)LL 
-{MM 
-returnNN 
-NotFoundNN 
-(NN  
-)NN  !
-;NN! "
-}OO 
-varQQ 
-petQQ 
-=QQ 
-awaitQQ 
-_contextQQ $
-.QQ$ %
-PetQQ% (
-.QQ( )
-	FindAsyncQQ) 2
-(QQ2 3
-idQQ3 5
-)QQ5 6
-;QQ6 7
-ifRR 
-(RR 
-petRR 
-==RR 
-nullRR 
-)RR 
-{SS 
-returnTT 
-NotFoundTT 
-(TT  
-)TT  !
-;TT! "
-}UU 
-ViewDataVV 
-[VV 
-$strVV (
-]VV( )
-=VV* +
-newVV, /
-
-SelectListVV0 :
-(VV: ;
-_contextVV; C
-.VVC D
-SetVVD G
-<VVG H
-ApplicationUserVVH W
->VVW X
-(VVX Y
-)VVY Z
-,VVZ [
-$strVV\ `
-,VV` a
-$strVVb f
-,VVf g
-petVVh k
-.VVk l
-ApplicationUserIdVVl }
-)VV} ~
-;VV~ 
-returnWW 
-ViewWW 
-(WW 
-petWW 
-)WW 
-;WW 
-}XX 	
-[]] 	
-HttpPost]]	 
-]]] 
-[^^ 	$
-ValidateAntiForgeryToken^^	 !
-]^^! "
-public__ 
-async__ 
-Task__ 
-<__ 
-IActionResult__ '
->__' (
-Edit__) -
-(__- .
-int__. 1
-id__2 4
-,__4 5
-[__6 7
-Bind__7 ;
-(__; <
-$str	__< ¢
+SelectListGG0 :
+(GG: ;
+_contextGG; C
+.GGC D
+SetGGD G
+<GGG H
+ApplicationUserGGH W
+>GGW X
+(GGX Y
+)GGY Z
+,GGZ [
+$strGG\ `
+,GG` a
+$strGGb f
+,GGf g
+commentGGh o
+.GGo p
+ApplicationUserId	GGp Å
 )
-__¢ £
+GGÅ Ç
+;
+GGÇ É
+ViewDataHH 
+[HH 
+$strHH 
+]HH 
+=HH 
+newHH  #
+
+SelectListHH$ .
+(HH. /
+_contextHH/ 7
+.HH7 8
+PetHH8 ;
+,HH; <
+$strHH= A
+,HHA B
+$strHHC G
+,HHG H
+commentHHI P
+.HHP Q
+PetIdHHQ V
+)HHV W
+;HHW X
+returnII 
+ViewII 
+(II 
+commentII 
+)II  
+;II  !
+}JJ 	
+publicMM 
+asyncMM 
+TaskMM 
+<MM 
+IActionResultMM '
+>MM' (
+EditMM) -
+(MM- .
+stringMM. 4
+idMM5 7
+)MM7 8
+{NN 	
+ifOO 
+(OO 
+idOO 
+==OO 
+nullOO 
+)OO 
+{PP 
+returnQQ 
+NotFoundQQ 
+(QQ  
+)QQ  !
+;QQ! "
+}RR 
+varTT 
+commentTT 
+=TT 
+awaitTT 
+_contextTT  (
+.TT( )
+CommentTT) 0
+.TT0 1
+	FindAsyncTT1 :
+(TT: ;
+idTT; =
+)TT= >
+;TT> ?
+ifUU 
+(UU 
+commentUU 
+==UU 
+nullUU 
+)UU  
+{VV 
+returnWW 
+NotFoundWW 
+(WW  
+)WW  !
+;WW! "
+}XX 
+ViewDataYY 
+[YY 
+$strYY (
+]YY( )
+=YY* +
+newYY, /
+
+SelectListYY0 :
+(YY: ;
+_contextYY; C
+.YYC D
+SetYYD G
+<YYG H
+ApplicationUserYYH W
+>YYW X
+(YYX Y
+)YYY Z
+,YYZ [
+$strYY\ `
+,YY` a
+$strYYb f
+,YYf g
+commentYYh o
+.YYo p
+ApplicationUserId	YYp Å
+)
+YYÅ Ç
+;
+YYÇ É
+ViewDataZZ 
+[ZZ 
+$strZZ 
+]ZZ 
+=ZZ 
+newZZ  #
+
+SelectListZZ$ .
+(ZZ. /
+_contextZZ/ 7
+.ZZ7 8
+PetZZ8 ;
+,ZZ; <
+$strZZ= A
+,ZZA B
+$strZZC G
+,ZZG H
+commentZZI P
+.ZZP Q
+PetIdZZQ V
+)ZZV W
+;ZZW X
+return[[ 
+View[[ 
+([[ 
+comment[[ 
+)[[  
+;[[  !
+}\\ 	
+[aa 	
+HttpPostaa	 
+]aa 
+[bb 	$
+ValidateAntiForgeryTokenbb	 !
+]bb! "
+publiccc 
+asynccc 
+Taskcc 
+<cc 
+IActionResultcc '
+>cc' (
+Editcc) -
+(cc- .
+stringcc. 4
+idcc5 7
+,cc7 8
+[cc9 :
+Bindcc: >
+(cc> ?
+$str	cc? ¢
+)
+cc¢ £
 ]
-__£ §
-Pet
-__• ®
-pet
-__© ¨
+cc£ §
+Comment
+cc• ¨
+comment
+cc≠ ¥
 )
-__¨ ≠
-{`` 	
-ifaa 
-(aa 
-idaa 
-!=aa 
-petaa 
-.aa 
-Idaa 
-)aa 
-{bb 
-returncc 
-NotFoundcc 
-(cc  
-)cc  !
-;cc! "
-}dd 
-ifff 
-(ff 
+cc¥ µ
+{dd 	
+ifee 
+(ee 
+idee 
+!=ee 
+commentee 
+.ee 
+Idee  
+)ee  !
+{ff 
+returngg 
+NotFoundgg 
+(gg  
+)gg  !
+;gg! "
+}hh 
+ifjj 
+(jj 
 
-ModelStateff 
-.ff 
-IsValidff "
-)ff" #
-{gg 
-tryhh 
-{ii 
-_contextjj 
-.jj 
-Updatejj #
-(jj# $
-petjj$ '
-)jj' (
-;jj( )
-awaitkk 
-_contextkk "
-.kk" #
-SaveChangesAsynckk# 3
-(kk3 4
-)kk4 5
-;kk5 6
-}ll 
-catchmm 
-(mm (
-DbUpdateConcurrencyExceptionmm 3
-)mm3 4
-{nn 
-ifoo 
-(oo 
-!oo 
-	PetExistsoo "
-(oo" #
-petoo# &
-.oo& '
-Idoo' )
-)oo) *
-)oo* +
-{pp 
-returnqq 
-NotFoundqq '
-(qq' (
-)qq( )
-;qq) *
-}rr 
-elsess 
-{tt 
-throwuu 
-;uu 
-}vv 
-}ww 
-returnxx 
-RedirectToActionxx '
-(xx' (
-nameofxx( .
-(xx. /
-Indexxx/ 4
-)xx4 5
-)xx5 6
-;xx6 7
-}yy 
-ViewDatazz 
-[zz 
-$strzz (
-]zz( )
-=zz* +
-newzz, /
+ModelStatejj 
+.jj 
+IsValidjj "
+)jj" #
+{kk 
+tryll 
+{mm 
+_contextnn 
+.nn 
+Updatenn #
+(nn# $
+commentnn$ +
+)nn+ ,
+;nn, -
+awaitoo 
+_contextoo "
+.oo" #
+SaveChangesAsyncoo# 3
+(oo3 4
+)oo4 5
+;oo5 6
+}pp 
+catchqq 
+(qq (
+DbUpdateConcurrencyExceptionqq 3
+)qq3 4
+{rr 
+ifss 
+(ss 
+!ss 
+CommentExistsss &
+(ss& '
+commentss' .
+.ss. /
+Idss/ 1
+)ss1 2
+)ss2 3
+{tt 
+returnuu 
+NotFounduu '
+(uu' (
+)uu( )
+;uu) *
+}vv 
+elseww 
+{xx 
+throwyy 
+;yy 
+}zz 
+}{{ 
+return|| 
+RedirectToAction|| '
+(||' (
+nameof||( .
+(||. /
+Index||/ 4
+)||4 5
+)||5 6
+;||6 7
+}}} 
+ViewData~~ 
+[~~ 
+$str~~ (
+]~~( )
+=~~* +
+new~~, /
 
-SelectListzz0 :
-(zz: ;
-_contextzz; C
-.zzC D
-SetzzD G
-<zzG H
-ApplicationUserzzH W
->zzW X
-(zzX Y
-)zzY Z
-,zzZ [
-$strzz\ `
-,zz` a
-$strzzb f
-,zzf g
-petzzh k
-.zzk l
-ApplicationUserIdzzl }
-)zz} ~
-;zz~ 
-return{{ 
-View{{ 
-({{ 
-pet{{ 
-){{ 
-;{{ 
-}|| 	
-public 
-async 
-Task 
-< 
-IActionResult '
->' (
-Delete) /
-(/ 0
-int0 3
-?3 4
-id5 7
-)7 8
-{
-ÄÄ 	
-if
-ÅÅ 
-(
-ÅÅ 
-id
-ÅÅ 
-==
-ÅÅ 
-null
-ÅÅ 
+SelectList~~0 :
+(~~: ;
+_context~~; C
+.~~C D
+Set~~D G
+<~~G H
+ApplicationUser~~H W
+>~~W X
+(~~X Y
+)~~Y Z
+,~~Z [
+$str~~\ `
+,~~` a
+$str~~b f
+,~~f g
+comment~~h o
+.~~o p
+ApplicationUserId	~~p Å
 )
-ÅÅ 
-{
-ÇÇ 
-return
-ÉÉ 
-NotFound
-ÉÉ 
-(
-ÉÉ  
-)
-ÉÉ  !
+~~Å Ç
 ;
-ÉÉ! "
-}
-ÑÑ 
-var
-ÜÜ 
-pet
-ÜÜ 
-=
-ÜÜ 
-await
-ÜÜ 
-_context
-ÜÜ $
-.
-ÜÜ$ %
-Pet
-ÜÜ% (
-.
-áá 
-Include
-áá 
-(
-áá 
-p
-áá 
-=>
-áá 
-p
-áá 
-.
-áá  
-ApplicationUser
-áá  /
-)
-áá/ 0
-.
-àà !
-FirstOrDefaultAsync
-àà $
-(
-àà$ %
-m
-àà% &
-=>
-àà' )
-m
-àà* +
-.
-àà+ ,
-Id
-àà, .
-==
-àà/ 1
-id
-àà2 4
-)
-àà4 5
-;
-àà5 6
-if
-ââ 
-(
-ââ 
-pet
-ââ 
-==
-ââ 
-null
-ââ 
-)
-ââ 
-{
-ää 
+~~Ç É
+ViewData 
+[ 
+$str 
+] 
+= 
+new  #
+
+SelectList$ .
+(. /
+_context/ 7
+.7 8
+Pet8 ;
+,; <
+$str= A
+,A B
+$strC G
+,G H
+commentI P
+.P Q
+PetIdQ V
+)V W
+;W X
 return
-ãã 
-NotFound
-ãã 
-(
-ãã  
-)
-ãã  !
-;
-ãã! "
-}
-åå 
-return
-éé 
+ÄÄ 
 View
-éé 
+ÄÄ 
 (
-éé 
-pet
-éé 
+ÄÄ 
+comment
+ÄÄ 
 )
-éé 
+ÄÄ  
 ;
-éé 
+ÄÄ  !
 }
-èè 	
+ÅÅ 	
+public
+ÑÑ 
+async
+ÑÑ 
+Task
+ÑÑ 
+<
+ÑÑ 
+IActionResult
+ÑÑ '
+>
+ÑÑ' (
+Delete
+ÑÑ) /
+(
+ÑÑ/ 0
+string
+ÑÑ0 6
+id
+ÑÑ7 9
+)
+ÑÑ9 :
+{
+ÖÖ 	
+if
+ÜÜ 
+(
+ÜÜ 
+id
+ÜÜ 
+==
+ÜÜ 
+null
+ÜÜ 
+)
+ÜÜ 
+{
+áá 
+return
+àà 
+NotFound
+àà 
+(
+àà  
+)
+àà  !
+;
+àà! "
+}
+ââ 
+var
+ãã 
+comment
+ãã 
+=
+ãã 
+await
+ãã 
+_context
+ãã  (
+.
+ãã( )
+Comment
+ãã) 0
+.
+åå 
+Include
+åå 
+(
+åå 
+c
+åå 
+=>
+åå 
+c
+åå 
+.
+åå  
+ApplicationUser
+åå  /
+)
+åå/ 0
+.
+çç 
+Include
+çç 
+(
+çç 
+c
+çç 
+=>
+çç 
+c
+çç 
+.
+çç  
+Pet
+çç  #
+)
+çç# $
+.
+éé !
+FirstOrDefaultAsync
+éé $
+(
+éé$ %
+m
+éé% &
+=>
+éé' )
+m
+éé* +
+.
+éé+ ,
+Id
+éé, .
+==
+éé/ 1
+id
+éé2 4
+)
+éé4 5
+;
+éé5 6
+if
+èè 
+(
+èè 
+comment
+èè 
+==
+èè 
+null
+èè 
+)
+èè  
+{
+êê 
+return
+ëë 
+NotFound
+ëë 
+(
+ëë  
+)
+ëë  !
+;
+ëë! "
+}
+íí 
+return
+îî 
+View
+îî 
+(
+îî 
+comment
+îî 
+)
+îî  
+;
+îî  !
+}
+ïï 	
 [
-íí 	
+òò 	
 HttpPost
-íí	 
+òò	 
 ,
-íí 
+òò 
 
 ActionName
-íí 
+òò 
 (
-íí 
+òò 
 $str
-íí &
+òò &
 )
-íí& '
+òò& '
 ]
-íí' (
+òò' (
 [
-ìì 	&
+ôô 	&
 ValidateAntiForgeryToken
-ìì	 !
+ôô	 !
 ]
-ìì! "
+ôô! "
 public
-îî 
+öö 
 async
-îî 
+öö 
 Task
-îî 
+öö 
 <
-îî 
+öö 
 IActionResult
-îî '
+öö '
 >
-îî' (
+öö' (
 DeleteConfirmed
-îî) 8
+öö) 8
 (
-îî8 9
-int
-îî9 <
+öö8 9
+string
+öö9 ?
 id
-îî= ?
+öö@ B
 )
-îî? @
+ööB C
 {
-ïï 	
+õõ 	
 var
-ññ 
-pet
-ññ 
+úú 
+comment
+úú 
 =
-ññ 
+úú 
 await
-ññ 
+úú 
 _context
-ññ $
+úú  (
 .
-ññ$ %
-Pet
-ññ% (
+úú( )
+Comment
+úú) 0
 .
-ññ( )
+úú0 1
 	FindAsync
-ññ) 2
+úú1 :
 (
-ññ2 3
+úú: ;
 id
-ññ3 5
+úú; =
 )
-ññ5 6
+úú= >
 ;
-ññ6 7
+úú> ?
 _context
-óó 
+ùù 
 .
-óó 
-Pet
-óó 
+ùù 
+Comment
+ùù 
 .
-óó 
+ùù 
 Remove
-óó 
+ùù #
 (
-óó  
-pet
-óó  #
+ùù# $
+comment
+ùù$ +
 )
-óó# $
+ùù+ ,
 ;
-óó$ %
+ùù, -
 await
-òò 
+ûû 
 _context
-òò 
+ûû 
 .
-òò 
+ûû 
 SaveChangesAsync
-òò +
+ûû +
 (
-òò+ ,
+ûû+ ,
 )
-òò, -
+ûû, -
 ;
-òò- .
+ûû- .
 return
-ôô 
+üü 
 RedirectToAction
-ôô #
+üü #
 (
-ôô# $
+üü# $
 nameof
-ôô$ *
+üü$ *
 (
-ôô* +
+üü* +
 Index
-ôô+ 0
+üü+ 0
 )
-ôô0 1
+üü0 1
 )
-ôô1 2
+üü1 2
 ;
-ôô2 3
+üü2 3
 }
-öö 	
+†† 	
 private
-úú 
+¢¢ 
 bool
-úú 
-	PetExists
-úú 
+¢¢ 
+CommentExists
+¢¢ "
 (
-úú 
-int
-úú "
+¢¢" #
+string
+¢¢# )
 id
-úú# %
+¢¢* ,
 )
-úú% &
+¢¢, -
 {
-ùù 	
+££ 	
 return
-ûû 
+§§ 
 _context
-ûû 
+§§ 
 .
-ûû 
-Pet
-ûû 
+§§ 
+Comment
+§§ #
 .
-ûû  
+§§# $
 Any
-ûû  #
+§§$ '
 (
-ûû# $
+§§' (
 e
-ûû$ %
+§§( )
 =>
-ûû& (
+§§* ,
 e
-ûû) *
+§§- .
 .
-ûû* +
+§§. /
 Id
-ûû+ -
+§§/ 1
 ==
-ûû. 0
+§§2 4
 id
-ûû1 3
+§§5 7
 )
-ûû3 4
+§§7 8
 ;
-ûû4 5
+§§8 9
 }
-üü 	
+•• 	
 }
-†† 
-}°° ‹£
-kD:\tspproject\Mvc\Where_is_my_Fluffymoon\Where_is_my_Fluffymoon\Migrations\20210418090546_Initial-Create.cs
+¶¶ 
+}ßß ÒF
+hC:\Users\Subaru\source\repos\Where_is_my_Fluffymoon\Where_is_my_Fluffymoon\Controllers\HomeController.cs
+	namespace 	"
+Where_is_my_Fluffymoon
+  
+.  !
+Controllers! ,
+{ 
+[ 
+	Authorize 
+] 
+public 
+
+class 
+HomeController 
+:  !
+
+Controller" ,
+{ 
+private 
+readonly 
+AppDbContext %
+_context& .
+;. /
+private 
+readonly 
+UserManager $
+<$ %
+ApplicationUser% 4
+>4 5
+_userManager6 B
+;B C
+public 
+HomeController 
+( 
+ILogger %
+<% &
+HomeController& 4
+>4 5
+logger6 <
+,< =
+AppDbContext> J
+contextK R
+,R S
+UserManagerT _
+<_ `
+ApplicationUser` o
+>o p
+userManagerq |
+)| }
+{ 	
+_context 
+= 
+context 
+; 
+_userManager 
+= 
+userManager &
+;& '
+}   	
+public(( 
+IActionResult(( 
+Error403(( %
+(((% &
+)((& '
+{)) 	
+return** 
+View** 
+(** 
+)** 
+;** 
+}++ 	
+public-- 
+IActionResult-- 
+Error404-- %
+(--% &
+)--& '
+{.. 	
+return// 
+View// 
+(// 
+)// 
+;// 
+}00 	
+public22 
+async22 
+Task22 
+<22 
+IActionResult22 '
+>22' (
+Index22) .
+(22. /
+)22/ 0
+{33 	
+var44 
+appDbContext44 
+=44 
+_context44 '
+.44' (
+Pet44( +
+.44+ ,
+Include44, 3
+(443 4
+p444 5
+=>446 8
+p449 :
+.44: ;
+ApplicationUser44; J
+)44J K
+;44K L
+ViewData66 
+[66 
+$str66 
+]66 
+=66  
+User66! %
+.66% &
+FindFirstValue66& 4
+(664 5
+
+ClaimTypes665 ?
+.66? @
+NameIdentifier66@ N
+)66N O
+;66O P
+return88 
+View88 
+(88 
+await88 
+appDbContext88 *
+.88* +
+ToListAsync88+ 6
+(886 7
+)887 8
+)888 9
+;889 :
+}99 	
+public;; 
+IActionResult;; 
+Pets;; !
+(;;! "
+);;" #
+{<< 	
+return== 
+Redirect== 
+(== 
+$str== #
+)==# $
+;==$ %
+}>> 	
+[@@ 	
+ResponseCache@@	 
+(@@ 
+Duration@@ 
+=@@  !
+$num@@" #
+,@@# $
+Location@@% -
+=@@. /!
+ResponseCacheLocation@@0 E
+.@@E F
+None@@F J
+,@@J K
+NoStore@@L S
+=@@T U
+true@@V Z
+)@@Z [
+]@@[ \
+publicAA 
+IActionResultAA 
+ErrorAA "
+(AA" #
+)AA# $
+{BB 	
+returnCC 
+ViewCC 
+(CC 
+newCC 
+ErrorViewModelCC *
+{CC+ ,
+	RequestIdCC- 6
+=CC7 8
+ActivityCC9 A
+.CCA B
+CurrentCCB I
+?CCI J
+.CCJ K
+IdCCK M
+??CCN P
+HttpContextCCQ \
+.CC\ ]
+TraceIdentifierCC] l
+}CCm n
+)CCn o
+;CCo p
+}DD 	
+publicGG 
+asyncGG 
+TaskGG 
+<GG 
+IActionResultGG '
+>GG' (
+DetailsGG) 0
+(GG0 1
+stringGG1 7
+?GG7 8
+idGG9 ;
+)GG; <
+{HH 	
+ifII 
+(II 
+idII 
+==II 
+nullII 
+)II 
+{JJ 
+returnKK 
+RedirectToActionKK '
+(KK' (
+$strKK( 2
+,KK2 3
+$strKK4 :
+)KK: ;
+;KK; <
+}LL 
+varNN 
+petNN 
+=NN 
+awaitNN 
+_contextNN $
+.NN$ %
+PetNN% (
+.OO 
+IncludeOO 
+(OO 
+pOO 
+=>OO 
+pOO 
+.OO  
+ApplicationUserOO  /
+)OO/ 0
+.PP 
+FirstOrDefaultAsyncPP $
+(PP$ %
+mPP% &
+=>PP' )
+mPP* +
+.PP+ ,
+IdPP, .
+==PP/ 1
+idPP2 4
+)PP4 5
+;PP5 6
+ifQQ 
+(QQ 
+petQQ 
+==QQ 
+nullQQ 
+)QQ 
+{RR 
+returnSS 
+RedirectToActionSS '
+(SS' (
+$strSS( 2
+,SS2 3
+$strSS4 :
+)SS: ;
+;SS; <
+}TT 
+returnVV 
+RedirectVV 
+(VV 
+$strVV ,
++VV- .
+idVV/ 1
+)VV1 2
+;VV2 3
+}WW 	
+publicZZ 
+asyncZZ 
+TaskZZ 
+<ZZ 
+IActionResultZZ '
+>ZZ' (
+EditZZ) -
+(ZZ- .
+stringZZ. 4
+?ZZ4 5
+idZZ6 8
+)ZZ8 9
+{[[ 	
+if\\ 
+(\\ 
+id\\ 
+==\\ 
+null\\ 
+)\\ 
+{]] 
+return^^ 
+RedirectToAction^^ '
+(^^' (
+$str^^( 2
+,^^2 3
+$str^^4 :
+)^^: ;
+;^^; <
+}__ 
+varaa 
+petaa 
+=aa 
+awaitaa 
+_contextaa $
+.aa$ %
+Petaa% (
+.aa( )
+	FindAsyncaa) 2
+(aa2 3
+idaa3 5
+)aa5 6
+;aa6 7
+ifbb 
+(bb 
+petbb 
+==bb 
+nullbb 
+)bb 
+{cc 
+returndd 
+RedirectToActiondd '
+(dd' (
+$strdd( 2
+,dd2 3
+$strdd4 :
+)dd: ;
+;dd; <
+}ee 
+ifgg 
+(gg 
+petgg 
+.gg 
+ApplicationUserIdgg %
+!=gg& (
+Usergg) -
+.gg- .
+FindFirstValuegg. <
+(gg< =
+
+ClaimTypesgg= G
+.ggG H
+NameIdentifierggH V
+)ggV W
+)ggW X
+{hh 
+returnii 
+RedirectToActionii '
+(ii' (
+$strii( 2
+,ii2 3
+$strii4 :
+)ii: ;
+;ii; <
+}jj 
+ViewDatall 
+[ll 
+$strll (
+]ll( )
+=ll* +
+newll, /
+
+SelectListll0 :
+(ll: ;
+_contextll; C
+.llC D
+SetllD G
+<llG H
+ApplicationUserllH W
+>llW X
+(llX Y
+)llY Z
+,llZ [
+$strll\ `
+,ll` a
+$strllb f
+,llf g
+petllh k
+.llk l
+ApplicationUserIdlll }
+)ll} ~
+;ll~ 
+returnmm 
+Redirectmm 
+(mm 
+$strmm )
++mm* +
+idmm, .
+)mm. /
+;mm/ 0
+}nn 	
+publicqq 
+asyncqq 
+Taskqq 
+<qq 
+IActionResultqq '
+>qq' (
+Deleteqq) /
+(qq/ 0
+stringqq0 6
+?qq6 7
+idqq8 :
+)qq: ;
+{rr 	
+ifss 
+(ss 
+idss 
+==ss 
+nullss 
+)ss 
+{tt 
+returnuu 
+RedirectToActionuu '
+(uu' (
+$struu( 2
+,uu2 3
+$struu4 :
+)uu: ;
+;uu; <
+}vv 
+varxx 
+petxx 
+=xx 
+awaitxx 
+_contextxx $
+.xx$ %
+Petxx% (
+.yy 
+Includeyy 
+(yy 
+pyy 
+=>yy 
+pyy 
+.yy  
+ApplicationUseryy  /
+)yy/ 0
+.zz 
+FirstOrDefaultAsynczz $
+(zz$ %
+mzz% &
+=>zz' )
+mzz* +
+.zz+ ,
+Idzz, .
+==zz/ 1
+idzz2 4
+)zz4 5
+;zz5 6
+if{{ 
+({{ 
+pet{{ 
+=={{ 
+null{{ 
+){{ 
+{|| 
+return}} 
+RedirectToAction}} '
+(}}' (
+$str}}( 2
+,}}2 3
+$str}}4 :
+)}}: ;
+;}}; <
+}~~ 
+if
+ÄÄ 
+(
+ÄÄ 
+pet
+ÄÄ 
+.
+ÄÄ 
+ApplicationUserId
+ÄÄ %
+!=
+ÄÄ& (
+User
+ÄÄ) -
+.
+ÄÄ- .
+FindFirstValue
+ÄÄ. <
+(
+ÄÄ< =
+
+ClaimTypes
+ÄÄ= G
+.
+ÄÄG H
+NameIdentifier
+ÄÄH V
+)
+ÄÄV W
+)
+ÄÄW X
+{
+ÅÅ 
+return
+ÇÇ 
+RedirectToAction
+ÇÇ '
+(
+ÇÇ' (
+$str
+ÇÇ( 2
+,
+ÇÇ2 3
+$str
+ÇÇ4 :
+)
+ÇÇ: ;
+;
+ÇÇ; <
+}
+ÉÉ 
+return
+ÖÖ 
+Redirect
+ÖÖ 
+(
+ÖÖ 
+$str
+ÖÖ +
++
+ÖÖ, -
+id
+ÖÖ. 0
+)
+ÖÖ0 1
+;
+ÖÖ1 2
+}
+ÜÜ 	
+}
+áá 
+}àà ïê
+hC:\Users\Subaru\source\repos\Where_is_my_Fluffymoon\Where_is_my_Fluffymoon\Controllers\PetsController.cs
+	namespace 	"
+Where_is_my_Fluffymoon
+  
+.  !
+Views! &
+{ 
+[ 
+	Authorize 
+] 
+public 
+
+class 
+PetsController 
+:  !
+
+Controller" ,
+{ 
+private 
+readonly 
+AppDbContext %
+_context& .
+;. /
+private 
+readonly 
+UserManager $
+<$ %
+ApplicationUser% 4
+>4 5
+_userManager6 B
+;B C
+private 
+readonly 
+IWebHostEnvironment ,
+_webHostEnvironment- @
+;@ A
+public 
+PetsController 
+( 
+AppDbContext *
+context+ 2
+,2 3
+UserManager4 ?
+<? @
+ApplicationUser@ O
+>O P
+userManagerQ \
+,\ ]
+IWebHostEnvironment^ q
+webHostEnvironment	r Ñ
+)
+Ñ Ö
+{ 	
+_context 
+= 
+context 
+; 
+_userManager!! 
+=!! 
+userManager!! &
+;!!& '
+_webHostEnvironment## 
+=##  !
+webHostEnvironment##" 4
+;##4 5
+}$$ 	
+public'' 
+async'' 
+Task'' 
+<'' 
+IActionResult'' '
+>''' (
+Index'') .
+(''. /
+)''/ 0
+{(( 	
+var)) 
+context)) 
+=)) 
+_context)) "
+.))" #
+Pet))# &
+.))& '
+Include))' .
+()). /
+p))/ 0
+=>))1 3
+p))4 5
+.))5 6
+ApplicationUser))6 E
+)))E F
+.))F G
+Where))G L
+())L M
+x))M N
+=>))O Q
+x))R S
+.))S T
+ApplicationUserId))T e
+==))f h
+User))i m
+.))m n
+FindFirstValue))n |
+())| }
+
+ClaimTypes	))} á
+.
+))á à
+NameIdentifier
+))à ñ
+)
+))ñ ó
+)
+))ó ò
+;
+))ò ô
+return** 
+View** 
+(** 
+await** 
+context** %
+.**% &
+ToListAsync**& 1
+(**1 2
+)**2 3
+)**3 4
+;**4 5
+}++ 	
+public.. 
+async.. 
+Task.. 
+<.. 
+IActionResult.. '
+>..' (
+Home..) -
+(..- .
+)... /
+{// 	
+return00 
+Redirect00 
+(00 
+$str00 
+)00  
+;00  !
+}11 	
+public44 
+async44 
+Task44 
+<44 
+IActionResult44 '
+>44' (
+Details44) 0
+(440 1
+string441 7
+id448 :
+)44: ;
+{55 	
+if66 
+(66 
+id66 
+==66 
+null66 
+)66 
+{77 
+return88 
+RedirectToAction88 '
+(88' (
+$str88( 2
+,882 3
+$str884 :
+)88: ;
+;88; <
+}99 
+var;; 
+pet;; 
+=;; 
+await;; 
+_context;; $
+.;;$ %
+Pet;;% (
+.<< 
+Include<< 
+(<< 
+p<< 
+=><< 
+p<< 
+.<<  
+ApplicationUser<<  /
+)<</ 0
+.== 
+FirstOrDefaultAsync== $
+(==$ %
+m==% &
+=>==' )
+m==* +
+.==+ ,
+Id==, .
+====/ 1
+id==2 4
+)==4 5
+;==5 6
+if>> 
+(>> 
+pet>> 
+==>> 
+null>> 
+)>> 
+{?? 
+return@@ 
+RedirectToAction@@ '
+(@@' (
+$str@@( 2
+,@@2 3
+$str@@4 :
+)@@: ;
+;@@; <
+}AA 
+ViewDataCC 
+[CC 
+$strCC 
+]CC 
+=CC  
+UserCC! %
+.CC% &
+FindFirstValueCC& 4
+(CC4 5
+
+ClaimTypesCC5 ?
+.CC? @
+NameIdentifierCC@ N
+)CCN O
+;CCO P
+ViewBagEE 
+.EE 
+commentsEE 
+=EE 
+_contextEE '
+.EE' (
+CommentEE( /
+.EE/ 0
+IncludeEE0 7
+(EE7 8
+pEE8 9
+=>EE: <
+pEE= >
+.EE> ?
+PetEE? B
+)EEB C
+.EEC D
+WhereEED I
+(EEI J
+xEEJ K
+=>EEL N
+xEEO P
+.EEP Q
+PetIdEEQ V
+==EEW Y
+petEEZ ]
+.EE] ^
+IdEE^ `
+)EE` a
+.EEa b
+OrderByEEb i
+(EEi j
+nEEj k
+=>EEl n
+nEEo p
+.EEp q
+
+Created_atEEq {
+)EE{ |
+;EE| }
+returnGG 
+ViewGG 
+(GG 
+petGG 
+)GG 
+;GG 
+}HH 	
+publicKK 
+IActionResultKK 
+CreateKK #
+(KK# $
+)KK$ %
+{LL 	
+ViewDataMM 
+[MM 
+$strMM (
+]MM( )
+=MM* +
+newMM, /
+
+SelectListMM0 :
+(MM: ;
+_contextMM; C
+.MMC D
+SetMMD G
+<MMG H
+ApplicationUserMMH W
+>MMW X
+(MMX Y
+)MMY Z
+,MMZ [
+$strMM\ `
+,MM` a
+$strMMb f
+)MMf g
+;MMg h
+returnNN 
+ViewNN 
+(NN 
+)NN 
+;NN 
+}OO 	
+[TT 	
+HttpPostTT	 
+]TT 
+[UU 	$
+ValidateAntiForgeryTokenUU	 !
+]UU! "
+publicVV 
+asyncVV 
+TaskVV 
+<VV 
+IActionResultVV '
+>VV' (
+CreateVV) /
+(VV/ 0
+[VV0 1
+BindVV1 5
+(VV5 6
+$str	VV6 ô
+)
+VVô ö
+]
+VVö õ
+Pet
+VVú ü
+pet
+VV† £
+)
+VV£ §
+{WW 	
+ifXX 
+(XX 
+petXX 
+.XX 
+NameXX 
+==XX 
+nullXX  
+)XX  !
+{YY 
+
+ModelStateZZ 
+.ZZ 
+AddModelErrorZZ (
+(ZZ( )
+$strZZ) /
+,ZZ/ 0
+$strZZ1 I
+)ZZI J
+;ZZJ K
+}[[ 
+if\\ 
+(\\ 
+pet\\ 
+.\\ 
+Description\\ 
+==\\  "
+null\\# '
+)\\' (
+{]] 
+
+ModelState^^ 
+.^^ 
+AddModelError^^ (
+(^^( )
+$str^^) 6
+,^^6 7
+$str^^8 W
+)^^W X
+;^^X Y
+}__ 
+ifaa 
+(aa 
+
+ModelStateaa 
+.aa 
+IsValidaa "
+)aa" #
+{bb 
+petcc 
+.cc 
+Idcc 
+=cc 
+Guidcc 
+.cc 
+NewGuidcc %
+(cc% &
+)cc& '
+.cc' (
+ToStringcc( 0
+(cc0 1
+)cc1 2
+;cc2 3
+petdd 
+.dd 
+ApplicationUserIddd %
+=dd& '
+Userdd( ,
+.dd, -
+FindFirstValuedd- ;
+(dd; <
+
+ClaimTypesdd< F
+.ddF G
+NameIdentifierddG U
+)ddU V
+;ddV W
+petee 
+.ee 
+
+Created_atee 
+=ee  
+DateTimeee! )
+.ee) *
+Nowee* -
+;ee- .
+petff 
+.ff 
+
+Updated_atff 
+=ff  
+DateTimeff! )
+.ff) *
+Nowff* -
+;ff- .
+varhh 
+fileshh 
+=hh 
+HttpContexthh '
+.hh' (
+Requesthh( /
+.hh/ 0
+Formhh0 4
+.hh4 5
+Fileshh5 :
+;hh: ;
+foreachii 
+(ii 
+varii 
+
+customFileii '
+inii( *
+filesii+ 0
+)ii0 1
+{jj 
+varkk 
+extkk 
+=kk 
+Pathkk "
+.kk" #
+GetExtensionkk# /
+(kk/ 0
+
+customFilekk0 :
+.kk: ;
+FileNamekk; C
+)kkC D
+.kkD E
+ToStringkkE M
+(kkM N
+)kkN O
+;kkO P
+ifll 
+(ll 
+!ll 
+(ll 
+extll 
+==ll  
+$strll! (
+||ll) +
+extll, /
+==ll0 2
+$strll3 9
+||ll: <
+extll= @
+==llA C
+$strllD J
+||llK M
+extllN Q
+==llR T
+$strllU [
+)ll[ \
+)ll\ ]
+{mm 
+
+ModelStatenn "
+.nn" #
+AddModelErrornn# 0
+(nn0 1
+$strnn1 <
+,nn< =
+$strnn> s
+)nns t
+;nnt u
+ifoo 
+(oo 
+!oo 
+
+ModelStateoo &
+.oo& '
+IsValidoo' .
+)oo. /
+{pp 
+returnqq "
+Viewqq# '
+(qq' (
+petqq( +
+)qq+ ,
+;qq, -
+}rr 
+}ss 
+iftt 
+(tt 
+
+customFilett "
+!=tt# %
+nulltt& *
+&&tt+ -
+
+customFilett. 8
+.tt8 9
+Lengthtt9 ?
+>tt@ A
+$numttB C
+)ttC D
+{uu 
+usingvv 
+(vv 
+varvv "
+
+fileStreamvv# -
+=vv. /
+newvv0 3
+
+FileStreamvv4 >
+(vv> ?
+Pathvv? C
+.vvC D
+CombinevvD K
+(vvK L
+PathvvL P
+.vvP Q
+CombinevvQ X
+(vvX Y
+_webHostEnvironmentvvY l
+.vvl m
+ContentRootPathvvm |
+,vv| }
+$str	vv~ í
+)
+vví ì
+,
+vvì î
+pet
+vvï ò
+.
+vvò ô
+Id
+vvô õ
++
+vvú ù
+$str
+vvû §
+)
+vv§ •
+,
+vv• ¶
+FileMode
+vvß Ø
+.
+vvØ ∞
+Create
+vv∞ ∂
+)
+vv∂ ∑
+)
+vv∑ ∏
+{ww 
+awaitxx !
+
+customFilexx" ,
+.xx, -
+CopyToAsyncxx- 8
+(xx8 9
+
+fileStreamxx9 C
+)xxC D
+;xxD E
+petyy 
+.yy  
+	ImagePathyy  )
+=yy* +
+petyy, /
+.yy/ 0
+Idyy0 2
+.yy2 3
+ToStringyy3 ;
+(yy; <
+)yy< =
+;yy= >
+}zz 
+}{{ 
+}|| 
+_context~~ 
+.~~ 
+Add~~ 
+(~~ 
+pet~~  
+)~~  !
+;~~! "
+await 
+_context 
+. 
+SaveChangesAsync /
+(/ 0
+)0 1
+;1 2
+return
+ÅÅ 
+RedirectToAction
+ÅÅ '
+(
+ÅÅ' (
+nameof
+ÅÅ( .
+(
+ÅÅ. /
+Index
+ÅÅ/ 4
+)
+ÅÅ4 5
+)
+ÅÅ5 6
+;
+ÅÅ6 7
+}
+ÇÇ 
+return
+ÑÑ 
+View
+ÑÑ 
+(
+ÑÑ 
+pet
+ÑÑ 
+)
+ÑÑ 
+;
+ÑÑ 
+}
+ÖÖ 	
+public
+àà 
+async
+àà 
+Task
+àà 
+<
+àà 
+IActionResult
+àà '
+>
+àà' (
+Edit
+àà) -
+(
+àà- .
+string
+àà. 4
+id
+àà5 7
+)
+àà7 8
+{
+ââ 	
+if
+ää 
+(
+ää 
+id
+ää 
+==
+ää 
+null
+ää 
+)
+ää 
+{
+ãã 
+return
+åå 
+RedirectToAction
+åå '
+(
+åå' (
+$str
+åå( 2
+,
+åå2 3
+$str
+åå4 :
+)
+åå: ;
+;
+åå; <
+}
+çç 
+var
+èè 
+pet
+èè 
+=
+èè 
+await
+èè 
+_context
+èè $
+.
+èè$ %
+Pet
+èè% (
+.
+èè( )
+	FindAsync
+èè) 2
+(
+èè2 3
+id
+èè3 5
+)
+èè5 6
+;
+èè6 7
+if
+êê 
+(
+êê 
+pet
+êê 
+==
+êê 
+null
+êê 
+)
+êê 
+{
+ëë 
+return
+íí 
+RedirectToAction
+íí '
+(
+íí' (
+$str
+íí( 2
+,
+íí2 3
+$str
+íí4 :
+)
+íí: ;
+;
+íí; <
+}
+ìì 
+if
+ïï 
+(
+ïï 
+pet
+ïï 
+.
+ïï 
+ApplicationUserId
+ïï %
+!=
+ïï& (
+User
+ïï) -
+.
+ïï- .
+FindFirstValue
+ïï. <
+(
+ïï< =
+
+ClaimTypes
+ïï= G
+.
+ïïG H
+NameIdentifier
+ïïH V
+)
+ïïV W
+)
+ïïW X
+{
+ññ 
+return
+óó 
+RedirectToAction
+óó '
+(
+óó' (
+$str
+óó( 2
+,
+óó2 3
+$str
+óó4 :
+)
+óó: ;
+;
+óó; <
+}
+òò 
+ViewData
+öö 
+[
+öö 
+$str
+öö (
+]
+öö( )
+=
+öö* +
+new
+öö, /
+
+SelectList
+öö0 :
+(
+öö: ;
+_context
+öö; C
+.
+ööC D
+Set
+ööD G
+<
+ööG H
+ApplicationUser
+ööH W
+>
+ööW X
+(
+ööX Y
+)
+ööY Z
+,
+ööZ [
+$str
+öö\ `
+,
+öö` a
+$str
+ööb f
+,
+ööf g
+pet
+ööh k
+.
+öök l
+ApplicationUserId
+ööl }
+)
+öö} ~
+;
+öö~ 
+return
+õõ 
+View
+õõ 
+(
+õõ 
+pet
+õõ 
+)
+õõ 
+;
+õõ 
+}
+úú 	
+[
+°° 	
+HttpPost
+°°	 
+]
+°° 
+[
+¢¢ 	&
+ValidateAntiForgeryToken
+¢¢	 !
+]
+¢¢! "
+public
+££ 
+async
+££ 
+Task
+££ 
+<
+££ 
+IActionResult
+££ '
+>
+££' (
+Edit
+££) -
+(
+££- .
+string
+££. 4
+id
+££5 7
+,
+££7 8
+[
+££9 :
+Bind
+££: >
+(
+££> ?
+$str££? ê
+)££ê ë
+]££ë í
+Pet££ì ñ
+pet££ó ö
+)££ö õ
+{
+§§ 	
+if
+•• 
+(
+•• 
+pet
+•• 
+.
+•• 
+ApplicationUserId
+•• %
+!=
+••& (
+User
+••) -
+.
+••- .
+FindFirstValue
+••. <
+(
+••< =
+
+ClaimTypes
+••= G
+.
+••G H
+NameIdentifier
+••H V
+)
+••V W
+.
+••W X
+ToString
+••X `
+(
+••` a
+)
+••a b
+)
+••b c
+{
+¶¶ 
+return
+ßß 
+RedirectToAction
+ßß '
+(
+ßß' (
+$str
+ßß( 2
+,
+ßß2 3
+$str
+ßß4 :
+)
+ßß: ;
+;
+ßß; <
+}
+®® 
+pet
+™™ 
+.
+™™ 
+
+Updated_at
+™™ 
+=
+™™ 
+DateTime
+™™ %
+.
+™™% &
+Now
+™™& )
+;
+™™) *
+pet
+´´ 
+.
+´´ 
+ApplicationUserId
+´´ !
+=
+´´" #
+User
+´´$ (
+.
+´´( )
+FindFirstValue
+´´) 7
+(
+´´7 8
+
+ClaimTypes
+´´8 B
+.
+´´B C
+NameIdentifier
+´´C Q
+)
+´´Q R
+;
+´´R S
+if
+≠≠ 
+(
+≠≠ 
+id
+≠≠ 
+!=
+≠≠ 
+pet
+≠≠ 
+.
+≠≠ 
+Id
+≠≠ 
+)
+≠≠ 
+{
+ÆÆ 
+return
+ØØ 
+RedirectToAction
+ØØ '
+(
+ØØ' (
+$str
+ØØ( 2
+,
+ØØ2 3
+$str
+ØØ4 :
+)
+ØØ: ;
+;
+ØØ; <
+}
+∞∞ 
+if
+≤≤ 
+(
+≤≤ 
+
+ModelState
+≤≤ 
+.
+≤≤ 
+IsValid
+≤≤ "
+)
+≤≤" #
+{
+≥≥ 
+try
+¥¥ 
+{
+µµ 
+var
+∂∂ 
+files
+∂∂ 
+=
+∂∂ 
+HttpContext
+∂∂  +
+.
+∂∂+ ,
+Request
+∂∂, 3
+.
+∂∂3 4
+Form
+∂∂4 8
+.
+∂∂8 9
+Files
+∂∂9 >
+;
+∂∂> ?
+foreach
+∑∑ 
+(
+∑∑ 
+var
+∑∑  
+
+customFile
+∑∑! +
+in
+∑∑, .
+files
+∑∑/ 4
+)
+∑∑4 5
+{
+∏∏ 
+var
+ππ 
+ext
+ππ 
+=
+ππ  !
+Path
+ππ" &
+.
+ππ& '
+GetExtension
+ππ' 3
+(
+ππ3 4
+
+customFile
+ππ4 >
+.
+ππ> ?
+FileName
+ππ? G
+)
+ππG H
+.
+ππH I
+ToString
+ππI Q
+(
+ππQ R
+)
+ππR S
+;
+ππS T
+if
+∫∫ 
+(
+∫∫ 
+!
+∫∫ 
+(
+∫∫ 
+ext
+∫∫ !
+==
+∫∫" $
+$str
+∫∫% ,
+||
+∫∫- /
+ext
+∫∫0 3
+==
+∫∫4 6
+$str
+∫∫7 =
+||
+∫∫> @
+ext
+∫∫A D
+==
+∫∫E G
+$str
+∫∫H N
+||
+∫∫O Q
+ext
+∫∫R U
+==
+∫∫V X
+$str
+∫∫Y _
+)
+∫∫_ `
+)
+∫∫` a
+{
+ªª 
+
+ModelState
+ºº &
+.
+ºº& '
+AddModelError
+ºº' 4
+(
+ºº4 5
+$str
+ºº5 @
+,
+ºº@ A
+$str
+ººB w
+)
+ººw x
+;
+ººx y
+if
+ΩΩ 
+(
+ΩΩ  
+!
+ΩΩ  !
+
+ModelState
+ΩΩ! +
+.
+ΩΩ+ ,
+IsValid
+ΩΩ, 3
+)
+ΩΩ3 4
+{
+ææ 
+return
+øø  &
+View
+øø' +
+(
+øø+ ,
+pet
+øø, /
+)
+øø/ 0
+;
+øø0 1
+}
+¿¿ 
+}
+¡¡ 
+if
+¬¬ 
+(
+¬¬ 
+
+customFile
+¬¬ &
+!=
+¬¬' )
+null
+¬¬* .
+&&
+¬¬/ 1
+
+customFile
+¬¬2 <
+.
+¬¬< =
+Length
+¬¬= C
+>
+¬¬D E
+$num
+¬¬F G
+)
+¬¬G H
+{
+√√ 
+System
+ƒƒ "
+.
+ƒƒ" #
+IO
+ƒƒ# %
+.
+ƒƒ% &
+File
+ƒƒ& *
+.
+ƒƒ* +
+Delete
+ƒƒ+ 1
+(
+ƒƒ1 2
+Path
+ƒƒ2 6
+.
+ƒƒ6 7
+Combine
+ƒƒ7 >
+(
+ƒƒ> ?!
+_webHostEnvironment
+ƒƒ? R
+.
+ƒƒR S
+ContentRootPath
+ƒƒS b
+,
+ƒƒb c
+$str
+ƒƒd x
++
+ƒƒy z
+id
+ƒƒ{ }
++
+ƒƒ~ 
+$strƒƒÄ Ü
+)ƒƒÜ á
+)ƒƒá à
+;ƒƒà â
+using
+∆∆ !
+(
+∆∆" #
+var
+∆∆# &
+
+fileStream
+∆∆' 1
+=
+∆∆2 3
+new
+∆∆4 7
+
+FileStream
+∆∆8 B
+(
+∆∆B C
+Path
+∆∆C G
+.
+∆∆G H
+Combine
+∆∆H O
+(
+∆∆O P
+Path
+∆∆P T
+.
+∆∆T U
+Combine
+∆∆U \
+(
+∆∆\ ]!
+_webHostEnvironment
+∆∆] p
+.
+∆∆p q
+ContentRootPath∆∆q Ä
+,∆∆Ä Å
+$str∆∆Ç ñ
+)∆∆ñ ó
+,∆∆ó ò
+pet∆∆ô ú
+.∆∆ú ù
+Id∆∆ù ü
++∆∆† °
+$str∆∆¢ ®
+)∆∆® ©
+,∆∆© ™
+FileMode∆∆´ ≥
+.∆∆≥ ¥
+Create∆∆¥ ∫
+)∆∆∫ ª
+)∆∆ª º
+{
+«« 
+await
+»»  %
+
+customFile
+»»& 0
+.
+»»0 1
+CopyToAsync
+»»1 <
+(
+»»< =
+
+fileStream
+»»= G
+)
+»»G H
+;
+»»H I
+pet
+……  #
+.
+……# $
+	ImagePath
+……$ -
+=
+……. /
+pet
+……0 3
+.
+……3 4
+Id
+……4 6
+.
+……6 7
+ToString
+……7 ?
+(
+……? @
+)
+……@ A
+;
+……A B
+}
+   
+}
+ÀÀ 
+}
+ÃÃ 
+var
+œœ 
+tst
+œœ 
+=
+œœ 
+Path
+œœ "
+.
+œœ" #
+Combine
+œœ# *
+(
+œœ* +!
+_webHostEnvironment
+œœ+ >
+.
+œœ> ?
+WebRootPath
+œœ? J
+,
+œœJ K
+Path
+œœL P
+.
+œœP Q
+Combine
+œœQ X
+(
+œœX Y
+$str
+œœY d
+,
+œœd e
+pet
+œœf i
+.
+œœi j
+Id
+œœj l
+.
+œœl m
+ToString
+œœm u
+(
+œœu v
+)
+œœv w
++
+œœx y
+$strœœz Ä
+)œœÄ Å
+)œœÅ Ç
+;œœÇ É
+var
+—— 
+test
+—— 
+=
+—— 
+System
+—— %
+.
+——% &
+IO
+——& (
+.
+——( )
+File
+——) -
+.
+——- .
+Exists
+——. 4
+(
+——4 5
+Path
+——5 9
+.
+——9 :
+Combine
+——: A
+(
+——A B!
+_webHostEnvironment
+——B U
+.
+——U V
+WebRootPath
+——V a
+,
+——a b
+Path
+——c g
+.
+——g h
+Combine
+——h o
+(
+——o p
+$str
+——p {
+,
+——{ |
+pet——} Ä
+.——Ä Å
+Id——Å É
+.——É Ñ
+ToString——Ñ å
+(——å ç
+)——ç é
++——è ê
+$str——ë ó
+)——ó ò
+)——ò ô
+)——ô ö
+;——ö õ
+if
+”” 
+(
+”” 
+System
+”” 
+.
+”” 
+IO
+”” !
+.
+””! "
+File
+””" &
+.
+””& '
+Exists
+””' -
+(
+””- .
+Path
+””. 2
+.
+””2 3
+Combine
+””3 :
+(
+””: ;!
+_webHostEnvironment
+””; N
+.
+””N O
+WebRootPath
+””O Z
+,
+””Z [
+Path
+””\ `
+.
+””` a
+Combine
+””a h
+(
+””h i
+$str
+””i t
+,
+””t u
+pet
+””v y
+.
+””y z
+Id
+””z |
+.
+””| }
+ToString””} Ö
+(””Ö Ü
+)””Ü á
++””à â
+$str””ä ê
+)””ê ë
+)””ë í
+)””í ì
+)””ì î
+{
+‘‘ 
+pet
+’’ 
+.
+’’ 
+	ImagePath
+’’ %
+=
+’’& '
+pet
+’’( +
+.
+’’+ ,
+Id
+’’, .
+.
+’’. /
+ToString
+’’/ 7
+(
+’’7 8
+)
+’’8 9
+;
+’’9 :
+}
+÷÷ 
+_context
+ÿÿ 
+.
+ÿÿ 
+Update
+ÿÿ #
+(
+ÿÿ# $
+pet
+ÿÿ$ '
+)
+ÿÿ' (
+;
+ÿÿ( )
+await
+ŸŸ 
+_context
+ŸŸ "
+.
+ŸŸ" #
+SaveChangesAsync
+ŸŸ# 3
+(
+ŸŸ3 4
+)
+ŸŸ4 5
+;
+ŸŸ5 6
+}
+⁄⁄ 
+catch
+€€ 
+(
+€€ *
+DbUpdateConcurrencyException
+€€ 3
+)
+€€3 4
+{
+‹‹ 
+if
+›› 
+(
+›› 
+!
+›› 
+	PetExists
+›› "
+(
+››" #
+pet
+››# &
+.
+››& '
+Id
+››' )
+)
+››) *
+)
+››* +
+{
+ﬁﬁ 
+return
+ﬂﬂ 
+RedirectToAction
+ﬂﬂ /
+(
+ﬂﬂ/ 0
+$str
+ﬂﬂ0 :
+,
+ﬂﬂ: ;
+$str
+ﬂﬂ< B
+)
+ﬂﬂB C
+;
+ﬂﬂC D
+}
+‡‡ 
+else
+·· 
+{
+‚‚ 
+throw
+„„ 
+;
+„„ 
+}
+‰‰ 
+}
+ÂÂ 
+return
+ÊÊ 
+Redirect
+ÊÊ 
+(
+ÊÊ  
+string
+ÊÊ  &
+.
+ÊÊ& '
+Format
+ÊÊ' -
+(
+ÊÊ- .
+$str
+ÊÊ. B
+,
+ÊÊB C
+pet
+ÊÊD G
+.
+ÊÊG H
+Id
+ÊÊH J
+)
+ÊÊJ K
+)
+ÊÊK L
+;
+ÊÊL M
+}
+ËË 
+return
+ÍÍ 
+Redirect
+ÍÍ 
+(
+ÍÍ 
+string
+ÍÍ "
+.
+ÍÍ" #
+Format
+ÍÍ# )
+(
+ÍÍ) *
+$str
+ÍÍ* >
+,
+ÍÍ> ?
+pet
+ÍÍ@ C
+.
+ÍÍC D
+Id
+ÍÍD F
+)
+ÍÍF G
+)
+ÍÍG H
+;
+ÍÍH I
+}
+ÏÏ 	
+public
+ÔÔ 
+async
+ÔÔ 
+Task
+ÔÔ 
+<
+ÔÔ 
+IActionResult
+ÔÔ '
+>
+ÔÔ' (
+Delete
+ÔÔ) /
+(
+ÔÔ/ 0
+string
+ÔÔ0 6
+id
+ÔÔ7 9
+)
+ÔÔ9 :
+{
+ 	
+if
+ÒÒ 
+(
+ÒÒ 
+id
+ÒÒ 
+==
+ÒÒ 
+null
+ÒÒ 
+)
+ÒÒ 
+{
+ÚÚ 
+return
+ÛÛ 
+RedirectToAction
+ÛÛ '
+(
+ÛÛ' (
+$str
+ÛÛ( 2
+,
+ÛÛ2 3
+$str
+ÛÛ4 :
+)
+ÛÛ: ;
+;
+ÛÛ; <
+}
+ÙÙ 
+var
+ˆˆ 
+pet
+ˆˆ 
+=
+ˆˆ 
+await
+ˆˆ 
+_context
+ˆˆ $
+.
+ˆˆ$ %
+Pet
+ˆˆ% (
+.
+˜˜ 
+Include
+˜˜ 
+(
+˜˜ 
+p
+˜˜ 
+=>
+˜˜ 
+p
+˜˜ 
+.
+˜˜  
+ApplicationUser
+˜˜  /
+)
+˜˜/ 0
+.
+¯¯ !
+FirstOrDefaultAsync
+¯¯ $
+(
+¯¯$ %
+m
+¯¯% &
+=>
+¯¯' )
+m
+¯¯* +
+.
+¯¯+ ,
+Id
+¯¯, .
+==
+¯¯/ 1
+id
+¯¯2 4
+)
+¯¯4 5
+;
+¯¯5 6
+if
+˘˘ 
+(
+˘˘ 
+pet
+˘˘ 
+==
+˘˘ 
+null
+˘˘ 
+)
+˘˘ 
+{
+˙˙ 
+return
+˚˚ 
+RedirectToAction
+˚˚ '
+(
+˚˚' (
+$str
+˚˚( 2
+,
+˚˚2 3
+$str
+˚˚4 :
+)
+˚˚: ;
+;
+˚˚; <
+}
+¸¸ 
+if
+˛˛ 
+(
+˛˛ 
+pet
+˛˛ 
+.
+˛˛ 
+ApplicationUserId
+˛˛ %
+!=
+˛˛& (
+User
+˛˛) -
+.
+˛˛- .
+FindFirstValue
+˛˛. <
+(
+˛˛< =
+
+ClaimTypes
+˛˛= G
+.
+˛˛G H
+NameIdentifier
+˛˛H V
+)
+˛˛V W
+)
+˛˛W X
+{
+ˇˇ 
+return
+ÄÄ 
+RedirectToAction
+ÄÄ '
+(
+ÄÄ' (
+$str
+ÄÄ( 2
+,
+ÄÄ2 3
+$str
+ÄÄ4 :
+)
+ÄÄ: ;
+;
+ÄÄ; <
+}
+ÅÅ 
+return
+ÉÉ 
+View
+ÉÉ 
+(
+ÉÉ 
+pet
+ÉÉ 
+)
+ÉÉ 
+;
+ÉÉ 
+}
+ÑÑ 	
+[
+áá 	
+HttpPost
+áá	 
+,
+áá 
+
+ActionName
+áá 
+(
+áá 
+$str
+áá &
+)
+áá& '
+]
+áá' (
+[
+àà 	&
+ValidateAntiForgeryToken
+àà	 !
+]
+àà! "
+public
+ââ 
+async
+ââ 
+Task
+ââ 
+<
+ââ 
+IActionResult
+ââ '
+>
+ââ' (
+DeleteConfirmed
+ââ) 8
+(
+ââ8 9
+string
+ââ9 ?
+id
+ââ@ B
+)
+ââB C
+{
+ää 	
+var
+ãã 
+pet
+ãã 
+=
+ãã 
+await
+ãã 
+_context
+ãã $
+.
+ãã$ %
+Pet
+ãã% (
+.
+ãã( )
+	FindAsync
+ãã) 2
+(
+ãã2 3
+id
+ãã3 5
+)
+ãã5 6
+;
+ãã6 7
+if
+òò 
+(
+òò 
+pet
+òò 
+.
+òò 
+ApplicationUserId
+òò %
+!=
+òò& (
+User
+òò) -
+.
+òò- .
+FindFirstValue
+òò. <
+(
+òò< =
+
+ClaimTypes
+òò= G
+.
+òòG H
+NameIdentifier
+òòH V
+)
+òòV W
+)
+òòW X
+{
+ôô 
+return
+öö 
+RedirectToAction
+öö '
+(
+öö' (
+$str
+öö( 2
+,
+öö2 3
+$str
+öö4 :
+)
+öö: ;
+;
+öö; <
+}
+õõ 
+_context
+ùù 
+.
+ùù 
+Pet
+ùù 
+.
+ùù 
+Remove
+ùù 
+(
+ùù  
+pet
+ùù  #
+)
+ùù# $
+;
+ùù$ %
+await
+ûû 
+_context
+ûû 
+.
+ûû 
+SaveChangesAsync
+ûû +
+(
+ûû+ ,
+)
+ûû, -
+;
+ûû- .
+System
+†† 
+.
+†† 
+IO
+†† 
+.
+†† 
+File
+†† 
+.
+†† 
+Delete
+†† !
+(
+††! "
+Path
+††" &
+.
+††& '
+Combine
+††' .
+(
+††. /!
+_webHostEnvironment
+††/ B
+.
+††B C
+ContentRootPath
+††C R
+,
+††R S
+$str
+††T h
++
+††i j
+id
+††k m
++
+††n o
+$str
+††p v
+)
+††v w
+)
+††w x
+;
+††x y
+return
+¢¢ 
+RedirectToAction
+¢¢ #
+(
+¢¢# $
+nameof
+¢¢$ *
+(
+¢¢* +
+Index
+¢¢+ 0
+)
+¢¢0 1
+)
+¢¢1 2
+;
+¢¢2 3
+}
+££ 	
+private
+•• 
+bool
+•• 
+	PetExists
+•• 
+(
+•• 
+string
+•• %
+id
+••& (
+)
+••( )
+{
+¶¶ 	
+return
+ßß 
+_context
+ßß 
+.
+ßß 
+Pet
+ßß 
+.
+ßß  
+Any
+ßß  #
+(
+ßß# $
+e
+ßß$ %
+=>
+ßß& (
+e
+ßß) *
+.
+ßß* +
+Id
+ßß+ -
+==
+ßß. 0
+id
+ßß1 3
+)
+ßß3 4
+;
+ßß4 5
+}
+®® 	
+[
+≠≠ 	
+HttpPost
+≠≠	 
+]
+≠≠ 
+[
+ÆÆ 	&
+ValidateAntiForgeryToken
+ÆÆ	 !
+]
+ÆÆ! "
+public
+ØØ 
+async
+ØØ 
+Task
+ØØ 
+<
+ØØ 
+IActionResult
+ØØ '
+>
+ØØ' (
+CommentsCreate
+ØØ) 7
+(
+ØØ7 8
+[
+ØØ8 9
+Bind
+ØØ9 =
+(
+ØØ= >
+$strØØ> ó
+)ØØó ò
+]ØØò ô
+CommentØØö °
+commentØØ¢ ©
+)ØØ© ™
+{
+∞∞ 	
+if
+±± 
+(
+±± 
+
+ModelState
+±± 
+.
+±± 
+IsValid
+±± "
+)
+±±" #
+{
+≤≤ 
+var
+≥≥ 
+petId
+≥≥ 
+=
+≥≥ 
+comment
+≥≥ #
+.
+≥≥# $
+PetId
+≥≥$ )
+;
+≥≥) *
+comment
+µµ 
+.
+µµ 
+Id
+µµ 
+=
+µµ 
+Guid
+µµ !
+.
+µµ! "
+NewGuid
+µµ" )
+(
+µµ) *
+)
+µµ* +
+.
+µµ+ ,
+ToString
+µµ, 4
+(
+µµ4 5
+)
+µµ5 6
+;
+µµ6 7
+comment
+∂∂ 
+.
+∂∂ 
+ApplicationUserId
+∂∂ )
+=
+∂∂* +
+User
+∂∂, 0
+.
+∂∂0 1
+FindFirstValue
+∂∂1 ?
+(
+∂∂? @
+
+ClaimTypes
+∂∂@ J
+.
+∂∂J K
+NameIdentifier
+∂∂K Y
+)
+∂∂Y Z
+;
+∂∂Z [
+comment
+∑∑ 
+.
+∑∑ 
+
+Created_at
+∑∑ "
+=
+∑∑# $
+DateTime
+∑∑% -
+.
+∑∑- .
+Now
+∑∑. 1
+;
+∑∑1 2
+comment
+∏∏ 
+.
+∏∏ 
+
+Updated_at
+∏∏ "
+=
+∏∏# $
+DateTime
+∏∏% -
+.
+∏∏- .
+Now
+∏∏. 1
+;
+∏∏1 2
+if
+∫∫ 
+(
+∫∫ 
+comment
+∫∫ 
+.
+∫∫ 
+Message
+∫∫ #
+==
+∫∫$ &
+null
+∫∫' +
+)
+∫∫+ ,
+{
+ªª 
+
+ModelState
+ºº 
+.
+ºº 
+AddModelError
+ºº ,
+(
+ºº, -
+$str
+ºº- 6
+,
+ºº6 7
+$str
+ºº8 Q
+)
+ººQ R
+;
+ººR S
+return
+ææ 
+Redirect
+ææ #
+(
+ææ# $
+string
+ææ$ *
+.
+ææ* +
+Format
+ææ+ 1
+(
+ææ1 2
+$str
+ææ2 F
+,
+ææF G
+comment
+ææH O
+.
+ææO P
+PetId
+ææP U
+)
+ææU V
+)
+ææV W
+;
+ææW X
+}
+øø 
+var
+¡¡ 
+files
+¡¡ 
+=
+¡¡ 
+HttpContext
+¡¡ '
+.
+¡¡' (
+Request
+¡¡( /
+.
+¡¡/ 0
+Form
+¡¡0 4
+.
+¡¡4 5
+Files
+¡¡5 :
+;
+¡¡: ;
+foreach
+¬¬ 
+(
+¬¬ 
+var
+¬¬ 
+
+customFile
+¬¬ '
+in
+¬¬( *
+files
+¬¬+ 0
+)
+¬¬0 1
+{
+√√ 
+var
+ƒƒ 
+ext
+ƒƒ 
+=
+ƒƒ 
+Path
+ƒƒ "
+.
+ƒƒ" #
+GetExtension
+ƒƒ# /
+(
+ƒƒ/ 0
+
+customFile
+ƒƒ0 :
+.
+ƒƒ: ;
+FileName
+ƒƒ; C
+)
+ƒƒC D
+.
+ƒƒD E
+ToString
+ƒƒE M
+(
+ƒƒM N
+)
+ƒƒN O
+;
+ƒƒO P
+if
+≈≈ 
+(
+≈≈ 
+ext
+≈≈ 
+==
+≈≈ 
+$str
+≈≈ &
+||
+≈≈' )
+ext
+≈≈* -
+==
+≈≈. 0
+$str
+≈≈1 7
+||
+≈≈8 :
+ext
+≈≈; >
+==
+≈≈? A
+$str
+≈≈B H
+||
+≈≈I K
+ext
+≈≈L O
+==
+≈≈P R
+$str
+≈≈S Y
+)
+≈≈Y Z
+{
+∆∆ 
+if
+«« 
+(
+«« 
+
+customFile
+«« &
+!=
+««' )
+null
+««* .
+&&
+««/ 1
+
+customFile
+««2 <
+.
+««< =
+Length
+««= C
+>
+««D E
+$num
+««F G
+)
+««G H
+{
+»» 
+using
+…… !
+(
+……" #
+var
+……# &
+
+fileStream
+……' 1
+=
+……2 3
+new
+……4 7
+
+FileStream
+……8 B
+(
+……B C
+Path
+……C G
+.
+……G H
+Combine
+……H O
+(
+……O P
+Path
+……P T
+.
+……T U
+Combine
+……U \
+(
+……\ ]!
+_webHostEnvironment
+……] p
+.
+……p q
+ContentRootPath……q Ä
+,……Ä Å
+$str……Ç ö
+)……ö õ
+,……õ ú
+comment……ù §
+.……§ •
+Id……• ß
++……® ©
+$str……™ ∞
+)……∞ ±
+,……± ≤
+FileMode……≥ ª
+.……ª º
+Create……º ¬
+)……¬ √
+)……√ ƒ
+{
+   
+await
+ÀÀ  %
+
+customFile
+ÀÀ& 0
+.
+ÀÀ0 1
+CopyToAsync
+ÀÀ1 <
+(
+ÀÀ< =
+
+fileStream
+ÀÀ= G
+)
+ÀÀG H
+;
+ÀÀH I
+comment
+ÃÃ  '
+.
+ÃÃ' (
+	ImagePath
+ÃÃ( 1
+=
+ÃÃ2 3
+comment
+ÃÃ4 ;
+.
+ÃÃ; <
+Id
+ÃÃ< >
+.
+ÃÃ> ?
+ToString
+ÃÃ? G
+(
+ÃÃG H
+)
+ÃÃH I
+;
+ÃÃI J
+}
+ÕÕ 
+}
+ŒŒ 
+}
+œœ 
+}
+–– 
+_context
+““ 
+.
+““ 
+Add
+““ 
+(
+““ 
+comment
+““ $
+)
+““$ %
+;
+““% &
+await
+”” 
+_context
+”” 
+.
+”” 
+SaveChangesAsync
+”” /
+(
+””/ 0
+)
+””0 1
+;
+””1 2
+return
+’’ 
+Redirect
+’’ 
+(
+’’  
+string
+’’  &
+.
+’’& '
+Format
+’’' -
+(
+’’- .
+$str
+’’. B
+,
+’’B C
+comment
+’’D K
+.
+’’K L
+PetId
+’’L Q
+)
+’’Q R
+)
+’’R S
+;
+’’S T
+}
+÷÷ 
+return
+ŸŸ 
+Redirect
+ŸŸ 
+(
+ŸŸ 
+string
+ŸŸ "
+.
+ŸŸ" #
+Format
+ŸŸ# )
+(
+ŸŸ) *
+$str
+ŸŸ* >
+,
+ŸŸ> ?
+comment
+ŸŸ@ G
+.
+ŸŸG H
+PetId
+ŸŸH M
+)
+ŸŸM N
+)
+ŸŸN O
+;
+ŸŸO P
+}
+⁄⁄ 	
+[
+›› 	
+HttpPost
+››	 
+,
+›› 
+
+ActionName
+›› 
+(
+›› 
+$str
+›› 6
+)
+››6 7
+]
+››7 8
+[
+ﬁﬁ 	&
+ValidateAntiForgeryToken
+ﬁﬁ	 !
+]
+ﬁﬁ! "
+public
+ﬂﬂ 
+async
+ﬂﬂ 
+Task
+ﬂﬂ 
+<
+ﬂﬂ 
+IActionResult
+ﬂﬂ '
+>
+ﬂﬂ' ($
+CommentDeleteConfirmed
+ﬂﬂ) ?
+(
+ﬂﬂ? @
+string
+ﬂﬂ@ F
+id
+ﬂﬂG I
+)
+ﬂﬂI J
+{
+‡‡ 	
+var
+·· 
+comment
+·· 
+=
+·· 
+await
+·· 
+_context
+··  (
+.
+··( )
+Comment
+··) 0
+.
+··0 1
+	FindAsync
+··1 :
+(
+··: ;
+id
+··; =
+)
+··= >
+;
+··> ?
+_context
+‚‚ 
+.
+‚‚ 
+Comment
+‚‚ 
+.
+‚‚ 
+Remove
+‚‚ #
+(
+‚‚# $
+comment
+‚‚$ +
+)
+‚‚+ ,
+;
+‚‚, -
+await
+„„ 
+_context
+„„ 
+.
+„„ 
+SaveChangesAsync
+„„ +
+(
+„„+ ,
+)
+„„, -
+;
+„„- .
+if
+ÂÂ 
+(
+ÂÂ 
+comment
+ÂÂ 
+.
+ÂÂ 
+	ImagePath
+ÂÂ  
+!=
+ÂÂ! #
+null
+ÂÂ$ (
+)
+ÂÂ( )
+{
+ÊÊ 
+System
+ÁÁ 
+.
+ÁÁ 
+IO
+ÁÁ 
+.
+ÁÁ 
+File
+ÁÁ 
+.
+ÁÁ 
+Delete
+ÁÁ %
+(
+ÁÁ% &
+Path
+ÁÁ& *
+.
+ÁÁ* +
+Combine
+ÁÁ+ 2
+(
+ÁÁ2 3!
+_webHostEnvironment
+ÁÁ3 F
+.
+ÁÁF G
+ContentRootPath
+ÁÁG V
+,
+ÁÁV W
+$str
+ÁÁX p
++
+ÁÁq r
+id
+ÁÁs u
++
+ÁÁv w
+$str
+ÁÁx ~
+)
+ÁÁ~ 
+)ÁÁ Ä
+;ÁÁÄ Å
+}
+ËË 
+return
+ÍÍ 
+Redirect
+ÍÍ 
+(
+ÍÍ 
+string
+ÍÍ "
+.
+ÍÍ" #
+Format
+ÍÍ# )
+(
+ÍÍ) *
+$str
+ÍÍ* >
+,
+ÍÍ> ?
+comment
+ÍÍ@ G
+.
+ÍÍG H
+PetId
+ÍÍH M
+)
+ÍÍM N
+)
+ÍÍN O
+;
+ÍÍO P
+}
+ÎÎ 	
+}
+ÏÏ 
+}ÌÌ Ö
+
+pC:\Users\Subaru\source\repos\Where_is_my_Fluffymoon\Where_is_my_Fluffymoon\Data\Where_is_my_FluffymoonContext.cs
+	namespace 	"
+Where_is_my_Fluffymoon
+  
+.  !
+Data! %
+{		 
+public
+
+ 
+
+class
+
+ )
+Where_is_my_FluffymoonContext
+
+ .
+:
+
+/ 0
+	DbContext
+
+1 :
+{ 
+public )
+Where_is_my_FluffymoonContext ,
+(- .
+DbContextOptions. >
+<> ?)
+Where_is_my_FluffymoonContext? \
+>\ ]
+options^ e
+)e f
+: 
+base 
+( 
+options 
+) 
+{ 	
+} 	
+public 
+DbSet 
+< "
+Where_is_my_Fluffymoon +
+.+ ,
+Models, 2
+.2 3
+Pet3 6
+>6 7
+Pet8 ;
+{< =
+get> A
+;A B
+setC F
+;F G
+}H I
+public 
+DbSet 
+< "
+Where_is_my_Fluffymoon +
+.+ ,
+Models, 2
+.2 3
+Comment3 :
+>: ;
+Comment< C
+{D E
+getF I
+;I J
+setK N
+;N O
+}P Q
+} 
+} Â°
+vC:\Users\Subaru\source\repos\Where_is_my_Fluffymoon\Where_is_my_Fluffymoon\Migrations\20210522091221_Initial_Create.cs
 	namespace 	"
 Where_is_my_Fluffymoon
   
@@ -3288,10 +7276,10 @@ Migrations! +
 public 
 
 partial 
-class 
-InitialCreate &
-:' (
-	Migration) 2
+class 
+Initial_Create '
+:( )
+	Migration* 3
 { 
 	protected 
 override 
@@ -4785,228 +8773,250 @@ ForeignKey
 Column
 °° %
 <
-°°% &
-int
-°°& )
+°°% &
+string
+°°& ,
 >
-°°) *
+°°, -
 (
-°°* +
+°°- .
 type
-°°+ /
+°°. 2
 :
-°°/ 0
+°°2 3
 $str
-°°1 6
+°°4 C
 ,
-°°6 7
+°°C D
 nullable
-°°8 @
+°°E M
 :
-°°@ A
+°°M N
 false
-°°B G
+°°O T
 )
-°°G H
-.
-¢¢ 
-
-Annotation
-¢¢ #
-(
-¢¢# $
-$str
-¢¢$ 8
+°°T U
 ,
-¢¢8 9
-$str
-¢¢: @
-)
-¢¢@ A
-,
-¢¢A B
+°°U V
 Name
-££ 
+¢¢ 
 =
-££ 
+¢¢ 
 table
-££  
+¢¢  
 .
-££  !
+¢¢  !
 Column
-££! '
+¢¢! '
 <
-££' (
+¢¢' (
 string
-££( .
+¢¢( .
 >
-££. /
+¢¢. /
 (
-££/ 0
+¢¢/ 0
 type
-££0 4
+¢¢0 4
 :
-££4 5
+¢¢4 5
 $str
-££6 E
+¢¢6 E
 ,
-££E F
+¢¢E F
 nullable
-££G O
+¢¢G O
 :
-££O P
+¢¢O P
 true
-££Q U
+¢¢Q U
 )
-££U V
+¢¢U V
 ,
-££V W
+¢¢V W
 Description
-§§ 
+££ 
 =
-§§  !
+££  !
 table
-§§" '
+££" '
 .
-§§' (
+££' (
 Column
-§§( .
+££( .
 <
-§§. /
+££. /
 string
-§§/ 5
+££/ 5
 >
-§§5 6
+££5 6
 (
-§§6 7
+££6 7
 type
-§§7 ;
+££7 ;
 :
-§§; <
+££; <
 $str
-§§= L
+££= L
 ,
-§§L M
+££L M
 nullable
-§§N V
+££N V
 :
-§§V W
+££V W
 true
-§§X \
+££X \
 )
-§§\ ]
+££\ ]
 ,
-§§] ^
+££] ^
 	ImagePath
-•• 
+§§ 
 =
-•• 
+§§ 
 table
-••  %
+§§  %
 .
-••% &
+§§% &
 Column
-••& ,
+§§& ,
 <
-••, -
+§§, -
 string
-••- 3
+§§- 3
 >
-••3 4
+§§3 4
 (
-••4 5
+§§4 5
 type
-••5 9
+§§5 9
 :
-••9 :
+§§9 :
 $str
-••; J
+§§; J
 ,
-••J K
+§§J K
 nullable
-••L T
+§§L T
 :
-••T U
+§§T U
 true
-••V Z
+§§V Z
 )
-••Z [
+§§Z [
 ,
-••[ \
+§§[ \
 CoordinatesLong
-¶¶ #
+•• #
 =
-¶¶$ %
+••$ %
 table
-¶¶& +
+••& +
 .
-¶¶+ ,
+••+ ,
 Column
-¶¶, 2
+••, 2
 <
-¶¶2 3
+••2 3
 string
-¶¶3 9
+••3 9
 >
-¶¶9 :
+••9 :
 (
-¶¶: ;
+••: ;
 type
-¶¶; ?
+••; ?
 :
-¶¶? @
+••? @
 $str
-¶¶A P
+••A P
 ,
-¶¶P Q
+••P Q
 nullable
-¶¶R Z
+••R Z
 :
-¶¶Z [
+••Z [
 true
-¶¶\ `
+••\ `
 )
-¶¶` a
+••` a
 ,
-¶¶a b
+••a b
 CoordinatesLat
-ßß "
+¶¶ "
 =
-ßß# $
+¶¶# $
 table
-ßß% *
+¶¶% *
 .
-ßß* +
+¶¶* +
 Column
-ßß+ 1
+¶¶+ 1
 <
-ßß1 2
+¶¶1 2
 string
-ßß2 8
+¶¶2 8
 >
-ßß8 9
+¶¶8 9
 (
-ßß9 :
+¶¶9 :
 type
-ßß: >
+¶¶: >
 :
-ßß> ?
+¶¶> ?
 $str
-ßß@ O
+¶¶@ O
 ,
-ßßO P
+¶¶O P
 nullable
-ßßQ Y
+¶¶Q Y
 :
-ßßY Z
+¶¶Y Z
 true
-ßß[ _
+¶¶[ _
 )
-ßß_ `
+¶¶_ `
 ,
-ßß` a
+¶¶` a
 
 Created_at
+ßß 
+=
+ßß  
+table
+ßß! &
+.
+ßß& '
+Column
+ßß' -
+<
+ßß- .
+DateTime
+ßß. 6
+>
+ßß6 7
+(
+ßß7 8
+type
+ßß8 <
+:
+ßß< =
+$str
+ßß> I
+,
+ßßI J
+nullable
+ßßK S
+:
+ßßS T
+true
+ßßU Y
+)
+ßßY Z
+,
+ßßZ [
+
+Updated_at
 ®® 
 =
 ®®  
@@ -5041,1425 +9051,1385 @@ Created_at
 )
 ®®Y Z
 ,
-®®Z [
-
-Updated_at
-©© 
-=
-©©  
-table
-©©! &
-.
-©©& '
-Column
-©©' -
-<
-©©- .
-DateTime
-©©. 6
->
-©©6 7
-(
-©©7 8
-type
-©©8 <
-:
-©©< =
-$str
-©©> I
-,
-©©I J
-nullable
-©©K S
-:
-©©S T
-true
-©©U Y
-)
-©©Y Z
-,
-©©Z [
+®®Z [
 ApplicationUserId
-™™ %
+©© %
 =
-™™& '
+©©& '
 table
-™™( -
+©©( -
 .
-™™- .
+©©- .
 Column
-™™. 4
+©©. 4
 <
-™™4 5
+©©4 5
 string
-™™5 ;
+©©5 ;
 >
-™™; <
+©©; <
 (
-™™< =
+©©< =
 type
-™™= A
+©©= A
 :
-™™A B
+©©A B
 $str
-™™C R
+©©C R
 ,
-™™R S
+©©R S
 nullable
-™™T \
+©©T \
 :
-™™\ ]
+©©\ ]
 true
-™™^ b
+©©^ b
 )
-™™b c
+©©b c
 }
-´´ 
+™™ 
 ,
-´´ 
+™™ 
 constraints
-¨¨ 
+´´ 
 :
-¨¨ 
+´´ 
 table
-¨¨ "
+´´ "
 =>
-¨¨# %
+´´# %
 {
-≠≠ 
+¨¨ 
+table
+≠≠ 
+.
+≠≠ 
+
+PrimaryKey
+≠≠ $
+(
+≠≠$ %
+$str
+≠≠% -
+,
+≠≠- .
+x
+≠≠/ 0
+=>
+≠≠1 3
+x
+≠≠4 5
+.
+≠≠5 6
+Id
+≠≠6 8
+)
+≠≠8 9
+;
+≠≠9 :
 table
 ÆÆ 
 .
 ÆÆ 
 
-PrimaryKey
+ForeignKey
 ÆÆ $
 (
 ÆÆ$ %
-$str
-ÆÆ% -
-,
-ÆÆ- .
-x
-ÆÆ/ 0
-=>
-ÆÆ1 3
-x
-ÆÆ4 5
-.
-ÆÆ5 6
-Id
-ÆÆ6 8
-)
-ÆÆ8 9
-;
-ÆÆ9 :
-table
-ØØ 
-.
-ØØ 
-
-ForeignKey
-ØØ $
-(
-ØØ$ %
 name
-∞∞ 
+ØØ 
 :
-∞∞ 
+ØØ 
 $str
-∞∞ D
+ØØ D
 ,
-∞∞D E
+ØØD E
 column
-±± 
+∞∞ 
 :
-±± 
+∞∞ 
 x
-±±  !
+∞∞  !
 =>
-±±" $
+∞∞" $
 x
-±±% &
+∞∞% &
 .
-±±& '
+∞∞& '
 ApplicationUserId
-±±' 8
+∞∞' 8
 ,
-±±8 9
+∞∞8 9
 principalTable
-≤≤ &
+±± &
 :
-≤≤& '
+±±& '
 $str
-≤≤( 5
+±±( 5
 ,
-≤≤5 6
+±±5 6
 principalColumn
-≥≥ '
+≤≤ '
 :
-≥≥' (
+≤≤' (
 $str
-≥≥) -
+≤≤) -
 ,
-≥≥- .
+≤≤- .
 onDelete
-¥¥  
+≥≥  
 :
-¥¥  !
+≥≥  !
 ReferentialAction
-¥¥" 3
+≥≥" 3
 .
-¥¥3 4
+≥≥3 4
 Restrict
-¥¥4 <
+≥≥4 <
 )
-¥¥< =
+≥≥< =
 ;
-¥¥= >
+≥≥= >
 }
-µµ 
+¥¥ 
 )
-µµ 
+¥¥ 
 ;
-µµ 
+¥¥ 
 migrationBuilder
-∑∑ 
+∂∂ 
 .
-∑∑ 
+∂∂ 
 CreateTable
-∑∑ (
+∂∂ (
 (
-∑∑( )
+∂∂( )
 name
-∏∏ 
+∑∑ 
 :
-∏∏ 
+∑∑ 
 $str
-∏∏ 
+∑∑ 
 ,
-∏∏  
+∑∑  
 columns
-ππ 
+∏∏ 
 :
-ππ 
+∏∏ 
 table
-ππ 
+∏∏ 
 =>
-ππ !
+∏∏ !
 new
-ππ" %
+∏∏" %
 {
-∫∫ 
+ππ 
 Id
-ªª 
+∫∫ 
 =
-ªª 
+∫∫ 
 table
-ªª 
+∫∫ 
 .
-ªª 
+∫∫ 
 Column
-ªª %
+∫∫ %
 <
-ªª% &
-int
-ªª& )
+∫∫% &
+string
+∫∫& ,
 >
-ªª) *
+∫∫, -
 (
-ªª* +
+∫∫- .
 type
-ªª+ /
+∫∫. 2
 :
-ªª/ 0
+∫∫2 3
 $str
-ªª1 6
+∫∫4 C
 ,
-ªª6 7
+∫∫C D
 nullable
-ªª8 @
+∫∫E M
 :
-ªª@ A
+∫∫M N
 false
-ªªB G
+∫∫O T
 )
-ªªG H
-.
-ºº 
-
-Annotation
-ºº #
-(
-ºº# $
-$str
-ºº$ 8
+∫∫T U
 ,
-ºº8 9
-$str
-ºº: @
-)
-ºº@ A
-,
-ººA B
+∫∫U V
 Message
-ΩΩ 
+ªª 
 =
-ΩΩ 
+ªª 
 table
-ΩΩ #
+ªª #
 .
-ΩΩ# $
+ªª# $
 Column
-ΩΩ$ *
+ªª$ *
 <
-ΩΩ* +
+ªª* +
 string
-ΩΩ+ 1
+ªª+ 1
 >
-ΩΩ1 2
+ªª1 2
 (
-ΩΩ2 3
+ªª2 3
 type
-ΩΩ3 7
+ªª3 7
 :
-ΩΩ7 8
+ªª7 8
 $str
-ΩΩ9 H
+ªª9 H
 ,
-ΩΩH I
+ªªH I
 nullable
-ΩΩJ R
+ªªJ R
 :
-ΩΩR S
+ªªR S
 true
-ΩΩT X
+ªªT X
 )
-ΩΩX Y
+ªªX Y
 ,
-ΩΩY Z
+ªªY Z
 	ImagePath
-ææ 
+ºº 
 =
-ææ 
+ºº 
 table
-ææ  %
+ºº  %
 .
-ææ% &
+ºº% &
 Column
-ææ& ,
+ºº& ,
 <
-ææ, -
+ºº, -
 string
-ææ- 3
+ºº- 3
 >
-ææ3 4
+ºº3 4
 (
-ææ4 5
+ºº4 5
 type
-ææ5 9
+ºº5 9
 :
-ææ9 :
+ºº9 :
 $str
-ææ; J
+ºº; J
 ,
-ææJ K
+ººJ K
 nullable
-ææL T
+ººL T
 :
-ææT U
+ººT U
 true
-ææV Z
+ººV Z
 )
-ææZ [
+ººZ [
 ,
-ææ[ \
+ºº[ \
 CoordinatesLong
-øø #
+ΩΩ #
 =
-øø$ %
+ΩΩ$ %
 table
-øø& +
+ΩΩ& +
 .
-øø+ ,
+ΩΩ+ ,
 Column
-øø, 2
+ΩΩ, 2
 <
-øø2 3
+ΩΩ2 3
 string
-øø3 9
+ΩΩ3 9
 >
-øø9 :
+ΩΩ9 :
 (
-øø: ;
+ΩΩ: ;
 type
-øø; ?
+ΩΩ; ?
 :
-øø? @
+ΩΩ? @
 $str
-øøA P
+ΩΩA P
 ,
-øøP Q
+ΩΩP Q
 nullable
-øøR Z
+ΩΩR Z
 :
-øøZ [
+ΩΩZ [
 true
-øø\ `
+ΩΩ\ `
 )
-øø` a
+ΩΩ` a
 ,
-øøa b
+ΩΩa b
 CoordinatesLat
-¿¿ "
+ææ "
 =
-¿¿# $
+ææ# $
 table
-¿¿% *
+ææ% *
 .
-¿¿* +
+ææ* +
 Column
-¿¿+ 1
+ææ+ 1
 <
-¿¿1 2
+ææ1 2
 string
-¿¿2 8
+ææ2 8
 >
-¿¿8 9
+ææ8 9
 (
-¿¿9 :
+ææ9 :
 type
-¿¿: >
+ææ: >
 :
-¿¿> ?
+ææ> ?
 $str
-¿¿@ O
+ææ@ O
 ,
-¿¿O P
+ææO P
 nullable
-¿¿Q Y
+ææQ Y
 :
-¿¿Y Z
+ææY Z
 true
-¿¿[ _
+ææ[ _
 )
-¿¿_ `
+ææ_ `
 ,
-¿¿` a
+ææ` a
 
 Created_at
-¡¡ 
+øø 
 =
-¡¡  
+øø  
 table
-¡¡! &
+øø! &
 .
-¡¡& '
+øø& '
 Column
-¡¡' -
+øø' -
 <
-¡¡- .
+øø- .
 DateTime
-¡¡. 6
+øø. 6
 >
-¡¡6 7
+øø6 7
 (
-¡¡7 8
+øø7 8
 type
-¡¡8 <
+øø8 <
 :
-¡¡< =
+øø< =
 $str
-¡¡> I
+øø> I
 ,
-¡¡I J
+øøI J
 nullable
-¡¡K S
+øøK S
 :
-¡¡S T
+øøS T
 true
-¡¡U Y
+øøU Y
 )
-¡¡Y Z
+øøY Z
 ,
-¡¡Z [
+øøZ [
 
 Updated_at
-¬¬ 
+¿¿ 
 =
-¬¬  
+¿¿  
 table
-¬¬! &
+¿¿! &
 .
-¬¬& '
+¿¿& '
 Column
-¬¬' -
+¿¿' -
 <
-¬¬- .
+¿¿- .
 DateTime
-¬¬. 6
+¿¿. 6
 >
-¬¬6 7
+¿¿6 7
 (
-¬¬7 8
+¿¿7 8
 type
-¬¬8 <
+¿¿8 <
 :
-¬¬< =
+¿¿< =
 $str
-¬¬> I
+¿¿> I
 ,
-¬¬I J
+¿¿I J
 nullable
-¬¬K S
+¿¿K S
 :
-¬¬S T
+¿¿S T
 true
-¬¬U Y
+¿¿U Y
 )
-¬¬Y Z
+¿¿Y Z
 ,
-¬¬Z [
+¿¿Z [
 ApplicationUserId
-√√ %
+¡¡ %
 =
-√√& '
+¡¡& '
 table
-√√( -
+¡¡( -
 .
-√√- .
+¡¡- .
 Column
-√√. 4
+¡¡. 4
 <
-√√4 5
+¡¡4 5
 string
-√√5 ;
+¡¡5 ;
 >
-√√; <
+¡¡; <
 (
-√√< =
+¡¡< =
 type
-√√= A
+¡¡= A
 :
-√√A B
+¡¡A B
 $str
-√√C R
+¡¡C R
 ,
-√√R S
+¡¡R S
 nullable
-√√T \
+¡¡T \
 :
-√√\ ]
+¡¡\ ]
 true
-√√^ b
+¡¡^ b
 )
-√√b c
+¡¡b c
 ,
-√√c d
+¡¡c d
 PetId
-ƒƒ 
+¬¬ 
 =
-ƒƒ 
+¬¬ 
 table
-ƒƒ !
+¬¬ !
 .
-ƒƒ! "
+¬¬! "
 Column
-ƒƒ" (
+¬¬" (
 <
-ƒƒ( )
-int
-ƒƒ) ,
+¬¬( )
+string
+¬¬) /
 >
-ƒƒ, -
+¬¬/ 0
 (
-ƒƒ- .
+¬¬0 1
 type
-ƒƒ. 2
+¬¬1 5
 :
-ƒƒ2 3
+¬¬5 6
 $str
-ƒƒ4 9
+¬¬7 F
 ,
-ƒƒ9 :
+¬¬F G
 nullable
-ƒƒ; C
+¬¬H P
 :
-ƒƒC D
-false
-ƒƒE J
+¬¬P Q
+true
+¬¬R V
 )
-ƒƒJ K
+¬¬V W
 }
-≈≈ 
+√√ 
 ,
-≈≈ 
+√√ 
 constraints
-∆∆ 
+ƒƒ 
 :
-∆∆ 
+ƒƒ 
 table
-∆∆ "
+ƒƒ "
 =>
-∆∆# %
+ƒƒ# %
 {
-«« 
+≈≈ 
 table
-»» 
+∆∆ 
 .
-»» 
+∆∆ 
 
 PrimaryKey
-»» $
+∆∆ $
 (
-»»$ %
+∆∆$ %
 $str
-»»% 1
+∆∆% 1
 ,
-»»1 2
+∆∆1 2
 x
-»»3 4
+∆∆3 4
 =>
-»»5 7
+∆∆5 7
 x
-»»8 9
+∆∆8 9
 .
-»»9 :
+∆∆9 :
 Id
-»»: <
+∆∆: <
 )
-»»< =
+∆∆< =
 ;
-»»= >
+∆∆= >
 table
-…… 
+«« 
 .
-…… 
+«« 
 
 ForeignKey
-…… $
+«« $
 (
-……$ %
+««$ %
 name
-   
+»» 
 :
-   
+»» 
 $str
-   H
+»» H
 ,
-  H I
+»»H I
 column
-ÀÀ 
+…… 
 :
-ÀÀ 
+…… 
 x
-ÀÀ  !
+……  !
 =>
-ÀÀ" $
+……" $
 x
-ÀÀ% &
+……% &
 .
-ÀÀ& '
+……& '
 ApplicationUserId
-ÀÀ' 8
+……' 8
 ,
-ÀÀ8 9
+……8 9
 principalTable
-ÃÃ &
+   &
 :
-ÃÃ& '
+  & '
 $str
-ÃÃ( 5
+  ( 5
 ,
-ÃÃ5 6
+  5 6
 principalColumn
-ÕÕ '
+ÀÀ '
 :
-ÕÕ' (
+ÀÀ' (
 $str
-ÕÕ) -
+ÀÀ) -
 ,
-ÕÕ- .
+ÀÀ- .
 onDelete
-ŒŒ  
+ÃÃ  
 :
-ŒŒ  !
+ÃÃ  !
 ReferentialAction
-ŒŒ" 3
+ÃÃ" 3
 .
-ŒŒ3 4
+ÃÃ3 4
 Restrict
-ŒŒ4 <
+ÃÃ4 <
 )
-ŒŒ< =
+ÃÃ< =
 ;
-ŒŒ= >
+ÃÃ= >
 table
-œœ 
+ÕÕ 
 .
-œœ 
+ÕÕ 
 
 ForeignKey
-œœ $
+ÕÕ $
 (
-œœ$ %
+ÕÕ$ %
 name
-–– 
+ŒŒ 
 :
-–– 
+ŒŒ 
 $str
-–– 4
+ŒŒ 4
 ,
-––4 5
+ŒŒ4 5
 column
-—— 
+œœ 
 :
-—— 
+œœ 
 x
-——  !
+œœ  !
 =>
-——" $
+œœ" $
 x
-——% &
+œœ% &
 .
-——& '
+œœ& '
 PetId
-——' ,
+œœ' ,
 ,
-——, -
+œœ, -
 principalTable
-““ &
+–– &
 :
-““& '
+––& '
 $str
-““( -
+––( -
 ,
-““- .
+––- .
 principalColumn
-”” '
+—— '
 :
-””' (
+——' (
 $str
-””) -
+——) -
 ,
-””- .
+——- .
 onDelete
-‘‘  
+““  
 :
-‘‘  !
+““  !
 ReferentialAction
-‘‘" 3
+““" 3
 .
-‘‘3 4
-Cascade
-‘‘4 ;
+““3 4
+Restrict
+““4 <
 )
-‘‘; <
+““< =
 ;
-‘‘< =
+““= >
 }
-’’ 
+”” 
 )
-’’ 
+”” 
 ;
-’’ 
+”” 
 migrationBuilder
-◊◊ 
+’’ 
 .
-◊◊ 
+’’ 
 CreateIndex
-◊◊ (
+’’ (
 (
-◊◊( )
+’’( )
 name
-ÿÿ 
+÷÷ 
 :
-ÿÿ 
+÷÷ 
 $str
-ÿÿ 2
+÷÷ 2
 ,
-ÿÿ2 3
+÷÷2 3
 table
-ŸŸ 
+◊◊ 
 :
-ŸŸ 
+◊◊ 
 $str
-ŸŸ )
+◊◊ )
 ,
-ŸŸ) *
+◊◊) *
 column
-⁄⁄ 
+ÿÿ 
 :
-⁄⁄ 
+ÿÿ 
 $str
-⁄⁄  
+ÿÿ  
 )
-⁄⁄  !
+ÿÿ  !
 ;
-⁄⁄! "
+ÿÿ! "
 migrationBuilder
-‹‹ 
+⁄⁄ 
 .
-‹‹ 
+⁄⁄ 
 CreateIndex
-‹‹ (
+⁄⁄ (
 (
-‹‹( )
+⁄⁄( )
 name
-›› 
+€€ 
 :
-›› 
+€€ 
 $str
-›› %
+€€ %
 ,
-››% &
+€€% &
 table
-ﬁﬁ 
+‹‹ 
 :
-ﬁﬁ 
+‹‹ 
 $str
-ﬁﬁ $
+‹‹ $
 ,
-ﬁﬁ$ %
+‹‹$ %
 column
+›› 
+:
+›› 
+$str
+›› (
+,
+››( )
+unique
+ﬁﬁ 
+:
+ﬁﬁ 
+true
+ﬁﬁ 
+,
+ﬁﬁ 
+filter
 ﬂﬂ 
 :
 ﬂﬂ 
 $str
-ﬂﬂ (
+ﬂﬂ 6
+)
+ﬂﬂ6 7
+;
+ﬂﬂ7 8
+migrationBuilder
+·· 
+.
+·· 
+CreateIndex
+·· (
+(
+··( )
+name
+‚‚ 
+:
+‚‚ 
+$str
+‚‚ 2
 ,
-ﬂﬂ( )
+‚‚2 3
+table
+„„ 
+:
+„„ 
+$str
+„„ )
+,
+„„) *
+column
+‰‰ 
+:
+‰‰ 
+$str
+‰‰  
+)
+‰‰  !
+;
+‰‰! "
+migrationBuilder
+ÊÊ 
+.
+ÊÊ 
+CreateIndex
+ÊÊ (
+(
+ÊÊ( )
+name
+ÁÁ 
+:
+ÁÁ 
+$str
+ÁÁ 2
+,
+ÁÁ2 3
+table
+ËË 
+:
+ËË 
+$str
+ËË )
+,
+ËË) *
+column
+ÈÈ 
+:
+ÈÈ 
+$str
+ÈÈ  
+)
+ÈÈ  !
+;
+ÈÈ! "
+migrationBuilder
+ÎÎ 
+.
+ÎÎ 
+CreateIndex
+ÎÎ (
+(
+ÎÎ( )
+name
+ÏÏ 
+:
+ÏÏ 
+$str
+ÏÏ 1
+,
+ÏÏ1 2
+table
+ÌÌ 
+:
+ÌÌ 
+$str
+ÌÌ (
+,
+ÌÌ( )
+column
+ÓÓ 
+:
+ÓÓ 
+$str
+ÓÓ  
+)
+ÓÓ  !
+;
+ÓÓ! "
+migrationBuilder
+ 
+.
+ 
+CreateIndex
+ (
+(
+( )
+name
+ÒÒ 
+:
+ÒÒ 
+$str
+ÒÒ "
+,
+ÒÒ" #
+table
+ÚÚ 
+:
+ÚÚ 
+$str
+ÚÚ $
+,
+ÚÚ$ %
+column
+ÛÛ 
+:
+ÛÛ 
+$str
+ÛÛ )
+)
+ÛÛ) *
+;
+ÛÛ* +
+migrationBuilder
+ıı 
+.
+ıı 
+CreateIndex
+ıı (
+(
+ıı( )
+name
+ˆˆ 
+:
+ˆˆ 
+$str
+ˆˆ %
+,
+ˆˆ% &
+table
+˜˜ 
+:
+˜˜ 
+$str
+˜˜ $
+,
+˜˜$ %
+column
+¯¯ 
+:
+¯¯ 
+$str
+¯¯ ,
+,
+¯¯, -
 unique
-‡‡ 
+˘˘ 
 :
-‡‡ 
+˘˘ 
 true
-‡‡ 
+˘˘ 
 ,
-‡‡ 
+˘˘ 
 filter
-·· 
-:
-·· 
-$str
-·· 6
-)
-··6 7
-;
-··7 8
-migrationBuilder
-„„ 
-.
-„„ 
-CreateIndex
-„„ (
-(
-„„( )
-name
-‰‰ 
-:
-‰‰ 
-$str
-‰‰ 2
-,
-‰‰2 3
-table
-ÂÂ 
-:
-ÂÂ 
-$str
-ÂÂ )
-,
-ÂÂ) *
-column
-ÊÊ 
-:
-ÊÊ 
-$str
-ÊÊ  
-)
-ÊÊ  !
-;
-ÊÊ! "
-migrationBuilder
-ËË 
-.
-ËË 
-CreateIndex
-ËË (
-(
-ËË( )
-name
-ÈÈ 
-:
-ÈÈ 
-$str
-ÈÈ 2
-,
-ÈÈ2 3
-table
-ÍÍ 
-:
-ÍÍ 
-$str
-ÍÍ )
-,
-ÍÍ) *
-column
-ÎÎ 
-:
-ÎÎ 
-$str
-ÎÎ  
-)
-ÎÎ  !
-;
-ÎÎ! "
-migrationBuilder
-ÌÌ 
-.
-ÌÌ 
-CreateIndex
-ÌÌ (
-(
-ÌÌ( )
-name
-ÓÓ 
-:
-ÓÓ 
-$str
-ÓÓ 1
-,
-ÓÓ1 2
-table
-ÔÔ 
-:
-ÔÔ 
-$str
-ÔÔ (
-,
-ÔÔ( )
-column
- 
-:
- 
-$str
-  
-)
-  !
-;
-! "
-migrationBuilder
-ÚÚ 
-.
-ÚÚ 
-CreateIndex
-ÚÚ (
-(
-ÚÚ( )
-name
-ÛÛ 
-:
-ÛÛ 
-$str
-ÛÛ "
-,
-ÛÛ" #
-table
-ÙÙ 
-:
-ÙÙ 
-$str
-ÙÙ $
-,
-ÙÙ$ %
-column
-ıı 
-:
-ıı 
-$str
-ıı )
-)
-ıı) *
-;
-ıı* +
-migrationBuilder
-˜˜ 
-.
-˜˜ 
-CreateIndex
-˜˜ (
-(
-˜˜( )
-name
-¯¯ 
-:
-¯¯ 
-$str
-¯¯ %
-,
-¯¯% &
-table
-˘˘ 
-:
-˘˘ 
-$str
-˘˘ $
-,
-˘˘$ %
-column
 ˙˙ 
 :
 ˙˙ 
 $str
-˙˙ ,
-,
-˙˙, -
-unique
-˚˚ 
-:
-˚˚ 
-true
-˚˚ 
-,
-˚˚ 
-filter
-¸¸ 
-:
-¸¸ 
-$str
-¸¸ :
+˙˙ :
 )
-¸¸: ;
+˙˙: ;
 ;
-¸¸; <
+˙˙; <
 migrationBuilder
-˛˛ 
+¸¸ 
 .
-˛˛ 
+¸¸ 
 CreateIndex
-˛˛ (
+¸¸ (
 (
-˛˛( )
+¸¸( )
 name
-ˇˇ 
+˝˝ 
 :
-ˇˇ 
+˝˝ 
 $str
-ˇˇ 4
+˝˝ 4
 ,
-ˇˇ4 5
+˝˝4 5
 table
-ÄÄ 
+˛˛ 
 :
-ÄÄ 
+˛˛ 
 $str
-ÄÄ  
+˛˛  
 ,
-ÄÄ  !
+˛˛  !
 column
-ÅÅ 
+ˇˇ 
 :
-ÅÅ 
+ˇˇ 
 $str
-ÅÅ +
+ˇˇ +
 )
-ÅÅ+ ,
+ˇˇ+ ,
 ;
-ÅÅ, -
+ˇˇ, -
 migrationBuilder
-ÉÉ 
+ÅÅ 
 .
-ÉÉ 
+ÅÅ 
 CreateIndex
-ÉÉ (
+ÅÅ (
 (
-ÉÉ( )
+ÅÅ( )
 name
-ÑÑ 
+ÇÇ 
 :
-ÑÑ 
+ÇÇ 
 $str
-ÑÑ (
+ÇÇ (
 ,
-ÑÑ( )
+ÇÇ( )
 table
-ÖÖ 
+ÉÉ 
 :
-ÖÖ 
+ÉÉ 
 $str
-ÖÖ  
+ÉÉ  
 ,
-ÖÖ  !
+ÉÉ  !
 column
-ÜÜ 
+ÑÑ 
 :
-ÜÜ 
+ÑÑ 
 $str
-ÜÜ 
+ÑÑ 
 )
-ÜÜ  
+ÑÑ  
 ;
-ÜÜ  !
+ÑÑ  !
 migrationBuilder
-àà 
+ÜÜ 
 .
-àà 
+ÜÜ 
 CreateIndex
-àà (
+ÜÜ (
 (
-àà( )
+ÜÜ( )
 name
-ââ 
+áá 
 :
-ââ 
+áá 
 $str
-ââ 0
+áá 0
 ,
-ââ0 1
+áá0 1
 table
-ää 
+àà 
 :
-ää 
+àà 
 $str
-ää 
+àà 
 ,
-ää 
+àà 
 column
-ãã 
+ââ 
 :
-ãã 
+ââ 
 $str
-ãã +
+ââ +
 )
-ãã+ ,
+ââ+ ,
 ;
-ãã, -
+ââ, -
 }
-åå 	
+ää 	
 	protected
-éé 
+åå 
 override
-éé 
+åå 
 void
-éé 
+åå 
 Down
-éé  $
+åå  $
 (
-éé$ %
+åå$ %
 MigrationBuilder
-éé% 5
+åå% 5
 migrationBuilder
-éé6 F
+åå6 F
 )
-ééF G
+ååF G
 {
-èè 	
+çç 	
 migrationBuilder
-êê 
+éé 
 .
-êê 
+éé 
 	DropTable
-êê &
+éé &
 (
-êê& '
+éé& '
 name
-ëë 
+èè 
 :
-ëë 
+èè 
 $str
-ëë (
+èè (
 )
-ëë( )
+èè( )
 ;
-ëë) *
+èè) *
 migrationBuilder
-ìì 
+ëë 
 .
-ìì 
+ëë 
 	DropTable
-ìì &
+ëë &
 (
-ìì& '
+ëë& '
 name
-îî 
+íí 
 :
-îî 
+íí 
 $str
-îî (
+íí (
 )
-îî( )
+íí( )
 ;
-îî) *
+íí) *
 migrationBuilder
-ññ 
+îî 
 .
-ññ 
+îî 
 	DropTable
-ññ &
+îî &
 (
-ññ& '
+îî& '
 name
-óó 
+ïï 
 :
-óó 
+ïï 
 $str
-óó (
+ïï (
 )
-óó( )
+ïï( )
 ;
-óó) *
+ïï) *
 migrationBuilder
-ôô 
+óó 
 .
-ôô 
+óó 
 	DropTable
-ôô &
+óó &
 (
-ôô& '
+óó& '
 name
-öö 
+òò 
 :
-öö 
+òò 
 $str
-öö '
+òò '
 )
-öö' (
+òò' (
 ;
-öö( )
+òò( )
 migrationBuilder
-úú 
+öö 
 .
-úú 
+öö 
 	DropTable
-úú &
+öö &
 (
-úú& '
+öö& '
 name
-ùù 
+õõ 
 :
-ùù 
+õõ 
 $str
-ùù (
+õõ (
 )
-ùù( )
+õõ( )
 ;
-ùù) *
+õõ) *
 migrationBuilder
-üü 
+ùù 
 .
-üü 
+ùù 
 	DropTable
-üü &
+ùù &
 (
-üü& '
+ùù& '
 name
-†† 
+ûû 
 :
-†† 
+ûû 
 $str
-†† 
+ûû 
 )
-††  
+ûû  
 ;
-††  !
+ûû  !
 migrationBuilder
-¢¢ 
+†† 
 .
-¢¢ 
+†† 
 	DropTable
-¢¢ &
+†† &
 (
-¢¢& '
+††& '
 name
-££ 
+°° 
 :
-££ 
+°° 
 $str
-££ #
+°° #
 )
-££# $
+°°# $
 ;
-££$ %
+°°$ %
 migrationBuilder
-•• 
+££ 
 .
-•• 
+££ 
 	DropTable
-•• &
+££ &
 (
-••& '
+££& '
 name
-¶¶ 
+§§ 
 :
-¶¶ 
+§§ 
 $str
-¶¶ 
+§§ 
 )
-¶¶ 
+§§ 
 ;
-¶¶ 
+§§ 
 migrationBuilder
-®® 
+¶¶ 
 .
-®® 
+¶¶ 
 	DropTable
-®® &
+¶¶ &
 (
-®®& '
+¶¶& '
 name
-©© 
+ßß 
 :
-©© 
+ßß 
 $str
-©© #
+ßß #
 )
-©©# $
+ßß# $
 ;
-©©$ %
+ßß$ %
 }
-™™ 	
+®® 	
 }
-´´ 
-}¨¨ ÿ
-QD:\tspproject\Mvc\Where_is_my_Fluffymoon\Where_is_my_Fluffymoon\Models\Comment.cs
-	namespace 	"
-Where_is_my_Fluffymoon
+©© 
+}™™ È
+\C:\Users\Subaru\source\repos\Where_is_my_Fluffymoon\Where_is_my_Fluffymoon\Models\Comment.cs
+	namespace 	"
+Where_is_my_Fluffymoon
   
-.  !
-Models! '
-{		 
+.  !
+Models! '
+{ 
+public 
+
+class 
+Comment 
+{ 
+public		 
+string		 
+Id		 
+{		 
+get		 
+;		 
+set		  #
+;		# $
+}		% &
 public
 
- 
-
-class
+ 
+string
 
- 
-Comment
+ 
+Message
 
- 
-{ 
-public 
-int 
-Id 
-{ 
-get 
-; 
-set  
-;  !
-}" #
+ 
+{
+
+ 
+get
+
+  #
+;
+
+# $
+set
+
+% (
+;
+
+( )
+}
+
+* +
+public 
+String 
+	ImagePath 
+{  !
+get" %
+;% &
+set' *
+;* +
+}, -
+public 
+String 
+CoordinatesLong %
+{& '
+get( +
+;+ ,
+set- 0
+;0 1
+}2 3
 public 
-string 
-Message 
-{ 
-get  #
-;# $
-set% (
-;( )
-}* +
-public 
-String 
-	ImagePath 
-{  !
-get" %
-;% &
-set' *
-;* +
-}, -
-public 
-String 
-CoordinatesLong %
-{& '
-get( +
-;+ ,
-set- 0
-;0 1
-}2 3
-public 
-String 
-CoordinatesLat $
-{% &
-get' *
-;* +
-set, /
-;/ 0
-}1 2
-public 
-DateTime 
-? 
+String 
+CoordinatesLat $
+{% &
+get' *
+;* +
+set, /
+;/ 0
+}1 2
+public 
+DateTime 
+? 
 
-Created_at #
-{$ %
-get& )
-;) *
-set+ .
-;. /
-}0 1
-public 
-DateTime 
-? 
+Created_at #
+{$ %
+get& )
+;) *
+set+ .
+;. /
+}0 1
+public 
+DateTime 
+? 
 
-Updated_at #
-{$ %
-get& )
-;) *
-set+ .
-;. /
-}0 1
-[ 	
+Updated_at #
+{$ %
+get& )
+;) *
+set+ .
+;. /
+}0 1
+[ 	
 
-ForeignKey	 
-( 
-$str %
-)% &
-]& '
-public 
-string 
-ApplicationUserId '
-{( )
-get* -
-;- .
-set/ 2
-;2 3
-}4 5
-public 
-ApplicationUser 
-ApplicationUser .
-{/ 0
-get1 4
-;4 5
-set6 9
-;9 :
-}; <
-[ 	
+ForeignKey	 
+( 
+$str %
+)% &
+]& '
+public 
+string 
+ApplicationUserId '
+{( )
+get* -
+;- .
+set/ 2
+;2 3
+}4 5
+public 
+ApplicationUser 
+ApplicationUser .
+{/ 0
+get1 4
+;4 5
+set6 9
+;9 :
+}; <
+[ 	
 
-ForeignKey	 
-( 
-$str 
-) 
-] 
-public 
-int 
-PetId 
-{ 
-get 
-; 
-set  #
-;# $
-}% &
-public 
-Pet 
-Pet 
-{ 
-get 
-; 
-set !
-;! "
-}# $
-} 
-} ∞
-XD:\tspproject\Mvc\Where_is_my_Fluffymoon\Where_is_my_Fluffymoon\Models\ErrorViewModel.cs
+ForeignKey	 
+( 
+$str 
+) 
+] 
+public 
+string 
+PetId 
+{ 
+get !
+;! "
+set# &
+;& '
+}( )
+public 
+Pet 
+Pet 
+{ 
+get 
+; 
+set !
+;! "
+}# $
+} 
+} ª
+cC:\Users\Subaru\source\repos\Where_is_my_Fluffymoon\Where_is_my_Fluffymoon\Models\ErrorViewModel.cs
 	namespace 	"
 Where_is_my_Fluffymoon
   
@@ -6495,8 +10465,8 @@ XD:\tspproject\Mvc\Where_is_my_Fluffymoon\Where_is_my_Fluffymoon\Models\ErrorVie
 }
 
  
-} ›
-MD:\tspproject\Mvc\Where_is_my_Fluffymoon\Where_is_my_Fluffymoon\Models\Pet.cs
+} Î
+XC:\Users\Subaru\source\repos\Where_is_my_Fluffymoon\Where_is_my_Fluffymoon\Models\Pet.cs
 	namespace 	"
 Where_is_my_Fluffymoon
   
@@ -6532,15 +10502,15 @@ MD:\tspproject\Mvc\Where_is_my_Fluffymoon\Where_is_my_Fluffymoon\Models\Pet.cs
 )1 2
 ;2 3
 } 	
-public 
-int 
-Id 
-{ 
-get 
-; 
-set  
-;  !
-}" #
+public 
+string 
+Id 
+{ 
+get 
+; 
+set  #
+;# $
+}% &
 public 
 String 
 Name 
@@ -6646,8 +10616,8 @@ ForeignKey	 
 ;7 8
 }9 :
 } 
-}   ñ
-JD:\tspproject\Mvc\Where_is_my_Fluffymoon\Where_is_my_Fluffymoon\Program.cs
+}   °
+UC:\Users\Subaru\source\repos\Where_is_my_Fluffymoon\Where_is_my_Fluffymoon\Program.cs
 	namespace
 
  	"
@@ -6731,8 +10701,8 @@ UseStartup )
 ) 
 ; 
 } 
-} ‹
-JD:\tspproject\Mvc\Where_is_my_Fluffymoon\Where_is_my_Fluffymoon\Startup.cs
+} Á
+UC:\Users\Subaru\source\repos\Where_is_my_Fluffymoon\Where_is_my_Fluffymoon\Startup.cs
 	namespace		 	"
 Where_is_my_Fluffymoon		
   

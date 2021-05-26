@@ -12,7 +12,7 @@
     @foreach (var item in Model)
     {
         <div class="col-lg-4 col-md-6 mb-4">
-            <div class="card h-100">
+            <div class="card h-100 shadow">
                 @if(item.ImagePath != null)
                 {
                         <img class="card-img" src="@Url.Content(string.Format("~/PetImages/{0}.jpg", item.Id))" alt="pet-image">
@@ -24,7 +24,6 @@
                 <div class="card-body">
                     <h4 class="card-title">@Html.DisplayFor(modelItem => item.Name)</h4>
                     <p class="card-text">@Html.DisplayFor(modelItem => item.Description)</p>
-                    @*<p class="card-text"><span class="font-weight-bold">Coordinates:</span> @Html.DisplayFor(modelItem => item.CoordinatesLong) | @Html.DisplayFor(modelItem => item.CoordinatesLat)</p>*@
                     <hr />
                     <p><span class="font-weight-bold">Added by:</span> @Html.DisplayFor(modelItem => item.ApplicationUser.FirstName) @Html.DisplayFor(modelItem => item.ApplicationUser.LastName)</p>
                     <p><span class="font-weight-bold">Created at:</span> @Html.DisplayFor(modelItem => item.Created_at) </p>

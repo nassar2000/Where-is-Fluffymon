@@ -15,7 +15,7 @@
     @foreach (var item in Model)
     {
         <div class="col-lg-4 col-md-6 mb-4">
-            <div class="card h-100">
+            <div class="card h-100 shadow">
                 @if(item.ImagePath != null)
                 {
                         <img class="card-img" src="@Url.Content(string.Format("~/PetImages/{0}.jpg", item.Id))" alt="pet-image">
